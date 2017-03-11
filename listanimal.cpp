@@ -321,10 +321,10 @@ int Parkit::getMakanan() {
 Buaya::Buaya(int x, int y, int kg, bool jinak) : Crocodillia('D') {
 	aksi = "open mouth";
 	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+	LandAnimal::SetMassa(kg);
+	LandAnimal::SetJinak(jinak);
+	LandAnimal::SetX(x);
+	LandAnimal::SetY(y);
 }
 void Buaya:: interact() {
 	cout << aksi;
@@ -336,10 +336,10 @@ int Buaya::getMakanan() {
 Aligator::Aligator(int x, int y, int kg, bool jinak) : Crocodillia('L') {
 	aksi = "crawl";
 	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+	LandAnimal::SetMassa(kg);
+	LandAnimal::SetJinak(jinak);
+	LandAnimal::SetX(x);
+	LandAnimal::SetY(y);
 }
 void Aligator::interact() {
 	cout << aksi;
