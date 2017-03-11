@@ -16,7 +16,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Omnivora 
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	OrangUtan(int x, int y, int kg, bool jinak); 
+	OrangUtan(int i, int x, int y, int kg, bool jinak); 
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact ();
@@ -41,7 +41,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Omnivora 
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Siamang(int x, int y, int kg, bool jinak);
+	Siamang(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact ();
@@ -66,7 +66,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Omnivora 
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Bekantan(int x, int y, int kg, bool jinak);
+	Bekantan(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -91,7 +91,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora 
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	BadakCulaSatu(int x, int y, int kg, bool jinak);
+	BadakCulaSatu(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -115,7 +115,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora 
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Zebra(int x, int y, int kg, bool jinak);
+	Zebra(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -139,7 +139,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	HarimauSumatra(int x, int y, int kg, bool jinak);
+	HarimauSumatra(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact();
@@ -163,7 +163,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Macan(int x, int y, int kg, bool jinak);
+	Macan(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -187,7 +187,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Rusa(int x, int y, int kg, bool jinak);
+	Rusa(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -211,7 +211,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Kancil(int x, int y, int kg, bool jinak);
+	Kancil(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -235,7 +235,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Banteng(int x, int y, int kg, bool jinak);
+	Banteng(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -259,7 +259,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Komodo(int x, int y, int kg, bool jinak);
+	Komodo(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -284,7 +284,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Iguana(int x, int y, int kg, bool jinak);
+	Iguana(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact();
@@ -310,7 +310,7 @@ public:
 	  * @param jml Nilai makanan yang diinginkan
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	HiuKarpet(int x, int y, int kg, bool jinak);
+	HiuKarpet(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -336,7 +336,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	HiuMartil(int x, int y, int kg, bool jinak);
+	HiuMartil(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -361,7 +361,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	StingRay(int x, int y, int kg, bool jinak);
+	StingRay(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -386,7 +386,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	MantaRay(int x, int y, int kg, bool jinak);
+	MantaRay(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -410,7 +410,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Elang(int x, int y, int kg, bool jinak);
+	Elang(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact();
@@ -434,7 +434,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Garuda(int x, int y, int kg, bool jinak);
+	Garuda(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -459,7 +459,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Kakatua(int x, int y, int kg, bool jinak);
+	Kakatua(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact();
@@ -484,7 +484,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Nuri(int x, int y, int kg, bool jinak);
+	Nuri(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -508,7 +508,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */ 	
-	Parkit(int x, int y, int kg, bool jinak);
+	Parkit(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan suara binatang ke layar
 	  */
 	void interact();
@@ -532,7 +532,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkan
 	  */
-	Buaya(int x, int y, int kg, bool jinak);
+	Buaya(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();
@@ -558,7 +558,7 @@ public:
 	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
 	  * @param jml Nilai makanan yang diinginkab
 	  */
-	Aligator(int x, int y, int kg, bool jinak);
+	Aligator(int i, int x, int y, int kg, bool jinak);
 	/** @brief Menampilkan aksi binatang ke layar
 	  */
 	void interact();

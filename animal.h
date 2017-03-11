@@ -14,7 +14,7 @@ public:
 	  * @param c Karakter inisial yang diinginkan
 	  * @param h Karakter habitat yang diinginkan
 	  */
-	Animal(char c);
+	Animal(char c, int i);
 	void SetJinak(bool _jinak);
 	bool IsJinak();
 	int GetMassa();
@@ -56,6 +56,7 @@ private:
 	int y;
 	int massa;
 	bool jinak;
+	const int ID;
 	const char inisial;
 	vector<char> type;
 };
@@ -69,7 +70,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	LandAnimal(char c);
+	LandAnimal(char c, int i);
 };
 
 /** @class WaterAnimal
@@ -80,7 +81,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	WaterAnimal(char c);
+	WaterAnimal(char c, int i);
 
 };
 
@@ -92,7 +93,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	FlyingAnimal(char c);
+	FlyingAnimal(char c, int i);
 };
 
 //ORDO BASE CLASS
@@ -105,7 +106,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Squamata(char c);
+	Squamata(char c, int i);
 };
 
 /** @class Primate
@@ -116,7 +117,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Primate(char c);
+	Primate(char c, int i);
 };
 
 /** @class Carnivore
@@ -127,7 +128,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Carnivore(char c);
+	Carnivore(char c, int i);
 };
 
 /** @class Artiodactyl
@@ -139,7 +140,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Artiodactyl(char c);
+	Artiodactyl(char c, int i);
 };
 
 /** @class Perrisodactyl
@@ -151,7 +152,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Perrisodactyl(char c);
+	Perrisodactyl(char c, int i);
 };
 
 /** @class Crocodillia
@@ -163,7 +164,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Crocodillia(char c);	
+	Crocodillia(char c, int i);	
 };
 
 /** @class Carchanhiniformes
@@ -174,7 +175,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Carcharhiniformes(char c);
+	Carcharhiniformes(char c, int i);
 };
 
 /** @class Rajiformes
@@ -185,7 +186,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Rajiformes(char c);
+	Rajiformes(char c, int i);
 };
 
 /** @class Falconformes
@@ -196,7 +197,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Falconiformes(char c);	
+	Falconiformes(char c, int i);	
 };
 
 /** @class Prittaciformes
@@ -207,7 +208,7 @@ public:
 	/** @brief Constructor.
 	  * @param c
 	  */
-	Prittaciformes(char c);
+	Prittaciformes(char c, int i);
 };
 
 #endif

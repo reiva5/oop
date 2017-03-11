@@ -2,7 +2,7 @@
 #include "animal.h"
 using namespace std;
 
-Animal::Animal(char c) : inisial(c) {
+Animal::Animal(char c, int i) : inisial(c) , ID(i) {
 }
 void Animal::SetJinak(bool _jinak) {
 	jinak = _jinak;
@@ -39,35 +39,35 @@ void Animal::AddHabitat(char c) {
 }
 
 //Habitat Base Class
-LandAnimal::LandAnimal(char c) : Animal(c) {
+LandAnimal::LandAnimal(char c, int i) : Animal(c, i) {
 	AddHabitat('x');
 }
-WaterAnimal::WaterAnimal(char c): Animal(c){
+WaterAnimal::WaterAnimal(char c, int i): Animal(c,i){
 	AddHabitat('w');
 }
-FlyingAnimal::FlyingAnimal(char c): Animal(c){	
+FlyingAnimal::FlyingAnimal(char c, int i): Animal(c,i){	
 	AddHabitat('o');
 }
 
 //ORDO BASE CLASS
-Squamata::Squamata(char c): LandAnimal(c) {
+Squamata::Squamata(char c, int i): LandAnimal(c,i) {
 }
-Primate::Primate(char c) : LandAnimal(c) {
+Primate::Primate(char c, int i) : LandAnimal(c,i) {
 }
-Carnivore::Carnivore(char c) : LandAnimal(c){
+Carnivore::Carnivore(char c, int i) : LandAnimal(c,i){
 }
-Artiodactyl::Artiodactyl(char c) : LandAnimal(c) {
+Artiodactyl::Artiodactyl(char c, int i) : LandAnimal(c,i) {
 }
-Perrisodactyl::Perrisodactyl(char c): LandAnimal(c) {
+Perrisodactyl::Perrisodactyl(char c, int i): LandAnimal(c,i) {
 }
-Crocodillia::Crocodillia(char c): WaterAnimal(c), LandAnimal(c) {
+Crocodillia::Crocodillia(char c, int i): WaterAnimal(c,i), LandAnimal(c,i) {
 }
-Carcharhiniformes::Carcharhiniformes(char c) : WaterAnimal(c) {
+Carcharhiniformes::Carcharhiniformes(char c, int i) : WaterAnimal(c,i) {
 }
-Rajiformes::Rajiformes(char c): WaterAnimal(c){
+Rajiformes::Rajiformes(char c, int i): WaterAnimal(c,i){
 }
-Falconiformes::Falconiformes(char c): FlyingAnimal(c){
+Falconiformes::Falconiformes(char c, int i): FlyingAnimal(c,i){
 }
-Prittaciformes::Prittaciformes(char c): FlyingAnimal(c){
+Prittaciformes::Prittaciformes(char c, int i): FlyingAnimal(c,i){
 }
 

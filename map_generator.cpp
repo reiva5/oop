@@ -25,6 +25,7 @@ int main(){
 				{"Id",1},
 				{"Spesies","elang bondol"},
 				{"Massa", 1000},
+				{"Jinak", true},
 				{"Lokasi", {
 					{"x",1},
 					{"y",1}}
@@ -34,6 +35,7 @@ int main(){
 				{"Id", 2},
 				{"Spesies", "elang bondol"},
 				{"Massa", 1200},
+				{"Jinak", true},
 				{"Lokasi", {
 					{"x",3},
 					{"y",2}}
@@ -43,6 +45,7 @@ int main(){
 				{"Id", 3},
 				{"Spesies", "elang bondol"},
 				{"Massa", 900},
+				{"Jinak", true},
 				{"Lokasi", {
 					{"x",18},
 					{"y",7}}
@@ -52,6 +55,7 @@ int main(){
 				{"Id", 1},
 				{"Spesies", "hiu martil"},
 				{"Massa", 500000},
+				{"Jinak", true},
 				{"Lokasi", {
 					{"x",5},
 					{"y",0}}
@@ -61,6 +65,7 @@ int main(){
 				{"Id", 2},
 				{"Spesies", "hiu martil"},
 				{"Massa", 480000},
+				{"Jinak", false},
 				{"Lokasi", {
 					{"x",10},
 					{"y",14}}
@@ -70,6 +75,7 @@ int main(){
 				{"Id", 3},
 				{"Spesies", "hiu martil"},
 				{"Massa", 300000},
+				{"Jinak", false},
 				{"Lokasi", {
 					{"x",9},
 					{"y",16}}
@@ -79,6 +85,7 @@ int main(){
 				{"Id", 1},
 				{"Spesies", "hiu karpet"},
 				{"Massa", 550000},
+				{"Jinak", true},
 				{"Lokasi", {
 					{"x",8},
 					{"y",1}}
@@ -88,6 +95,7 @@ int main(){
 				{"Id", 2},
 				{"Spesies", "hiu karpet"},
 				{"Massa", 550000},
+				{"Jinak", true},
 				{"Lokasi", {
 					{"x",3},
 					{"y",5}}
@@ -96,14 +104,43 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "sting ray"},
-				{"Massa", 560000},
+				{"Massa", 8000},
+				{"Jinak", true},
 				{"Lokasi", {
-					{"x",8},
-					{"y",1}}
+					{"x",4},
+					{"y",3}}
 				}
 			},
-
-		
+			{
+				{"Id", 2},
+				{"Spesies", "sting ray"},
+				{"Massa", 15000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",5},
+					{"y",10}}
+				}
+			},
+			{
+				{"Id", 3},
+				{"Spesies", "sting ray"},
+				{"Massa", 6000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",10},
+					{"y",11}}
+				}
+			},
+			{
+				{"Id", 4},
+				{"Spesies", "sting ray"},
+				{"Massa", 5000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",3},
+					{"y",16}}
+				}
+			},
 		}
 		);
 

@@ -2,7 +2,7 @@
 #include "listanimal.h"
 using namespace std;
 
-OrangUtan::OrangUtan(int x, int y, int kg, bool jinak): Primate('U') {
+OrangUtan::OrangUtan(int i, int x, int y, int kg, bool jinak): Primate('U',i) {
 	suara = "Auooo";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -17,7 +17,7 @@ int OrangUtan::getMakanan() {
 	Omnivora::GetAmount();
 }
 
-Siamang::Siamang(int x, int y, int kg, bool jinak): Primate('S') {
+Siamang::Siamang(int i, int x, int y, int kg, bool jinak): Primate('S',i) {
 	suara = "Ooo Ooo";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -32,7 +32,7 @@ int Siamang::getMakanan() {
 	Omnivora::GetAmount();
 }
 
-Bekantan::Bekantan(int x, int y, int kg, bool jinak): Primate('B'){
+Bekantan::Bekantan(int i, int x, int y, int kg, bool jinak): Primate('B',i){
 	aksi = "climb tree";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -47,7 +47,7 @@ int Bekantan::getMakanan() {
 	Omnivora::GetAmount();
 }
 
-BadakCulaSatu::BadakCulaSatu(int x, int y, int kg, bool jinak): Perrisodactyl('C') {
+BadakCulaSatu::BadakCulaSatu(int i, int x, int y, int kg, bool jinak): Perrisodactyl('C', i) {
 	aksi = "bathing in mud";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -62,7 +62,7 @@ int BadakCulaSatu::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-Zebra::Zebra(int x, int y, int kg, bool jinak) : Perrisodactyl('Z') {
+Zebra::Zebra(int i, int x, int y, int kg, bool jinak) : Perrisodactyl('Z',i) {
 	aksi = "running";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -77,7 +77,7 @@ int Zebra::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-HarimauSumatra::HarimauSumatra(int x, int y, int kg, bool jinak) : Carnivore('H') {
+HarimauSumatra::HarimauSumatra(int i, int x, int y, int kg, bool jinak) : Carnivore('H',i) {
 	suara = "AUUM!!";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -92,7 +92,7 @@ int HarimauSumatra::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Macan::Macan(int x, int y, int kg, bool jinak) : Carnivore('M') {
+Macan::Macan(int i, int x, int y, int kg, bool jinak) : Carnivore('M', i) {
 	aksi = "stalk prey";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -107,7 +107,7 @@ int Macan::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Rusa::Rusa(int x, int y, int kg, bool jinak): Artiodactyl('E'){
+Rusa::Rusa(int i, int x, int y, int kg, bool jinak): Artiodactyl('E',i){
 	aksi = "flaunt horn";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -122,7 +122,7 @@ int Rusa::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-Kancil::Kancil(int x, int y, int kg, bool jinak): Artiodactyl('K'){
+Kancil::Kancil(int i, int x, int y, int kg, bool jinak): Artiodactyl('K',i){
 	aksi = "eat cucumber";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -138,7 +138,7 @@ int Kancil::getMakanan() {
 }
 
 
-Banteng::Banteng(int x, int y, int kg, bool jinak) : Artiodactyl('A'){
+Banteng::Banteng(int i, int x, int y, int kg, bool jinak) : Artiodactyl('A',i){
 	aksi = "snort";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -153,7 +153,7 @@ int Banteng::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-Komodo::Komodo(int x, int y, int kg, bool jinak) : Squamata('J'){
+Komodo::Komodo(int i, int x, int y, int kg, bool jinak) : Squamata('J',i){
 	aksi = "stick tongue";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -168,7 +168,7 @@ int Komodo::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Iguana::Iguana(int x, int y, int kg, bool jinak) : Squamata('I') {
+Iguana::Iguana(int i, int x, int y, int kg, bool jinak) : Squamata('I',i) {
 	suara = "Hiss";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -183,7 +183,7 @@ int Iguana::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-HiuKarpet::HiuKarpet(int x, int y, int kg, bool jinak) : Carcharhiniformes('V') {
+HiuKarpet::HiuKarpet(int i, int x, int y, int kg, bool jinak) : Carcharhiniformes('V',i) {
 	aksi = "burying in sand";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -198,7 +198,7 @@ int HiuKarpet::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-HiuMartil::HiuMartil(int x, int y, int kg, bool jinak) : Carcharhiniformes('T'){
+HiuMartil::HiuMartil(int i, int x, int y, int kg, bool jinak) : Carcharhiniformes('T',i){
 	aksi = "move head";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -213,7 +213,7 @@ int HiuMartil::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-StingRay::StingRay(int x, int y, int kg, bool jinak) : Rajiformes('Y') {
+StingRay::StingRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Y',i) {
 	aksi = "move fin";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -228,7 +228,7 @@ int StingRay::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-MantaRay::MantaRay(int x, int y, int kg, bool jinak) : Rajiformes('Q') {
+MantaRay::MantaRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Q',i) {
 	aksi = "swim! jump!";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -243,7 +243,7 @@ int MantaRay::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Elang::Elang(int x, int y, int kg, bool jinak) : Falconiformes('~') {
+Elang::Elang(int i, int x, int y, int kg, bool jinak) : Falconiformes('~',i) {
 	suara = "Kaaaak!";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -258,7 +258,7 @@ int Elang::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Garuda::Garuda(int x, int y, int kg, bool jinak) : Falconiformes('G') {
+Garuda::Garuda(int i, int x, int y, int kg, bool jinak) : Falconiformes('G',i) {
 	aksi = "spread wings";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -273,7 +273,7 @@ int Garuda::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Kakatua::Kakatua(int x, int y, int kg, bool jinak) : Prittaciformes ('P') {
+Kakatua::Kakatua(int i, int x, int y, int kg, bool jinak) : Prittaciformes ('P',i) {
 	suara = "Hello! kwak!";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -288,7 +288,7 @@ int Kakatua::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-Nuri::Nuri(int x, int y, int kg, bool jinak) : Prittaciformes('N') {
+Nuri::Nuri(int i, int x, int y, int kg, bool jinak) : Prittaciformes('N',i) {
 	aksi = "play ball";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -303,7 +303,7 @@ int Nuri::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-Parkit::Parkit(int x, int y, int kg, bool jinak) : Prittaciformes('F') {
+Parkit::Parkit(int i, int x, int y, int kg, bool jinak) : Prittaciformes('F',i) {
 	suara = "cuit cuit";
 	SetAmount(kg/defmakanan);
 	SetMassa(kg);
@@ -318,7 +318,7 @@ int Parkit::getMakanan() {
 	Herbivora::GetAmount();
 }
 
-Buaya::Buaya(int x, int y, int kg, bool jinak) : Crocodillia('D') {
+Buaya::Buaya(int i, int x, int y, int kg, bool jinak) : Crocodillia('D',i) {
 	aksi = "open mouth";
 	SetAmount(kg/defmakanan);
 	LandAnimal::SetMassa(kg);
@@ -333,7 +333,7 @@ int Buaya::getMakanan() {
 	Karnivora::GetAmount();
 }
 
-Aligator::Aligator(int x, int y, int kg, bool jinak) : Crocodillia('L') {
+Aligator::Aligator(int i, int x, int y, int kg, bool jinak) : Crocodillia('L',i) {
 	aksi = "crawl";
 	SetAmount(kg/defmakanan);
 	LandAnimal::SetMassa(kg);
