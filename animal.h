@@ -17,6 +17,8 @@ public:
 	Animal(char c, int i);
 	void SetJinak(bool _jinak);
 	bool IsJinak();
+	char GetInisial();
+	int GetID();
 	int GetMassa();
 	/** @brief Mengembalikan posisi binatang di x
 	  * @return Nilai x
@@ -96,6 +98,30 @@ public:
 	FlyingAnimal(char c, int i);
 };
 
+class Land_WaterAnimal: public Animal {
+public:
+	/** @brief Constructor.
+	  * @param c
+	  */
+	Land_WaterAnimal(char c, int i);
+};
+
+class Land_AirAnimal: public Animal {
+public:
+	/** @brief Constructor.
+	  * @param c
+	  */
+	Land_AirAnimal(char c, int i);
+};
+
+class Water_AirAnimal: public Animal {
+public:
+	/** @brief Constructor.
+	  * @param c
+	  */
+	Water_AirAnimal(char c, int i);
+};
+
 //ORDO BASE CLASS
 
 /** @class Squamata
@@ -159,7 +185,7 @@ public:
   * Kelas Crocodillia turunan dari LandAnimal dan WaterAnimal
   * menunjukkan ordo crocodillia yang hidup di dua habitat
   */
-class Crocodillia: public LandAnimal, public WaterAnimal {
+class Crocodillia: public Land_WaterAnimal {
 public:
 	/** @brief Constructor.
 	  * @param c
@@ -211,4 +237,15 @@ public:
 	Prittaciformes(char c, int i);
 };
 
+class AnimalHandler{
+	public:
+		AnimalHandler();
+		Animal* GetAnimal(char, int);
+		int NbAnimal();
+		~AnimalHandler();
+		void AddAnimal(Animal*);
+	private:
+		vector<Animal*> animallist;
+		int n;
+};
 #endif

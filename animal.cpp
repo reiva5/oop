@@ -28,6 +28,14 @@ void Animal::SetX(int _x) {
 void Animal::SetY(int _y) {
 	y = _y;
 }
+
+char Animal::GetInisial(){
+	return inisial;
+}
+
+int Animal::GetID(){
+	return ID;
+}
 void Animal::render() {
 	cout << inisial;
 }
@@ -48,6 +56,19 @@ WaterAnimal::WaterAnimal(char c, int i): Animal(c,i){
 FlyingAnimal::FlyingAnimal(char c, int i): Animal(c,i){	
 	AddHabitat('o');
 }
+Land_WaterAnimal::Land_WaterAnimal(char c, int i) : Animal(c, i) {
+	AddHabitat('x');
+	AddHabitat('w');
+}
+Land_AirAnimal::Land_AirAnimal(char c, int i) : Animal(c, i) {
+	AddHabitat('x');
+	AddHabitat('o');
+}
+Water_AirAnimal::Water_AirAnimal(char c, int i) : Animal(c, i) {
+	AddHabitat('w');
+	AddHabitat('o');
+}
+
 
 //ORDO BASE CLASS
 Squamata::Squamata(char c, int i): LandAnimal(c,i) {
@@ -60,7 +81,7 @@ Artiodactyl::Artiodactyl(char c, int i) : LandAnimal(c,i) {
 }
 Perrisodactyl::Perrisodactyl(char c, int i): LandAnimal(c,i) {
 }
-Crocodillia::Crocodillia(char c, int i): WaterAnimal(c,i), LandAnimal(c,i) {
+Crocodillia::Crocodillia(char c, int i): Land_WaterAnimal(c,i) {
 }
 Carcharhiniformes::Carcharhiniformes(char c, int i) : WaterAnimal(c,i) {
 }
@@ -71,3 +92,40 @@ Falconiformes::Falconiformes(char c, int i): FlyingAnimal(c,i){
 Prittaciformes::Prittaciformes(char c, int i): FlyingAnimal(c,i){
 }
 
+AnimalHandler::AnimalHandler()
+{
+	n=0;
+}
+
+Animal* AnimalHandler::GetAnimal(char s, int id)
+{
+	bool found=false;
+	int i=0;
+	while((!found) && (i<n))
+	{
+		if((animallist[i]->GetInisial()==s) && (animallist[i]->GetID()==id))
+			found=true;
+		else
+			i++;
+	}
+	if(found)
+		return animallist[i];
+	else
+		return NULL;
+}
+
+int AnimalHandler::NbAnimal(){
+	return n;
+}
+
+AnimalHandler::~AnimalHandler(){
+	for(int i=0; i<n; i++){
+		delete animallist[i];
+	}
+}
+
+void AnimalHandler::AddAnimal(Animal* a)
+{
+	animallist.push_back(a);
+	n++;
+}

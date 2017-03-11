@@ -1,0 +1,360 @@
+{
+    "AnimalList": [
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 15,
+                "y": 2
+            },
+            "Massa": 1000,
+            "Spesies": "Banteng"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 5,
+                "y": 7
+            },
+            "Massa": 1000,
+            "Spesies": "Banteng"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 17,
+                "y": 13
+            },
+            "Massa": 1000,
+            "Spesies": "Bekantan"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 18,
+                "y": 13
+            },
+            "Massa": 1000,
+            "Spesies": "Bekantan"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 10,
+                "y": 11
+            },
+            "Massa": 1000,
+            "Spesies": "BadakCulaSatu"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 2,
+                "y": 14
+            },
+            "Massa": 1000,
+            "Spesies": "BadakCulaSatu"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 0,
+                "y": 0
+            },
+            "Massa": 1000,
+            "Spesies": "Buaya"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 10,
+                "y": 5
+            },
+            "Massa": 1000,
+            "Spesies": "Buaya"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 9,
+                "y": 7
+            },
+            "Massa": 1000,
+            "Spesies": "Rusa"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 3,
+                "y": 12
+            },
+            "Massa": 1000,
+            "Spesies": "Rusa"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 3,
+                "y": 11
+            },
+            "Massa": 1000,
+            "Spesies": "Parkit"
+        },
+        {
+            "Id": 1,
+            "Jinak": false,
+            "Lokasi": {
+                "x": 9,
+                "y": 2
+            },
+            "Massa": 5000,
+            "Spesies": "Garuda"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 18,
+                "y": 4
+            },
+            "Massa": 5000,
+            "Spesies": "Garuda"
+        },
+        {
+            "Id": 3,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 16,
+                "y": 5
+            },
+            "Massa": 5000,
+            "Spesies": "Garuda"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 17,
+                "y": 2
+            },
+            "Massa": 500000,
+            "Spesies": "HarimauSumatra"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 18,
+                "y": 2
+            },
+            "Massa": 500000,
+            "Spesies": "HarimauSumatra"
+        },
+        {
+            "Id": 3,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 5,
+                "y": 14
+            },
+            "Massa": 500000,
+            "Spesies": "HarimauSumatra"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 5,
+                "y": 0
+            },
+            "Massa": 500000,
+            "Spesies": "HiuMartil"
+        },
+        {
+            "Id": 2,
+            "Jinak": false,
+            "Lokasi": {
+                "x": 10,
+                "y": 14
+            },
+            "Massa": 480000,
+            "Spesies": "HiuMartil"
+        },
+        {
+            "Id": 3,
+            "Jinak": false,
+            "Lokasi": {
+                "x": 9,
+                "y": 16
+            },
+            "Massa": 300000,
+            "Spesies": "HiuMartil"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 8,
+                "y": 1
+            },
+            "Massa": 550000,
+            "Spesies": "HiuKarpet"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 3,
+                "y": 5
+            },
+            "Massa": 550000,
+            "Spesies": "HiuKarpet"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 4,
+                "y": 3
+            },
+            "Massa": 8000,
+            "Spesies": "StingRay"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 5,
+                "y": 10
+            },
+            "Massa": 13000,
+            "Spesies": "StingRay"
+        },
+        {
+            "Id": 3,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 10,
+                "y": 11
+            },
+            "Massa": 6000,
+            "Spesies": "StingRay"
+        },
+        {
+            "Id": 4,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 3,
+                "y": 16
+            },
+            "Massa": 5000,
+            "Spesies": "StingRay"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 0,
+                "y": 5
+            },
+            "Massa": 5000,
+            "Spesies": "MantaRay"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 8,
+                "y": 11
+            },
+            "Massa": 5000,
+            "Spesies": "MantaRay"
+        },
+        {
+            "Id": 3,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 1,
+                "y": 16
+            },
+            "Massa": 5000,
+            "Spesies": "MantaRay"
+        },
+        {
+            "Id": 1,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 1,
+                "y": 1
+            },
+            "Massa": 1000,
+            "Spesies": "Elang"
+        },
+        {
+            "Id": 2,
+            "Jinak": true,
+            "Lokasi": {
+                "x": 3,
+                "y": 2
+            },
+            "Massa": 1200,
+            "Spesies": "Elang"
+        }
+    ],
+    "CageList": [
+        {
+            "Habitat": "x",
+            "Id": 1
+        },
+        {
+            "Habitat": "w",
+            "Id": 2
+        }
+    ],
+    "CellList": [
+        {
+            "Cage": 1,
+            "Lokasi": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "water"
+        },
+        {
+            "Cage": 1,
+            "Lokasi": {
+                "x": 0,
+                "y": 1
+            },
+            "type": "water"
+        },
+        {
+            "Cage": 2,
+            "Lokasi": {
+                "x": 1,
+                "y": 0
+            },
+            "type": "water"
+        },
+        {
+            "Cage": 2,
+            "Lokasi": {
+                "x": 1,
+                "y": 1
+            },
+            "type": "water"
+        }
+    ],
+    "ZooLength": 2,
+    "ZooWidth": 2
+}

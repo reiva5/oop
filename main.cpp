@@ -1,67 +1,47 @@
 #include <iostream>
 #include <fstream>
 #include "zoo.h"
+#include "driver.h"
+#include "json.hpp"
+#include "zooexp.h"
 
 using namespace std;
+using json=nlohmann::json;
 
 int main()
 {
-	int length; 
+	ifstream fin;
+	int length;
 	int width;
-	char c;
-	Cell* cell;
-	Zoo *z;
+	fin.open("map.json");
+	json input;
+	if(fin.is_open()){
+		fin>>input;
+		length=input["ZooLength"].get<int>();
+		width=input["ZooWidth"].get<int>();
+		fin.close();
+	}
 
-	ifstream input;
-	input.open("map.txt");
-	if(input.is_open()){
-		input>>width>>length;
-		z= new Zoo(width, length);
-		input.get(c);
-		for(int i=0; i<length; i++)
-		{
-			for(int j=0; j<width; j++)
-			{
-				input.get(c);
-				switch(c){
-					case 'w':
-						cell= new WaterHabitat();
-						break;
-					case 'x':
-						cell= new LandHabitat();
-						break;
-					case 'o':
-						cell= new AirHabitat();
-						break;
-					case ' ':
-						cell= new Road();
-						break;
-					case '*':
-						cell= new Park();
-						break;
-					case 'R':
-						cell= new Restaurant();
-						break;
-					default:
-						cell=new Road();
-				}
-				z->SetCell(j,i,cell);
+	
+	CageHandler c;
+	AnimalHandler ah;
+	Driver driver;
+	Zoo z(width,length);
+	
+	try{
+		driver.initialize_cage(c);
+		driver.initialize_zoo(z, c);
+		driver.initialize_animal(ah, z);	
+		for(int i=0; i<width; i++){
+			for(int j=0; j<length; j++){
+				z.GetCell(j,i)->render();
 			}
-			input.get(c);
+			cout<<endl;
 		}
-		input.close();	
 	}
-
-	for(int i=0; i<length; i++)
-	{
-		for(int j=0; j<width; j++)
-		{
-			z->GetCell(j, i)->render();
-		}
-		cout<<endl;
+	catch(ZooExp& exp){
+		exp.DispError();
 	}
-
-
 
 	return 0;
 }

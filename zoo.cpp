@@ -1,5 +1,6 @@
 #include "zoo.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ char Cell::getType(){
 
 void Cell::render(){
 	if(animal!=NULL){
-		cout<<' ';
+		animal->render();
 	}
 	else{
 		if(cage==NULL)
@@ -22,6 +23,22 @@ void Cell::render(){
 		else
 			cout<<char(type-32);
 	}
+}
+
+Cage* Cell::getCage(){
+	return cage;
+}
+
+void Cell::setCage(Cage* c){
+	cage=c;
+}
+
+Animal* Cell::getAnimal(){
+	return animal;
+}
+
+void Cell::setAnimal(Animal* a){
+	animal=a;
 }
 
 Zoo::Zoo(int x, int y): width(x), length(y){
@@ -39,6 +56,13 @@ void Zoo::SetCell(int x, int y, Cell* cell)
 Cell* Zoo::GetCell(int x, int y)
 {
 	return c[y][x];
+}
+
+Zoo::~Zoo(){
+	for(int i=0; i<length;i++){
+		delete [] c[i];
+	}
+	delete [] c;
 }
 
 Habitat::Habitat(char c): Cell(c) {}
