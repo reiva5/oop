@@ -140,7 +140,7 @@ int main(){
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",10},
-					{"y",11}}
+					{"y",10}}
 				}
 			},
 			{
@@ -565,16 +565,6 @@ int main(){
 			},
 			{
 				{"Id",1},
-				{"Spesies","Zebra"},
-				{"Massa", 1000},
-				{"Jinak", true},
-				{"Lokasi", {
-					{"x",8},
-					{"y",9}}
-				}
-			},
-			{
-				{"Id",1},
 				{"Spesies","Elang"},
 				{"Massa", 1000},
 				{"Jinak", true},
@@ -651,6 +641,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", true},
 				{"Cage", -1}
 			},
 			{
@@ -723,6 +715,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", true},
 				{"Cage", -1}
 			},
 			{
@@ -811,6 +805,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -883,6 +879,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -971,6 +969,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1043,6 +1043,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1131,6 +1133,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1203,6 +1207,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1243,6 +1249,8 @@ int main(){
 					{"y", 0},
 				}},
 				{"type", "road"},
+				{"entrance", true},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1251,6 +1259,8 @@ int main(){
 					{"y", 1},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1259,6 +1269,8 @@ int main(){
 					{"y", 2},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1291,6 +1303,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1299,6 +1313,8 @@ int main(){
 					{"y", 7},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1307,6 +1323,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1315,6 +1333,8 @@ int main(){
 					{"y", 9},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1323,6 +1343,8 @@ int main(){
 					{"y", 10},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1331,6 +1353,8 @@ int main(){
 					{"y", 11},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1339,6 +1363,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1347,6 +1373,8 @@ int main(){
 					{"y", 13},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1355,6 +1383,8 @@ int main(){
 					{"y", 14},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1363,6 +1393,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1371,6 +1403,8 @@ int main(){
 					{"y", 16},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1379,6 +1413,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1387,6 +1423,8 @@ int main(){
 					{"y", 18},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1395,6 +1433,8 @@ int main(){
 					{"y", 19},
 				}},
 				{"type", "road"},
+				{"entrance", true},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1419,6 +1459,8 @@ int main(){
 					{"y", 2},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1451,6 +1493,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1499,6 +1543,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1539,6 +1585,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1579,6 +1627,8 @@ int main(){
 					{"y", 2},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1611,6 +1661,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1659,6 +1711,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1699,6 +1753,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1739,6 +1795,8 @@ int main(){
 					{"y", 2},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1771,6 +1829,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1819,6 +1879,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1859,6 +1921,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1899,6 +1963,8 @@ int main(){
 					{"y", 2},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1907,6 +1973,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1915,6 +1983,8 @@ int main(){
 					{"y", 4},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1923,6 +1993,8 @@ int main(){
 					{"y", 5},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1931,6 +2003,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -1979,6 +2053,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2019,6 +2095,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2091,6 +2169,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2139,6 +2219,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2179,6 +2261,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2251,6 +2335,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2299,6 +2385,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2338,7 +2426,9 @@ int main(){
 					{"x", 10},
 					{"y", 17},
 				}},
-				{"type", "rpad"},
+				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2411,6 +2501,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2419,6 +2511,8 @@ int main(){
 					{"y", 7},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2427,6 +2521,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2435,6 +2531,8 @@ int main(){
 					{"y", 9},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2443,6 +2541,8 @@ int main(){
 					{"y", 10},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2451,6 +2551,8 @@ int main(){
 					{"y", 11},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2459,6 +2561,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2467,6 +2571,8 @@ int main(){
 					{"y", 13},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2475,6 +2581,8 @@ int main(){
 					{"y", 14},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2483,6 +2591,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2491,6 +2601,8 @@ int main(){
 					{"y", 16},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2499,6 +2611,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2571,6 +2685,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2587,6 +2703,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2619,6 +2737,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2659,6 +2779,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2707,6 +2829,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2715,6 +2839,8 @@ int main(){
 					{"y", 4},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2723,6 +2849,8 @@ int main(){
 					{"y", 5},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2731,6 +2859,8 @@ int main(){
 					{"y", 6},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2747,6 +2877,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2779,6 +2911,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2819,6 +2953,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2867,6 +3003,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2907,6 +3045,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2939,6 +3079,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2979,6 +3121,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2987,6 +3131,8 @@ int main(){
 					{"y", 18},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -2995,6 +3141,8 @@ int main(){
 					{"y", 19},
 				}},
 				{"type", "road"},
+				{"entrance", true},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3027,6 +3175,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3067,6 +3217,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3099,6 +3251,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3139,6 +3293,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3187,6 +3343,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3227,6 +3385,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3259,6 +3419,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3267,6 +3429,8 @@ int main(){
 					{"y", 13},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3275,6 +3439,8 @@ int main(){
 					{"y", 14},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3283,6 +3449,8 @@ int main(){
 					{"y", 15},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3291,6 +3459,8 @@ int main(){
 					{"y", 16},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3299,6 +3469,8 @@ int main(){
 					{"y", 17},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3347,6 +3519,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3387,6 +3561,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3419,6 +3595,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3507,6 +3685,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3547,6 +3727,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3579,6 +3761,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3667,6 +3851,8 @@ int main(){
 					{"y", 3},
 				}},
 				{"type", "road"},
+				{"entrance", true},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3707,6 +3893,8 @@ int main(){
 					{"y", 8},
 				}},
 				{"type", "road"},
+				{"entrance", true},
+				{"exit", false},
 				{"Cage", -1}
 			},
 			{
@@ -3739,6 +3927,8 @@ int main(){
 					{"y", 12},
 				}},
 				{"type", "road"},
+				{"entrance", false},
+				{"exit", true},
 				{"Cage", -1}
 			},
 			{
