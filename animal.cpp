@@ -4,19 +4,43 @@ using namespace std;
 
 Animal::Animal(char c) : inisial(c) {
 }
-Animal::~Animal() {
+int Animal::GetMassa() {
+	return massa;
+}
+int Animal::GetPosisiX() {
+	return x;
+}
+int Animal::GetPosisiY() {
+	return y;
+}
+void Animal::SetMassa(int kg) {
+	massa = kg;
+}
+void Animal::SetX(int _x) {
+	x = _x;
+}
+void Animal::SetY(int _y) {
+	y = _y;
 }
 void Animal::render() {
 	cout << inisial;
-
+}
+vector<char>& Animal::GetHabitat() {
+	return type;
+}
+void Animal::AddHabitat(char c) {
+	type.push_back(c);
 }
 
 //Habitat Base Class
 LandAnimal::LandAnimal(char c) : Animal(c) {
+	AddHabitat('x');
 }
 WaterAnimal::WaterAnimal(char c): Animal(c){
+	AddHabitat('w');
 }
 FlyingAnimal::FlyingAnimal(char c): Animal(c){	
+	AddHabitat('o');
 }
 
 //ORDO BASE CLASS
@@ -30,8 +54,8 @@ Artiodactyl::Artiodactyl(char c) : LandAnimal(c) {
 }
 Perrisodactyl::Perrisodactyl(char c): LandAnimal(c) {
 }
-//Crocodillia::Crocodillia(char c): WaterAnimal(c){
-//}
+Crocodillia::Crocodillia(char c): WaterAnimal(c), LandAnimal(c) {
+}
 Carcharhiniformes::Carcharhiniformes(char c) : WaterAnimal(c) {
 }
 Rajiformes::Rajiformes(char c): WaterAnimal(c){
