@@ -22,14 +22,88 @@ int main(){
 	map["AnimalList"]=json::array(
 		{
 			{
-				{"Spesies","orangutan"},
-				{"Makanan", 20},
+				{"Id",1},
+				{"Spesies","elang bondol"},
+				{"Massa", 1000},
 				{"Lokasi", {
-					{"x",2},
+					{"x",1},
 					{"y",1}}
-				},
-				{"Interact", "Auuo uooo"}
-			}
+				}
+			},
+			{
+				{"Id", 2},
+				{"Spesies", "elang bondol"},
+				{"Massa", 1200},
+				{"Lokasi", {
+					{"x",3},
+					{"y",2}}
+				}
+			},
+			{
+				{"Id", 3},
+				{"Spesies", "elang bondol"},
+				{"Massa", 900},
+				{"Lokasi", {
+					{"x",18},
+					{"y",7}}
+				}
+			},
+			{
+				{"Id", 1},
+				{"Spesies", "hiu martil"},
+				{"Massa", 500000},
+				{"Lokasi", {
+					{"x",5},
+					{"y",0}}
+				}
+			},
+			{
+				{"Id", 2},
+				{"Spesies", "hiu martil"},
+				{"Massa", 480000},
+				{"Lokasi", {
+					{"x",10},
+					{"y",14}}
+				}
+			},
+			{
+				{"Id", 3},
+				{"Spesies", "hiu martil"},
+				{"Massa", 300000},
+				{"Lokasi", {
+					{"x",9},
+					{"y",16}}
+				}
+			},
+			{
+				{"Id", 1},
+				{"Spesies", "hiu karpet"},
+				{"Massa", 550000},
+				{"Lokasi", {
+					{"x",8},
+					{"y",1}}
+				}
+			},
+			{
+				{"Id", 2},
+				{"Spesies", "hiu karpet"},
+				{"Massa", 550000},
+				{"Lokasi", {
+					{"x",3},
+					{"y",5}}
+				}
+			},
+			{
+				{"Id", 1},
+				{"Spesies", "sting ray"},
+				{"Massa", 560000},
+				{"Lokasi", {
+					{"x",8},
+					{"y",1}}
+				}
+			},
+
+		
 		}
 		);
 

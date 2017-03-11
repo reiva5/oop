@@ -4,6 +4,12 @@ using namespace std;
 
 Animal::Animal(char c) : inisial(c) {
 }
+void Animal::SetJinak(bool _jinak) {
+	jinak = _jinak;
+}
+bool Animal::IsJinak() {
+	return jinak;
+}
 int Animal::GetMassa() {
 	return massa;
 }

@@ -15,6 +15,8 @@ public:
 	  * @param h Karakter habitat yang diinginkan
 	  */
 	Animal(char c);
+	void SetJinak(bool _jinak);
+	bool IsJinak();
 	int GetMassa();
 	/** @brief Mengembalikan posisi binatang di x
 	  * @return Nilai x
@@ -53,6 +55,7 @@ private:
 	int x;
 	int y;
 	int massa;
+	bool jinak;
 	const char inisial;
 	vector<char> type;
 };
