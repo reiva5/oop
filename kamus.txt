@@ -1,0 +1,39 @@
+Kamus
+Animal:
+A = Banteng
+B = Bekantan
+C = BadakCulaSatu
+D = Buaya
+E = Rusa
+F = Parkit
+G = Garuda
+H = HarimauSumatra
+I = Iguana
+J = Komodo
+K = Kancil
+L = Aligator
+M = Macan
+N = Nuri
+P = Kakatua
+Q = MantaRay
+S = Siamang
+T = HiuMartil
+U = OrangUtan
+V = HiuKarpet
+Y = StingRay
+Z = Zebra
+~ = Elang
+
+
+Habitat:
+w = water
+o = air
+x = land
+W = Cage water
+O = Cage air
+X = Cage land
+
+Facility:
+' ' = road
+R 	= Restaurant
+* 	= Park  

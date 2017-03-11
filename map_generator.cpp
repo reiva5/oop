@@ -114,7 +114,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "sting ray"},
-				{"Massa", 15000},
+				{"Massa", 13000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",5},
@@ -139,6 +139,66 @@ int main(){
 				{"Lokasi", {
 					{"x",3},
 					{"y",16}}
+				}
+			},
+			{
+				{"Id", 1},
+				{"Spesies", "manta ray"},
+				{"Massa", 5000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",0},
+					{"y",5}}
+				}
+			},
+			{
+				{"Id", 2},
+				{"Spesies", "manta ray"},
+				{"Massa", 5000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",8},
+					{"y",11}}
+				}
+			},
+			{
+				{"Id", 3},
+				{"Spesies", "manta ray"},
+				{"Massa", 5000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",1},
+					{"y",16}}
+				}
+			},
+			{
+				{"Id", 1},
+				{"Spesies", "garuda"},
+				{"Massa", 5000},
+				{"Jinak", false},
+				{"Lokasi", {
+					{"x",9},
+					{"y",2}}
+				}
+			},
+			{
+				{"Id", 2},
+				{"Spesies", "garuda"},
+				{"Massa", 5000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",18},
+					{"y",4}}
+				}
+			},
+			{
+				{"Id", 3},
+				{"Spesies", "garuda"},
+				{"Massa", 5000},
+				{"Jinak", true},
+				{"Lokasi", {
+					{"x",16},
+					{"y",5}}
 				}
 			},
 		}
