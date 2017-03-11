@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Cell::Cell(char c): type(c){
+Cell::Cell(char c, int x, int y): type(c), absis(x), ordinat(y){
 	cage=NULL;
 	animal=NULL;
 }
@@ -41,6 +41,16 @@ void Cell::setAnimal(Animal* a){
 	animal=a;
 }
 
+int Cell::GetAbsis()
+{
+	return absis;
+}
+
+int Cell::GetOrdinat()
+{
+	return ordinat;
+}
+
 Zoo::Zoo(int x, int y): width(x), length(y){
 	c = new Cell**[length];
 	for(int i=0; i<length; i++){
@@ -65,18 +75,77 @@ Zoo::~Zoo(){
 	delete [] c;
 }
 
-Habitat::Habitat(char c): Cell(c) {}
+int Zoo::GetWidth()
+{
+	return width;
+}
 
-LandHabitat::LandHabitat(): Habitat('x') {}
+int Zoo::GetLength()
+{
+	return length;
+}
 
-WaterHabitat::WaterHabitat(): Habitat('w') {}
+void Zoo::AddEntrance(Cell* c)
+{
+	entrance.push_back(c);
+}
 
-AirHabitat::AirHabitat(): Habitat('o') {}
+void Zoo::AddExit(Cell* c)
+{
+	exit.push_back(c);
+}
 
-Facility::Facility(char c): Cell(c){}
+Cell* Zoo::GetEntrance(int i)
+{
+	if(i<entrance.size())
+		return entrance[i];
+	else
+		return NULL;
+}
 
-Road::Road():Facility(' ') {}
+Cell* Zoo::GetExit(int i)
+{
+	if(i<exit.size())
+		return exit[i];
+	else
+		return NULL;	
+}
 
-Park::Park():Facility('*') {}
+int Zoo::NbEntrance()
+{
+	return entrance.size();
+}
 
-Restaurant::Restaurant():Facility('R') {};
+int Zoo::NbExit()
+{
+	return exit.size();
+}
+
+Habitat::Habitat(char c, int x, int y): Cell(c, x, y) {}
+
+LandHabitat::LandHabitat(int x, int y): Habitat('x', x, y) {}
+
+WaterHabitat::WaterHabitat(int x, int y): Habitat('w', x, y) {}
+
+AirHabitat::AirHabitat(int x, int y): Habitat('o', x, y) {}
+
+Facility::Facility(char c, int x, int y): Cell(c, x, y){}
+
+Road::Road(int x, int y):Facility(' ', x, y), jenis(0){
+}
+
+Road::Road(int n, int x, int y): Facility(' ', x, y), jenis(n){
+}
+
+int Road::GetJenis(){
+	return jenis;
+}
+
+Park::Park(int x, int y):Facility('*', x, y) {}
+
+Restaurant::Restaurant(int x, int y):Facility('R', x, y) {};
+
+Entrance::Entrance(int x, int y) : Road(1, x, y) {}
+
+Exit::Exit(int x, int y) : Road(-1, x, y) {}
+

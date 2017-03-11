@@ -25,23 +25,30 @@ int main()
 	
 	CageHandler c;
 	AnimalHandler ah;
-	Driver driver;
 	Zoo z(width,length);
-	
+	Driver driver(z);
+	bool finished=false;
+	int option;
 	try{
 		driver.initialize_cage(c);
 		driver.initialize_zoo(z, c);
-		driver.initialize_animal(ah, z);	
-		for(int i=0; i<width; i++){
-			for(int j=0; j<length; j++){
-				z.GetCell(j,i)->render();
-			}
-			cout<<endl;
-		}
+		driver.initialize_animal(ah, z);
+		driver.init_pos(z);	
 	}
 	catch(ZooExp& exp){
 		exp.DispError();
+	}	
+	while(!finished){
+		cout<<"Pilih menu: 1. display 2.tour 3.exit"<<endl;
+		cin>>option;
+		if(option==1)
+			driver.DisplayVirtualZoo(z);
+		else if(option==2)
+			driver.TourVirtualZoo(z);
+		else if(option==3)
+			finished=true;
+		else
+			cout<<"Not an option"<<endl;
 	}
-
 	return 0;
 }

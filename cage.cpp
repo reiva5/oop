@@ -14,27 +14,45 @@ Cage::Cage(int _id, char hab): id(_id), habitat(hab)
 
 void Cage::AddAnimal(Animal* a)
 {
-	if(a->IsJinak()){
-		if(this->IsIsiJinak()){
-			if(this->IsAvailable())
-				animal.push_back(a);
-			else
-				throw ZooExp(0);
-		}
+	bool feasible=false;
+	int i=0;
+
+	while((!feasible)&& i<(a->GetHabitat()).size()){
+		if((a->GetHabitat())[i]==this->getHabitat())
+			feasible=true;
 		else
-			throw ZooExp(3);
+			i++;
 	}
-	else{
-		if(animal[0]->GetInisial()==a->GetInisial()){
-			if(this->IsAvailable())
-				animal.push_back(a);
-			else
-				throw ZooExp(0);	
+
+	if(feasible){
+		if(animal.size()==0){
+			animal.push_back(a);
 		}
-		else
-			throw ZooExp(3);
+		else{
+			if(a->IsJinak()){
+				if(this->IsIsiJinak()){
+					if(this->IsAvailable())
+						animal.push_back(a);
+					else
+						throw ZooExp(0);
+				}
+				else
+					throw ZooExp(3);
+			}
+			else{
+				if(animal[0]->GetInisial()==a->GetInisial()){
+					if(this->IsAvailable())
+						animal.push_back(a);
+					else
+						throw ZooExp(0);	
+				}
+				else
+					throw ZooExp(3);
+			}	
+		}
 	}
-	animal.push_back(a);
+	else
+		throw ZooExp(1);	
 } 
 
 void Cage::AddCell(char c)
@@ -72,10 +90,15 @@ bool Cage::IsAvailable()
 
 bool Cage::IsIsiJinak()
 {
-	if(animal.size()>0)
-		return animal[0]->IsJinak();
-	else
-		return true;
+	bool found=false;
+	int i=0;
+	while((!found) && i<animal.size()){
+		if(!(animal[i]->IsJinak()))
+			found=true;
+		else
+			i++;
+	}
+	return !found;
 }
 
 CageHandler::CageHandler()

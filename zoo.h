@@ -9,17 +9,21 @@ using namespace std;
 
 class Cell: public Renderable{
 	public:
-		Cell(char c);
+		Cell(char, int, int);
 		void render();
 		char getType();
 		Cage* getCage();
 		void setCage(Cage*);
 		Animal* getAnimal();
 		void setAnimal(Animal*);
+		int GetAbsis();
+		int GetOrdinat();
 	protected:
 		Cage* cage;
 		Animal* animal;
 		const char type;
+		const int absis;
+		const int ordinat;
 };
 
 class Zoo{
@@ -28,58 +32,74 @@ class Zoo{
 		void SetCell(int, int, Cell*);
 		Cell* GetCell(int x, int y);
 		~Zoo();
+		int GetWidth();
+		int GetLength();
+		void AddEntrance(Cell*);
+		void AddExit(Cell*);
+		Cell* GetEntrance(int);
+		Cell* GetExit(int);
+		int NbEntrance();
+		int NbExit();
 	protected:
 		Cell*** c;
 		const int width;
 		const int length;
+		vector<Cell*> entrance;
+		vector<Cell*> exit;
 };
 
 class Habitat: public Cell{
 	public:
-		Habitat(char c);
+		Habitat(char, int, int);
 };
 
 class LandHabitat: public Habitat{
 	public:
-		LandHabitat();
+		LandHabitat(int, int);
 };
 
 class WaterHabitat: public Habitat{
 	public:
-		WaterHabitat();
+		WaterHabitat(int, int);
 };
 
 class AirHabitat: public Habitat{
 	public:
-		AirHabitat();
+		AirHabitat(int, int);
 };
 
 class Facility: public Cell{
 	public:
-		Facility(char c);
+		Facility(char, int, int);
 };
 
 class Road: public Facility{
 	public:
-		Road();
+		Road(int,int);
+		Road(int, int, int);
+		int GetJenis();
+	private:
+		const int jenis;
 };
 
 class Park: public Facility{
 	public:
-		Park();
+		Park(int,int);
 };
 
 class Restaurant: public Facility{
 	public:
-		Restaurant();
+		Restaurant(int, int);
 };
 
 class Entrance: public Road{
-
+	public:
+		Entrance(int, int);
 };
 
 class Exit: public Road{
-
+	public:
+		Exit(int, int);
 };
 
 #endif

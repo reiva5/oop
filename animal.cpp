@@ -37,7 +37,7 @@ int Animal::GetID(){
 	return ID;
 }
 void Animal::render() {
-	cout << inisial;
+	cout << "\033[1;31m"<<inisial<<"\033[0m";
 }
 vector<char>& Animal::GetHabitat() {
 	return type;

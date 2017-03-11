@@ -75,7 +75,7 @@ int main(){
 			{
 				{"Id", 17},
 				{"Habitat", "x"}
-			}
+			},
 			{
 				{"Id", 18},
 				{"Habitat", "o"}
@@ -3990,8 +3990,8 @@ int main(){
 		}
 		);
 
-	map["ZooWidth"]=2;
-	map["ZooLength"]=2;
+	map["ZooWidth"]=20;
+	map["ZooLength"]=20;
 
 	ofstream fout;
 	fout.open("map.json");

@@ -6,7 +6,7 @@ using namespace std;
 int ZooExp::n =0;
 
 string ZooExp::msg [] = {"Animal over capacity", "Animal not in its habitat", "Cell type and Cage habitat doesn't match",
-	"Wild animal must be with its species"};
+	"Wild animal must be with its species", "Absis/Ordinat overflow", "Tour has finished"};
 
 ZooExp::ZooExp(int id): msg_id(id) {
 	n++;
