@@ -147,7 +147,7 @@ Banteng::Banteng(int i, int x, int y, int kg, bool jinak) : Artiodactyl('A',i){
 	SetY(y);
 }
 void Banteng::interact() {
-	cout <<"Banteng: ("<< aksi ")" << endl;
+	cout <<"Banteng: ("<< aksi << ")" << endl;
 }
 int Banteng::getMakanan() {
 	Herbivora::GetAmount();
@@ -252,7 +252,7 @@ Elang::Elang(int i, int x, int y, int kg, bool jinak) : Falconiformes('~',i) {
 	SetY(y);
 }
 void Elang::interact() {
-	cout << "Elang: \" << suara << "\"" << endl;
+	cout << "Elang: \"" << suara << "\"" << endl;
 }
 int Elang::getMakanan() {
 	Karnivora::GetAmount();
@@ -282,7 +282,7 @@ Kakatua::Kakatua(int i, int x, int y, int kg, bool jinak) : Prittaciformes ('P',
 	SetY(y);
 }
 void Kakatua::interact() {
-	cout << "Kakatua: \" << suara << "\"" << endl;
+	cout << "Kakatua: \"" << suara << "\"" << endl;
 }
 int Kakatua::getMakanan() {
 	Herbivora::GetAmount();
