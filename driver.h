@@ -15,6 +15,7 @@ class Driver{
 		int GetPosX();
 		int GetPosY();
 		void TourVirtualZoo(Zoo&);
+		void MoveAnimal(Zoo&, AnimalHandler&);
 
 	private:
 		int curr_x;

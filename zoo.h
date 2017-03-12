@@ -4,13 +4,14 @@
 #include <bits/stdc++.h>
 #include "renderable.h"
 #include "cage.h"
+#include "zooexp.h"
 
 using namespace std;
 
 class Cell: public Renderable{
 	public:
 		Cell(char, int, int);
-		void render();
+		virtual void render();
 		char getType();
 		Cage* getCage();
 		void setCage(Cage*);
@@ -51,6 +52,7 @@ class Zoo{
 class Habitat: public Cell{
 	public:
 		Habitat(char, int, int);
+		void render();
 };
 
 class LandHabitat: public Habitat{
@@ -71,6 +73,7 @@ class AirHabitat: public Habitat{
 class Facility: public Cell{
 	public:
 		Facility(char, int, int);
+		virtual void render();
 };
 
 class Road: public Facility{
@@ -78,6 +81,7 @@ class Road: public Facility{
 		Road(int,int);
 		Road(int, int, int);
 		int GetJenis();
+		void render();
 	private:
 		const int jenis;
 };
@@ -85,11 +89,13 @@ class Road: public Facility{
 class Park: public Facility{
 	public:
 		Park(int,int);
+		void render();
 };
 
 class Restaurant: public Facility{
 	public:
 		Restaurant(int, int);
+		void render();
 };
 
 class Entrance: public Road{

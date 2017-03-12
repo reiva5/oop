@@ -22,8 +22,7 @@ int main()
 		fin.close();
 	}
 
-	
-	CageHandler c;
+	CageHandler c; 
 	AnimalHandler ah;
 	Zoo z(width,length);
 	Driver driver(z);
@@ -32,23 +31,28 @@ int main()
 	try{
 		driver.initialize_cage(c);
 		driver.initialize_zoo(z, c);
-		driver.initialize_animal(ah, z);
-		driver.init_pos(z);	
+		driver.initialize_animal(ah, z);	
+		while(!finished){
+				Renderable::banner();
+				cin>>option;
+				if(option==1)
+					driver.DisplayVirtualZoo(z);
+				else if(option==2){
+					driver.init_pos(z);	
+					driver.TourVirtualZoo(z);
+					driver.MoveAnimal(z, ah);
+				}
+				else if(option==3)
+					cout<<"Jumlah kebutuhan makanan per hari adalah "<<ah.JumlahMakanan()<<" gram"<<endl;
+				else if(option==4)
+					finished=true;
+				else
+					cout<<"Not an option"<<endl;	
+		
+		}
 	}
 	catch(ZooExp& exp){
 		exp.DispError();
-	}	
-	while(!finished){
-		cout<<"Pilih menu: 1. display 2.tour 3.exit"<<endl;
-		cin>>option;
-		if(option==1)
-			driver.DisplayVirtualZoo(z);
-		else if(option==2) 
-			driver.TourVirtualZoo(z);
-		else if(option==3)
-			finished=true;
-		else
-			cout<<"Not an option"<<endl;
 	}
 	return 0;
 }

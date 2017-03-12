@@ -240,10 +240,11 @@ public:
 class AnimalHandler{
 	public:
 		AnimalHandler();
-		Animal* GetAnimal(char, int);
+		Animal* GetAnimal(int);
 		int NbAnimal();
 		~AnimalHandler();
 		void AddAnimal(Animal*);
+		int JumlahMakanan();
 	private:
 		vector<Animal*> animallist;
 		int n;

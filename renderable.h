@@ -4,6 +4,7 @@
 class Renderable{
 	public:
 		virtual void render()=0;
+		static void banner();
 };
 
 #endif

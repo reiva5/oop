@@ -37,7 +37,7 @@ int Animal::GetID(){
 	return ID;
 }
 void Animal::render() {
-	cout << "\033[1;31m"<<inisial<<"\033[0m";
+	cout << "\033[1;31m"<<inisial<<' '<<"\033[0m";
 }
 vector<char>& Animal::GetHabitat() {
 	return type;
@@ -97,21 +97,9 @@ AnimalHandler::AnimalHandler()
 	n=0;
 }
 
-Animal* AnimalHandler::GetAnimal(char s, int id)
+Animal* AnimalHandler::GetAnimal(int id)
 {
-	bool found=false;
-	int i=0;
-	while((!found) && (i<n))
-	{
-		if((animallist[i]->GetInisial()==s) && (animallist[i]->GetID()==id))
-			found=true;
-		else
-			i++;
-	}
-	if(found)
-		return animallist[i];
-	else
-		return NULL;
+	return animallist[id];
 }
 
 int AnimalHandler::NbAnimal(){
@@ -128,4 +116,14 @@ void AnimalHandler::AddAnimal(Animal* a)
 {
 	animallist.push_back(a);
 	n++;
+}
+
+int AnimalHandler::JumlahMakanan()
+{
+	int sum=0;
+	for(int i=0; i<animallist.size(); i++)
+	{
+		sum+=animallist[i]->getMakanan();
+	}
+	return sum;
 }

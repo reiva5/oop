@@ -14,10 +14,6 @@ Driver::Driver(Zoo& z)
 	for(int i=0; i<z.GetLength(); i++)
 	{
 		visited[i]=new bool[z.GetWidth()];
-		for(int j=0; j<z.GetWidth(); j++)
-		{
-			visited[i][j]=false;
-		}
 	}
 }
 
@@ -196,6 +192,9 @@ void Driver::DisplayVirtualZoo(Zoo& z)
 	cin>>right;
 	cout<<"Input down position: ";
 	cin>>down;
+	cout<<"======================================================================"<<endl;
+	cout<<"                        VIRTUAL ZOO MAP"<<endl;
+	cout<<"======================================================================"<<endl;
 	if(left>=0 && up>=0 && right<z.GetWidth() && down<z.GetLength()){
 		for(int i=up; i<=down; i++){
 			for(int j=left; j<=right; j++){
@@ -215,6 +214,12 @@ void Driver::init_pos(Zoo& z)
 
 	curr_x=z.GetEntrance(idx)->GetAbsis();
 	curr_y=z.GetEntrance(idx)->GetOrdinat();
+	for(int i=0; i<z.GetLength(); i++){
+		for(int j=0; j<z.GetWidth(); j++)
+		{
+			visited[i][j]=false;
+		}
+	}
 }
 
 int Driver::GetPosX()
@@ -230,65 +235,120 @@ int Driver::GetPosY()
 void Driver::TourVirtualZoo(Zoo& z)
 {
 	srand(time(NULL));
-	int init=rand()%4;
-	bool found=false;
-	int i=0;
+	bool finish=false;
 
-	while((!found) && (i<4))
-	{
-		if(init==0){
-			if((curr_y-1>=0)&&(z.GetCell(curr_x, curr_y-1)->getType()==' ')&&(!visited[curr_y-1][curr_x])){
-				found=true;
-				visited[curr_y][curr_x]=true;
-				curr_y--;
+	cout<<"======================================================================"<<endl;
+	cout<<"                        VIRTUAL ZOO TOUR"<<endl;
+	cout<<"======================================================================"<<endl;
+
+	while(!finish){
+		int init=rand()%4;
+		bool found=false;
+		int i=0;
+
+		while((!found) && (i<4))
+		{
+			if(init==0){
+				if((curr_y-1>=0)&&(z.GetCell(curr_x, curr_y-1)->getType()==' ')&&(!visited[curr_y-1][curr_x])){
+					found=true;
+					visited[curr_y][curr_x]=true;
+					curr_y--;
+				}
+				else
+					init++;
 			}
-			else
-				init++;
+			else if(init==1){
+				if((curr_x+1<z.GetWidth())&&(z.GetCell(curr_x+1, curr_y)->getType()==' ')&&(!visited[curr_y][curr_x+1])){
+					found=true;
+					visited[curr_y][curr_x]=true;
+					curr_x++;
+				}
+				else
+					init++;
+			}
+			else if(init==2){
+				if((curr_y+1<z.GetLength())&&(z.GetCell(curr_x, curr_y+1)->getType()==' ')&&(!visited[curr_y+1][curr_x])){
+					found=true;
+					visited[curr_y][curr_x]=true;
+					curr_y++;
+				}
+				else
+					init++;
+			}
+			else if(init==3){
+				if((curr_x-1>=0)&&(z.GetCell(curr_x-1, curr_y)->getType()==' ')&&(!visited[curr_y][curr_x-1])){
+					found=true;
+					visited[curr_y][curr_x]=true;
+					curr_x--;
+				}
+				else
+					init=0;
+			}
+
+			if(!found)
+				i++;
+		}
+
+		if(!found){
+			finish=true;
+			throw ZooExp(5);
+		}
+		else{
+			cout<<"You're in: "<<curr_x<<' '<<curr_y<<endl;
+			if(curr_y-1>=0 && z.GetCell(curr_x, curr_y-1)->getAnimal()!=NULL)
+				z.GetCell(curr_x, curr_y-1)->getAnimal()->interact();
+			if(curr_x-1>=0 && z.GetCell(curr_x-1, curr_y)->getAnimal()!=NULL)
+				z.GetCell(curr_x-1, curr_y)->getAnimal()->interact();
+			if(curr_y+1<z.GetLength() && z.GetCell(curr_x, curr_y+1)->getAnimal()!=NULL)
+				z.GetCell(curr_x, curr_y+1)->getAnimal()->interact();
+			if(curr_x+1<z.GetWidth() && z.GetCell(curr_x+1, curr_y)->getAnimal()!=NULL)
+				z.GetCell(curr_x+1, curr_y)->getAnimal()->interact();
+
+			for(int i=0; i<z.NbExit(); i++){
+				if(z.GetExit(i)->GetAbsis()==curr_x && z.GetExit(i)->GetOrdinat()==curr_y){
+					finish=true;
+					throw ZooExp(6);
+				}
+			}
+		}		
+	}	
+}
+
+void Driver::MoveAnimal(Zoo& z, AnimalHandler& ah)
+{
+	srand(time(NULL));
+	for(int i=0; i<ah.NbAnimal(); i++){
+		int init=rand()%4;
+		int x= ah.GetAnimal(i)->GetPosisiX();
+		int y= ah.GetAnimal(i)->GetPosisiY();
+		int cage= z.GetCell(x, y)->getCage()->getId();
+		if(init==0){
+			if(y-1>=0 && z.GetCell(x, y-1)->getCage()!=NULL && z.GetCell(x, y-1)->getCage()->getId()==cage && z.GetCell(x, y-1)->getAnimal()==NULL){
+				ah.GetAnimal(i)->SetY(y-1);
+				z.GetCell(x, y)->setAnimal(NULL);
+				z.GetCell(x, y-1)->setAnimal(ah.GetAnimal(i));
+			}
 		}
 		else if(init==1){
-			if((curr_x+1<z.GetWidth())&&(z.GetCell(curr_x+1, curr_y)->getType()==' ')&&(!visited[curr_y][curr_x+1])){
-				found=true;
-				visited[curr_y][curr_x]=true;
-				curr_x++;
+			if(x+1<z.GetWidth() && z.GetCell(x+1, y)->getCage()!=NULL && z.GetCell(x+1, y)->getCage()->getId()==cage && z.GetCell(x+1, y)->getAnimal()==NULL){
+				ah.GetAnimal(i)->SetX(x+1);
+				z.GetCell(x, y)->setAnimal(NULL);
+				z.GetCell(x+1, y)->setAnimal(ah.GetAnimal(i));
 			}
-			else
-				init++;
 		}
 		else if(init==2){
-			if((curr_y+1<z.GetLength())&&(z.GetCell(curr_x, curr_y+1)->getType()==' ')&&(!visited[curr_y+1][curr_x])){
-				found=true;
-				visited[curr_y][curr_x]=true;
-				curr_y++;
+			if(y+1<z.GetLength() && z.GetCell(x, y+1)->getCage()!=NULL && z.GetCell(x, y+1)->getCage()->getId()==cage && z.GetCell(x, y+1)->getAnimal()==NULL){
+				ah.GetAnimal(i)->SetY(y+1);
+				z.GetCell(x, y)->setAnimal(NULL);
+				z.GetCell(x, y+1)->setAnimal(ah.GetAnimal(i));
 			}
-			else
-				init++;
 		}
 		else if(init==3){
-			if((curr_x-1>=0)&&(z.GetCell(curr_x-1, curr_y)->getType()==' ')&&(!visited[curr_y][curr_x-1])){
-				found=true;
-				visited[curr_y][curr_x]=true;
-				curr_x--;
+			if(x-1>=0 && z.GetCell(x-1, y)->getCage()!=NULL && z.GetCell(x-1, y)->getCage()->getId()==cage && z.GetCell(x-1, y)->getAnimal()==NULL){
+				ah.GetAnimal(i)->SetX(x-1);
+				z.GetCell(x, y)->setAnimal(NULL);
+				z.GetCell(x-1, y)->setAnimal(ah.GetAnimal(i));
 			}
-			else
-				init=0;
 		}
-
-		if(!found)
-			i++;
 	}
-
-	if(!found)
-		throw ZooExp(5);
-	else{
-		cout<<"You're in: "<<curr_x<<' '<<curr_y<<endl;
-		if(curr_y-1>=0 && z.GetCell(curr_x, curr_y-1)->getAnimal()!=NULL)
-			z.GetCell(curr_x, curr_y-1)->getAnimal()->interact();
-		if(curr_x-1>=0 && z.GetCell(curr_x-1, curr_y)->getAnimal()!=NULL)
-			z.GetCell(curr_x-1, curr_y)->getAnimal()->interact();
-		if(curr_y+1<z.GetLength() && z.GetCell(curr_x, curr_y+1)->getAnimal()!=NULL)
-			z.GetCell(curr_x, curr_y+1)->getAnimal()->interact();
-		if(curr_x+1<z.GetWidth() && z.GetCell(curr_x+1, curr_y)->getAnimal()!=NULL)
-			z.GetCell(curr_x+1, curr_y)->getAnimal()->interact();
-	}
-		
 }

@@ -7,7 +7,7 @@
                 "x": 15,
                 "y": 2
             },
-            "Massa": 1000,
+            "Massa": 800000,
             "Spesies": "Banteng"
         },
         {
@@ -17,7 +17,7 @@
                 "x": 5,
                 "y": 7
             },
-            "Massa": 1000,
+            "Massa": 870000,
             "Spesies": "Banteng"
         },
         {
@@ -27,7 +27,7 @@
                 "x": 17,
                 "y": 13
             },
-            "Massa": 1000,
+            "Massa": 20000,
             "Spesies": "Bekantan"
         },
         {
@@ -37,7 +37,7 @@
                 "x": 18,
                 "y": 13
             },
-            "Massa": 1000,
+            "Massa": 10000,
             "Spesies": "Bekantan"
         },
         {
@@ -47,7 +47,7 @@
                 "x": 10,
                 "y": 10
             },
-            "Massa": 1000,
+            "Massa": 2000000,
             "Spesies": "BadakCulaSatu"
         },
         {
@@ -57,7 +57,7 @@
                 "x": 2,
                 "y": 14
             },
-            "Massa": 1000,
+            "Massa": 1600000,
             "Spesies": "BadakCulaSatu"
         },
         {
@@ -67,7 +67,7 @@
                 "x": 9,
                 "y": 3
             },
-            "Massa": 1000,
+            "Massa": 950000,
             "Spesies": "Buaya"
         },
         {
@@ -77,7 +77,7 @@
                 "x": 10,
                 "y": 5
             },
-            "Massa": 1000,
+            "Massa": 1000000,
             "Spesies": "Buaya"
         },
         {
@@ -87,7 +87,7 @@
                 "x": 9,
                 "y": 7
             },
-            "Massa": 1000,
+            "Massa": 50000,
             "Spesies": "Rusa"
         },
         {
@@ -97,7 +97,7 @@
                 "x": 3,
                 "y": 12
             },
-            "Massa": 1000,
+            "Massa": 45000,
             "Spesies": "Rusa"
         },
         {
@@ -107,7 +107,7 @@
                 "x": 3,
                 "y": 11
             },
-            "Massa": 1000,
+            "Massa": 500,
             "Spesies": "Parkit"
         },
         {
@@ -127,7 +127,7 @@
                 "x": 18,
                 "y": 4
             },
-            "Massa": 5000,
+            "Massa": 4500,
             "Spesies": "Garuda"
         },
         {
@@ -137,7 +137,7 @@
                 "x": 16,
                 "y": 5
             },
-            "Massa": 5000,
+            "Massa": 4300,
             "Spesies": "Garuda"
         },
         {
@@ -147,7 +147,7 @@
                 "x": 17,
                 "y": 2
             },
-            "Massa": 500000,
+            "Massa": 120000,
             "Spesies": "HarimauSumatra"
         },
         {
@@ -157,7 +157,7 @@
                 "x": 18,
                 "y": 2
             },
-            "Massa": 500000,
+            "Massa": 80000,
             "Spesies": "HarimauSumatra"
         },
         {
@@ -167,7 +167,7 @@
                 "x": 5,
                 "y": 14
             },
-            "Massa": 500000,
+            "Massa": 97000,
             "Spesies": "HarimauSumatra"
         },
         {
@@ -177,7 +177,7 @@
                 "x": 12,
                 "y": 15
             },
-            "Massa": 500000,
+            "Massa": 4000,
             "Spesies": "Iguana"
         },
         {
@@ -187,7 +187,7 @@
                 "x": 14,
                 "y": 5
             },
-            "Massa": 500000,
+            "Massa": 86000,
             "Spesies": "Komodo"
         },
         {
@@ -197,7 +197,7 @@
                 "x": 15,
                 "y": 7
             },
-            "Massa": 500000,
+            "Massa": 90000,
             "Spesies": "Komodo"
         },
         {
@@ -207,7 +207,7 @@
                 "x": 10,
                 "y": 8
             },
-            "Massa": 500000,
+            "Massa": 2000,
             "Spesies": "Kancil"
         },
         {
@@ -217,7 +217,7 @@
                 "x": 14,
                 "y": 13
             },
-            "Massa": 500000,
+            "Massa": 1700,
             "Spesies": "Kancil"
         },
         {
@@ -227,7 +227,7 @@
                 "x": 12,
                 "y": 4
             },
-            "Massa": 500000,
+            "Massa": 360000,
             "Spesies": "Aligator"
         },
         {
@@ -237,7 +237,7 @@
                 "x": 6,
                 "y": 16
             },
-            "Massa": 500000,
+            "Massa": 290000,
             "Spesies": "Aligator"
         },
         {
@@ -247,7 +247,7 @@
                 "x": 15,
                 "y": 0
             },
-            "Massa": 500000,
+            "Massa": 78000,
             "Spesies": "Macan"
         },
         {
@@ -257,7 +257,7 @@
                 "x": 8,
                 "y": 13
             },
-            "Massa": 500000,
+            "Massa": 88000,
             "Spesies": "Macan"
         },
         {
@@ -267,7 +267,7 @@
                 "x": 2,
                 "y": 9
             },
-            "Massa": 500000,
+            "Massa": 480,
             "Spesies": "Nuri"
         },
         {
@@ -277,7 +277,7 @@
                 "x": 0,
                 "y": 10
             },
-            "Massa": 500000,
+            "Massa": 400,
             "Spesies": "Nuri"
         },
         {
@@ -287,7 +287,7 @@
                 "x": 15,
                 "y": 15
             },
-            "Massa": 500000,
+            "Massa": 290,
             "Spesies": "Kakatua"
         },
         {
@@ -297,7 +297,7 @@
                 "x": 13,
                 "y": 16
             },
-            "Massa": 500000,
+            "Massa": 310,
             "Spesies": "Kakatua"
         },
         {
@@ -307,7 +307,7 @@
                 "x": 0,
                 "y": 5
             },
-            "Massa": 5000,
+            "Massa": 1300000,
             "Spesies": "MantaRay"
         },
         {
@@ -317,7 +317,7 @@
                 "x": 8,
                 "y": 11
             },
-            "Massa": 5000,
+            "Massa": 1000000,
             "Spesies": "MantaRay"
         },
         {
@@ -327,7 +327,7 @@
                 "x": 1,
                 "y": 16
             },
-            "Massa": 5000,
+            "Massa": 1350000,
             "Spesies": "MantaRay"
         },
         {
@@ -337,7 +337,7 @@
                 "x": 17,
                 "y": 16
             },
-            "Massa": 500000,
+            "Massa": 11900,
             "Spesies": "Siamang"
         },
         {
@@ -347,7 +347,7 @@
                 "x": 16,
                 "y": 18
             },
-            "Massa": 500000,
+            "Massa": 10700,
             "Spesies": "Siamang"
         },
         {
@@ -387,7 +387,7 @@
                 "x": 7,
                 "y": 4
             },
-            "Massa": 550000,
+            "Massa": 37000,
             "Spesies": "OrangUtan"
         },
         {
@@ -397,7 +397,7 @@
                 "x": 6,
                 "y": 5
             },
-            "Massa": 550000,
+            "Massa": 60000,
             "Spesies": "OrangUtan"
         },
         {
@@ -407,7 +407,7 @@
                 "x": 8,
                 "y": 1
             },
-            "Massa": 550000,
+            "Massa": 350000,
             "Spesies": "HiuKarpet"
         },
         {
@@ -417,7 +417,7 @@
                 "x": 3,
                 "y": 5
             },
-            "Massa": 550000,
+            "Massa": 300000,
             "Spesies": "HiuKarpet"
         },
         {
@@ -467,7 +467,7 @@
                 "x": 5,
                 "y": 8
             },
-            "Massa": 1000,
+            "Massa": 120000,
             "Spesies": "Zebra"
         },
         {

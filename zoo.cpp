@@ -14,15 +14,7 @@ char Cell::getType(){
 }
 
 void Cell::render(){
-	if(animal!=NULL){
-		animal->render();
-	}
-	else{
-		if(cage==NULL)
-			cout<<type;
-		else
-			cout<<char(type-32);
-	}
+	cout<<type<<endl;
 }
 
 Cage* Cell::getCage(){
@@ -38,7 +30,10 @@ Animal* Cell::getAnimal(){
 }
 
 void Cell::setAnimal(Animal* a){
-	animal=a;
+	if(this->getAnimal()==NULL)
+		animal=a;
+	else
+		throw ZooExp(7);
 }
 
 int Cell::GetAbsis()
@@ -123,6 +118,18 @@ int Zoo::NbExit()
 
 Habitat::Habitat(char c, int x, int y): Cell(c, x, y) {}
 
+void Habitat::render(){
+	if(animal!=NULL){
+		animal->render();
+	}
+	else{
+		if(cage==NULL)
+			cout<<"\033[1;37m"<<type<<' '<<"\033[0m";
+		else
+			cout<<"\033[1;37m"<<char(type-32)<<' '<<"\033[0m";
+	}
+}
+
 LandHabitat::LandHabitat(int x, int y): Habitat('x', x, y) {}
 
 WaterHabitat::WaterHabitat(int x, int y): Habitat('w', x, y) {}
@@ -130,6 +137,10 @@ WaterHabitat::WaterHabitat(int x, int y): Habitat('w', x, y) {}
 AirHabitat::AirHabitat(int x, int y): Habitat('o', x, y) {}
 
 Facility::Facility(char c, int x, int y): Cell(c, x, y){}
+
+void Facility::render(){
+	cout<<type<<endl;
+}
 
 Road::Road(int x, int y):Facility(' ', x, y), jenis(0){
 }
@@ -141,9 +152,23 @@ int Road::GetJenis(){
 	return jenis;
 }
 
+void Road::render(){
+	cout<<"\033[1;43m"<<type<<' '<<"\033[0m";
+}
+
 Park::Park(int x, int y):Facility('*', x, y) {}
 
+void Park::render()
+{
+	cout<<"\033[1;32m"<<type<<' '<<"\033[0m";
+}
+
 Restaurant::Restaurant(int x, int y):Facility('R', x, y) {};
+
+void Restaurant::render()
+{
+	cout<<"\033[1;34m"<<type<<' '<<"\033[0m";
+}
 
 Entrance::Entrance(int x, int y) : Road(1, x, y) {}
 
