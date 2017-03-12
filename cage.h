@@ -21,8 +21,6 @@ class Cage{
 		bool IsIsiJinak();
 	private:
 		int luas;
-		int pintuX;
-		int pintuY;
 		const int id;
 		const char habitat;
 		vector<Animal*> animal;

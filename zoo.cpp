@@ -30,10 +30,14 @@ Animal* Cell::getAnimal(){
 }
 
 void Cell::setAnimal(Animal* a){
-	if(this->getAnimal()==NULL)
-		animal=a;
-	else
-		throw ZooExp(7);
+	if(a==NULL)
+		animal=NULL;
+	else{
+		if(this->getAnimal()==NULL)
+			animal=a;
+		else
+			throw ZooExp(7);
+	}
 }
 
 int Cell::GetAbsis()

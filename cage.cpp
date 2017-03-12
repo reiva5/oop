@@ -8,8 +8,6 @@ using json=nlohmann::json;
 Cage::Cage(int _id, char hab): id(_id), habitat(hab)
 {
 	luas=0;
-	pintuX=0;
-	pintuY=0;
 }
 
 void Cage::AddAnimal(Animal* a)

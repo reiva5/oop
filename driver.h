@@ -5,9 +5,9 @@
 
 class Driver{
 	public:
-		Driver(Zoo&);
+		Driver();
 		~Driver();
-		void initialize_zoo(Zoo&, CageHandler&);
+		void initialize_zoo(Zoo**, CageHandler&);
 		void initialize_cage(CageHandler&);
 		void initialize_animal(AnimalHandler&, Zoo&);
 		void DisplayVirtualZoo(Zoo&);

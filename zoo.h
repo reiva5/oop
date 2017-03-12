@@ -41,6 +41,7 @@ class Zoo{
 		Cell* GetExit(int);
 		int NbEntrance();
 		int NbExit();
+
 	protected:
 		Cell*** c;
 		const int width;

@@ -6,14 +6,19 @@
 using namespace std;
 using json=nlohmann::json;
 
-Driver::Driver(Zoo& z)
+Driver::Driver()
 {
-	map_length=z.GetLength();
-	map_width=z.GetWidth();
-	visited= new bool*[z.GetLength()];
-	for(int i=0; i<z.GetLength(); i++)
+	ifstream fin;
+	fin.open("map.json");
+	json input;
+	fin>>input;
+
+	map_length=input["ZooLength"].get<int>();
+	map_width=input["ZooWidth"].get<int>();
+	visited= new bool*[map_length];
+	for(int i=0; i<map_length; i++)
 	{
-		visited[i]=new bool[z.GetWidth()];
+		visited[i]=new bool[map_width];
 	}
 }
 
@@ -26,7 +31,7 @@ Driver::~Driver()
 	delete [] visited;
 }
 
-void Driver::initialize_zoo(Zoo& z, CageHandler& ch)
+void Driver::initialize_zoo(Zoo** z, CageHandler& ch)
 {
 	ifstream fin;
 	fin.open("map.json");
@@ -39,6 +44,7 @@ void Driver::initialize_zoo(Zoo& z, CageHandler& ch)
 
 		json input;
 		fin>>input;
+		(*z)=new Zoo(map_width, map_length);
 		json c=input["CellList"];
 		for(auto i:c)
 		{
@@ -56,11 +62,11 @@ void Driver::initialize_zoo(Zoo& z, CageHandler& ch)
 			else if(type=="road"){
 				if(i["entrance"].get<bool>()){
 					cell= new Entrance(x,y);
-					z.AddEntrance(cell);
+					(*z)->AddEntrance(cell);
 				}
 				else if(i["exit"].get<bool>()){
 					cell=new Exit(x,y);
-					z.AddExit(cell);
+					(*z)->AddExit(cell);
 				}
 				else
 					cell = new Road(x,y);
@@ -70,11 +76,11 @@ void Driver::initialize_zoo(Zoo& z, CageHandler& ch)
 			else if(type=="restaurant")
 				cell = new Restaurant(x,y);
 
-			z.SetCell(x,y,cell);
+			(*z)->SetCell(x,y,cell);
 			if(id>0){
 				cage=ch.GetCage(id);
 				cage->AddCell(cell->getType());
-				z.GetCell(x,y)->setCage(cage);	
+				(*z)->GetCell(x,y)->setCage(cage);	
 			}
 			
 		}
@@ -291,7 +297,7 @@ void Driver::TourVirtualZoo(Zoo& z)
 
 		if(!found){
 			finish=true;
-			throw ZooExp(5);
+			cout<<"No next move found"<<endl;
 		}
 		else{
 			cout<<"You're in: "<<curr_x<<' '<<curr_y<<endl;
@@ -307,7 +313,7 @@ void Driver::TourVirtualZoo(Zoo& z)
 			for(int i=0; i<z.NbExit(); i++){
 				if(z.GetExit(i)->GetAbsis()==curr_x && z.GetExit(i)->GetOrdinat()==curr_y){
 					finish=true;
-					throw ZooExp(6);
+					cout<<"You are in an exit!"<<endl;
 				}
 			}
 		}		
