@@ -326,7 +326,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Aligator"},
-				{"Massa", 290000},
+				{"Massa", 290 000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",6},
