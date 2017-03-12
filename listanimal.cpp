@@ -11,7 +11,7 @@ OrangUtan::OrangUtan(int i, int x, int y, int kg, bool jinak): Primate('U',i) {
 	SetY(y);
 }
 void OrangUtan::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int OrangUtan::getMakanan() {
 	Omnivora::GetAmount();
@@ -26,7 +26,7 @@ Siamang::Siamang(int i, int x, int y, int kg, bool jinak): Primate('S',i) {
 	SetY(y);
 }
 void Siamang::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int Siamang::getMakanan() {
 	Omnivora::GetAmount();
@@ -41,7 +41,7 @@ Bekantan::Bekantan(int i, int x, int y, int kg, bool jinak): Primate('B',i){
 	SetY(y);
 }
 void Bekantan::interact() {
-	cout << aksi;
+	cout << aksi<< endl;
 }
 int Bekantan::getMakanan() {
 	Omnivora::GetAmount();
@@ -56,7 +56,7 @@ BadakCulaSatu::BadakCulaSatu(int i, int x, int y, int kg, bool jinak): Perrisoda
 	SetY(y);
 }
 void BadakCulaSatu::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int BadakCulaSatu::getMakanan() {
 	Herbivora::GetAmount();
@@ -71,7 +71,7 @@ Zebra::Zebra(int i, int x, int y, int kg, bool jinak) : Perrisodactyl('Z',i) {
 	SetY(y);
 }
 void Zebra::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Zebra::getMakanan() {
 	Herbivora::GetAmount();
@@ -86,7 +86,7 @@ HarimauSumatra::HarimauSumatra(int i, int x, int y, int kg, bool jinak) : Carniv
 	SetY(y);
 }
 void HarimauSumatra::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int HarimauSumatra::getMakanan() {
 	Karnivora::GetAmount();
@@ -101,7 +101,7 @@ Macan::Macan(int i, int x, int y, int kg, bool jinak) : Carnivore('M', i) {
 	SetY(y);
 }
 void Macan::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Macan::getMakanan() {
 	Karnivora::GetAmount();
@@ -116,7 +116,7 @@ Rusa::Rusa(int i, int x, int y, int kg, bool jinak): Artiodactyl('E',i){
 	SetY(y);
 }
 void Rusa::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Rusa::getMakanan() {
 	Herbivora::GetAmount();
@@ -131,7 +131,7 @@ Kancil::Kancil(int i, int x, int y, int kg, bool jinak): Artiodactyl('K',i){
 	SetY(y);
 }
 void Kancil::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Kancil::getMakanan() {
 	Herbivora::GetAmount();
@@ -162,7 +162,7 @@ Komodo::Komodo(int i, int x, int y, int kg, bool jinak) : Squamata('J',i){
 	SetY(y);
 }
 void Komodo::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Komodo::getMakanan() {
 	Karnivora::GetAmount();
@@ -177,7 +177,7 @@ Iguana::Iguana(int i, int x, int y, int kg, bool jinak) : Squamata('I',i) {
 	SetY(y);
 }
 void Iguana::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int Iguana::getMakanan() {
 	Herbivora::GetAmount();
@@ -192,7 +192,7 @@ HiuKarpet::HiuKarpet(int i, int x, int y, int kg, bool jinak) : Carcharhiniforme
 	SetY(y);
 }
 void HiuKarpet::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int HiuKarpet::getMakanan() {
 	Karnivora::GetAmount();
@@ -207,7 +207,7 @@ HiuMartil::HiuMartil(int i, int x, int y, int kg, bool jinak) : Carcharhiniforme
 	SetY(y);
 }
 void HiuMartil::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int HiuMartil::getMakanan() {
 	Karnivora::GetAmount();
@@ -222,7 +222,7 @@ StingRay::StingRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Y',i) 
 	SetY(y);
 }
 void StingRay::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int StingRay::getMakanan() {
 	Karnivora::GetAmount();
@@ -237,7 +237,7 @@ MantaRay::MantaRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Q',i) 
 	SetY(y);
 }
 void MantaRay::interact() {
-	cout << aksi;
+	cout << aksi<< endl;
 }
 int MantaRay::getMakanan() {
 	Karnivora::GetAmount();
@@ -252,7 +252,7 @@ Elang::Elang(int i, int x, int y, int kg, bool jinak) : Falconiformes('~',i) {
 	SetY(y);
 }
 void Elang::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int Elang::getMakanan() {
 	Karnivora::GetAmount();
@@ -267,7 +267,7 @@ Garuda::Garuda(int i, int x, int y, int kg, bool jinak) : Falconiformes('G',i) {
 	SetY(y);
 }
 void Garuda::interact() {
-	cout << aksi;
+	cout << aksi<< endl;
 }
 int Garuda::getMakanan() {
 	Karnivora::GetAmount();
@@ -282,7 +282,7 @@ Kakatua::Kakatua(int i, int x, int y, int kg, bool jinak) : Prittaciformes ('P',
 	SetY(y);
 }
 void Kakatua::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int Kakatua::getMakanan() {
 	Herbivora::GetAmount();
@@ -297,7 +297,7 @@ Nuri::Nuri(int i, int x, int y, int kg, bool jinak) : Prittaciformes('N',i) {
 	SetY(y);
 }
 void Nuri::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Nuri::getMakanan() {
 	Herbivora::GetAmount();
@@ -312,7 +312,7 @@ Parkit::Parkit(int i, int x, int y, int kg, bool jinak) : Prittaciformes('F',i) 
 	SetY(y);
 }
 void Parkit::interact() {
-	cout << suara;
+	cout << suara << endl;
 }
 int Parkit::getMakanan() {
 	Herbivora::GetAmount();
@@ -327,7 +327,7 @@ Buaya::Buaya(int i, int x, int y, int kg, bool jinak) : Crocodillia('D',i) {
 	SetY(y);
 }
 void Buaya:: interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Buaya::getMakanan() {
 	Karnivora::GetAmount();
@@ -342,7 +342,7 @@ Aligator::Aligator(int i, int x, int y, int kg, bool jinak) : Crocodillia('L',i)
 	SetY(y);
 }
 void Aligator::interact() {
-	cout << aksi;
+	cout << aksi << endl;
 }
 int Aligator::getMakanan() {
 	Karnivora::GetAmount();

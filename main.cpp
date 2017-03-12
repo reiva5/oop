@@ -43,7 +43,7 @@ int main()
 		cin>>option;
 		if(option==1)
 			driver.DisplayVirtualZoo(z);
-		else if(option==2)
+		else if(option==2) 
 			driver.TourVirtualZoo(z);
 		else if(option==3)
 			finished=true;

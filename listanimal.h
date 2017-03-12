@@ -53,7 +53,7 @@ public:
 
 private:
 	string suara;
-	const int defmakanan=6;
+	const int defmakanan=5;
 };
 
 /** @class Bekantan
@@ -78,7 +78,7 @@ public:
 
 private:
 	string aksi;
-	const int defmakanan=5; 
+	const int defmakanan=10; 
 };
 
 /** @class BadakCulaSatu
@@ -102,7 +102,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=4; 
+	const int defmakanan=250; 
 };
 
 /** @class Zebra
@@ -126,7 +126,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=3; 
+	const int defmakanan=60; 
 };
 
 /** @class HarimauSumatra
@@ -150,7 +150,7 @@ public:
 	int getMakanan();
 private:
 	string suara;
-	const int defmakanan=10;	
+	const int defmakanan=12;	
 };
 
 /** @class HarimauSumatra
@@ -174,7 +174,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=9;
+	const int defmakanan=12;
 };
 
 /** @class Rusa
@@ -198,7 +198,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=4;
+	const int defmakanan=20;
 };
 
 /** @class Kancil
@@ -246,7 +246,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=5;
+	const int defmakanan=100;
 };
 
 /** @class Komodo
@@ -295,7 +295,7 @@ public:
 	int getMakanan();
 private:
 	string suara;
-	const int defmakanan=10;	
+	const int defmakanan=8;	
 };
 
 /** @class HiuKarpet
@@ -321,7 +321,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=10;
+	const int defmakanan=100;
 };
 
 /** @class HiuMartil
@@ -347,7 +347,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=10;
+	const int defmakanan=100;
 };
 
 /** @class StingRay
@@ -397,7 +397,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=10;
+	const int defmakanan=400;
 };
 
 /** @class Elang
@@ -421,7 +421,7 @@ public:
 	int getMakanan();
 private:
 	string suara;
-	const int defmakanan=10;
+	const int defmakanan=5;
 };
 
 /** @class Garuda
@@ -445,7 +445,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=10;
+	const int defmakanan=6;
 };
 
 /** @class Kakatua
@@ -471,7 +471,7 @@ public:
 
 private:
 	string suara;
-	const int defmakanan=10;
+	const int defmakanan=3;
 };
 
 /** @class Nuri
@@ -495,7 +495,7 @@ public:
 	int getMakanan();
 private:
 	string aksi;
-	const int defmakanan=10;
+	const int defmakanan=2;
 };
 
 /** @class Parkit
@@ -519,7 +519,7 @@ public:
 	int getMakanan();
 private:
 	string suara;
-	const int defmakanan=10;
+	const int defmakanan=5;
 };
 
 /** @class Buaya
@@ -544,7 +544,7 @@ public:
 
 private:
 	string aksi;
-	const int defmakanan=10;
+	const int defmakanan=200;
 	
 };
 
@@ -570,7 +570,7 @@ public:
 
 private:
 	string aksi;
-	const int defmakanan= 10;
+	const int defmakanan=100;
 };
 
 #endif

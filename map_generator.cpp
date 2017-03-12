@@ -96,7 +96,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","Banteng"},
-				{"Massa", 1000},
+				{"Massa", 800000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",15},
@@ -106,7 +106,7 @@ int main(){
 			{
 				{"Id",2},
 				{"Spesies","Banteng"},
-				{"Massa", 1000},
+				{"Massa", 870000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",5},
@@ -116,7 +116,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","Bekantan"},
-				{"Massa", 1000},
+				{"Massa", 20000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",17},
@@ -126,7 +126,7 @@ int main(){
 			{
 				{"Id",2},
 				{"Spesies","Bekantan"},
-				{"Massa", 1000},
+				{"Massa", 10000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",18},
@@ -136,7 +136,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","BadakCulaSatu"},
-				{"Massa", 1000},
+				{"Massa", 2000000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",10},
@@ -146,7 +146,7 @@ int main(){
 			{
 				{"Id",2},
 				{"Spesies","BadakCulaSatu"},
-				{"Massa", 1000},
+				{"Massa", 1600000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",2},
@@ -156,7 +156,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","Buaya"},
-				{"Massa", 1000},
+				{"Massa", 950000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",9},
@@ -166,7 +166,7 @@ int main(){
 			{
 				{"Id",2},
 				{"Spesies","Buaya"},
-				{"Massa", 1000},
+				{"Massa", 1000000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",10},
@@ -176,7 +176,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","Rusa"},
-				{"Massa", 1000},
+				{"Massa", 50000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",9},
@@ -186,7 +186,7 @@ int main(){
 			{
 				{"Id",2},
 				{"Spesies","Rusa"},
-				{"Massa", 1000},
+				{"Massa", 45000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",3},
@@ -196,7 +196,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","Parkit"},
-				{"Massa", 1000},
+				{"Massa", 500},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",3},
@@ -216,7 +216,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Garuda"},
-				{"Massa", 5000},
+				{"Massa", 4500},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",18},
@@ -226,7 +226,7 @@ int main(){
 			{
 				{"Id", 3},
 				{"Spesies", "Garuda"},
-				{"Massa", 5000},
+				{"Massa", 4300},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",16},
@@ -236,7 +236,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "HarimauSumatra"},
-				{"Massa", 500000},
+				{"Massa", 120000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",17},
@@ -246,7 +246,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "HarimauSumatra"},
-				{"Massa", 500000},
+				{"Massa", 80000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",18},
@@ -256,7 +256,7 @@ int main(){
 			{
 				{"Id", 3},
 				{"Spesies", "HarimauSumatra"},
-				{"Massa", 500000},
+				{"Massa", 97000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",5},
@@ -266,7 +266,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Iguana"},
-				{"Massa", 500000},
+				{"Massa", 4000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",12},
@@ -276,7 +276,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Komodo"},
-				{"Massa", 500000},
+				{"Massa", 86000},
 				{"Jinak", false},
 				{"Lokasi", {
 					{"x",14},
@@ -286,7 +286,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Komodo"},
-				{"Massa", 500000},
+				{"Massa", 90000},
 				{"Jinak", false},
 				{"Lokasi", {
 					{"x",15},
@@ -296,7 +296,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Kancil"},
-				{"Massa", 500000},
+				{"Massa", 2000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",10},
@@ -306,7 +306,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Kancil"},
-				{"Massa", 500000},
+				{"Massa", 1700},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",14},
@@ -316,7 +316,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Aligator"},
-				{"Massa", 500000},
+				{"Massa", 360000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",12},
@@ -326,7 +326,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Aligator"},
-				{"Massa", 500000},
+				{"Massa", 290000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",6},
@@ -336,7 +336,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Macan"},
-				{"Massa", 500000},
+				{"Massa", 78000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",15},
@@ -346,7 +346,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Macan"},
-				{"Massa", 500000},
+				{"Massa", 88000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",8},
@@ -356,7 +356,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Nuri"},
-				{"Massa", 500000},
+				{"Massa", 480},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",2},
@@ -366,7 +366,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Nuri"},
-				{"Massa", 500000},
+				{"Massa", 400},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",0},
@@ -376,7 +376,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Kakatua"},
-				{"Massa", 500000},
+				{"Massa", 290},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",15},
@@ -386,7 +386,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Kakatua"},
-				{"Massa", 500000},
+				{"Massa", 310},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",13},
@@ -396,7 +396,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "MantaRay"},
-				{"Massa", 5000},
+				{"Massa", 1300000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",0},
@@ -406,7 +406,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "MantaRay"},
-				{"Massa", 5000},
+				{"Massa", 1000000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",8},
@@ -416,7 +416,7 @@ int main(){
 			{
 				{"Id", 3},
 				{"Spesies", "MantaRay"},
-				{"Massa", 5000},
+				{"Massa", 1350000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",1},
@@ -426,7 +426,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "Siamang"},
-				{"Massa", 500000},
+				{"Massa", 11900},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",17},
@@ -436,7 +436,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "Siamang"},
-				{"Massa", 500000},
+				{"Massa", 10700},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",16},
@@ -476,7 +476,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "OrangUtan"},
-				{"Massa", 550000},
+				{"Massa", 37000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",7},
@@ -486,7 +486,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "OrangUtan"},
-				{"Massa", 550000},
+				{"Massa", 60000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",6},
@@ -496,7 +496,7 @@ int main(){
 			{
 				{"Id", 1},
 				{"Spesies", "HiuKarpet"},
-				{"Massa", 550000},
+				{"Massa", 350000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",8},
@@ -506,7 +506,7 @@ int main(){
 			{
 				{"Id", 2},
 				{"Spesies", "HiuKarpet"},
-				{"Massa", 550000},
+				{"Massa", 300000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",3},
@@ -556,7 +556,7 @@ int main(){
 			{
 				{"Id",1},
 				{"Spesies","Zebra"},
-				{"Massa", 1000},
+				{"Massa", 120000},
 				{"Jinak", true},
 				{"Lokasi", {
 					{"x",5},
@@ -4000,16 +4000,5 @@ int main(){
 		fout.close();
 	}
 
-	// ifstream fin;
-	// fin.open("map.json");
-	// if(fin.is_open()){
-	// 	json in;
-	// 	fin>>in;
-	// 	json animal=in["AnimalList"];
-	// 	for(auto i:animal){
-	// 		cout<<"Spesies: "<<i["spesies"].get<string>()<<endl;
-	// 		cout<<"Posisi "<<i["Lokasi"]["x"].get<int>()<<' '<<i["Lokasi"]["y"].get<int>()<<endl;
-	// 	}
-	// }
 	return 0;
 }
