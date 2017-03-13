@@ -3,6 +3,7 @@
 
 #include "pemakan.h"
 #include "animal.h"
+#include <string>
 
 using namespace std;
 
