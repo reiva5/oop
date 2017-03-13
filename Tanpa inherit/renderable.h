@@ -1,9 +1,9 @@
-#ifndef RENDERABLE_H
-#define RENDERABLE_H
+#ifndef RENDERABLE_h
+#define RENDERABLE_h
 
 class Renderable{
 	public:
-		void render();
+		virtual void render()=0;
 		static void banner();
 };
 

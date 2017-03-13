@@ -2,576 +2,348 @@
 #include "listanimal.h"
 using namespace std;
 
-OrangUtan::OrangUtan():a('U',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-OrangUtan::OrangUtan(int i, int x, int y, int kg, bool jinak): a('U',i) {
+OrangUtan::OrangUtan(int i, int x, int y, int kg, bool jinak): Primate('U',i) {
 	suara = "Auooo";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Primate");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void OrangUtan::interact() {
 	cout << "Orang Utan: \""<< suara <<"\""<< endl;
 }
 int OrangUtan::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal OrangUtan::GetAnimal(){
-	return a;
+	Omnivora::GetAmount();
 }
 
-Siamang::Siamang():a('S',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Siamang::Siamang(int i, int x, int y, int kg, bool jinak): a('S',i) {
+Siamang::Siamang(int i, int x, int y, int kg, bool jinak): Primate('S',i) {
 	suara = "Ooo Ooo";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Primate");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Siamang::interact() {
 	cout << "Siamang: \"" << suara << "\"" << endl;
 }
 int Siamang::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Siamang::GetAnimal(){
-	return a;
+	Omnivora::GetAmount();
 }
 
-Bekantan::Bekantan():a('B',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Bekantan::Bekantan(int i, int x, int y, int kg, bool jinak): a('B',i){
+Bekantan::Bekantan(int i, int x, int y, int kg, bool jinak): Primate('B',i){
 	aksi = "climb tree";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Primate");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Bekantan::interact() {
 	cout << "Bekantan: (" << aksi << ")" << endl;
 }
 int Bekantan::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Bekantan::GetAnimal(){
-	return a;
+	Omnivora::GetAmount();
 }
 
-BadakCulaSatu::BadakCulaSatu():a('C',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-BadakCulaSatu::BadakCulaSatu(int i, int x, int y, int kg, bool jinak) : a('C',i){
+BadakCulaSatu::BadakCulaSatu(int i, int x, int y, int kg, bool jinak): Perrisodactyl('C', i) {
 	aksi = "bathing in mud";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Perrisodactyl");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void BadakCulaSatu::interact() {
 	cout <<"Badak Cula Satu: (" << aksi << ")" << endl;
 }
 int BadakCulaSatu::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal BadakCulaSatu::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-Zebra::Zebra():a('Z',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Zebra::Zebra(int i, int x, int y, int kg, bool jinak) : a('Z',i) {
+Zebra::Zebra(int i, int x, int y, int kg, bool jinak) : Perrisodactyl('Z',i) {
 	aksi = "running";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Perrisodactyl");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Zebra::interact() {
 	cout <<"Zebra: (" << aksi << ")" << endl;
 }
 int Zebra::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Zebra::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-HarimauSumatra::HarimauSumatra():a('H',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-HarimauSumatra::HarimauSumatra(int i, int x, int y, int kg, bool jinak) : a('H',i) {
+HarimauSumatra::HarimauSumatra(int i, int x, int y, int kg, bool jinak) : Carnivore('H',i) {
 	suara = "AUUM!!";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Carnivore");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void HarimauSumatra::interact() {
 	cout <<"Harimau Sumatra: \"" << suara << "\"" << endl;
 }
 int HarimauSumatra::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal HarimauSumatra::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Macan::Macan():a('M',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Macan::Macan(int i, int x, int y, int kg, bool jinak) : a('M', i) {
+Macan::Macan(int i, int x, int y, int kg, bool jinak) : Carnivore('M', i) {
 	aksi = "stalk prey";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Carnivore");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Macan::interact() {
 	cout <<"Macan: (" << aksi << ")" << endl;
 }
 int Macan::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Macan::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Rusa::Rusa():a('E',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Rusa::Rusa(int i, int x, int y, int kg, bool jinak): a('E',i){
+Rusa::Rusa(int i, int x, int y, int kg, bool jinak): Artiodactyl('E',i){
 	aksi = "flaunt horn";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Artiodactyl");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Rusa::interact() {
 	cout <<"Rusa: (" << aksi << ")" << endl;
 }
 int Rusa::getMakanan() {
-	_pemakan.GetAmount();
+	Herbivora::GetAmount();
 }
-Animal Rusa::GetAnimal(){
-	return a;
-}
-Kancil::Kancil():a('K',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Kancil::Kancil(int i, int x, int y, int kg, bool jinak): a('K',i){
+
+Kancil::Kancil(int i, int x, int y, int kg, bool jinak): Artiodactyl('K',i){
 	aksi = "eat cucumber";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Artiodactyl");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Kancil::interact() {
 	cout <<"Kancil: (" << aksi << ")" << endl;
 }
 int Kancil::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Kancil::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-Banteng::Banteng():a('A',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Banteng::Banteng(int i, int x, int y, int kg, bool jinak) : a('A',i){
+
+Banteng::Banteng(int i, int x, int y, int kg, bool jinak) : Artiodactyl('A',i){
 	aksi = "snort";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Artiodactyl");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Banteng::interact() {
 	cout <<"Banteng: ("<< aksi << ")" << endl;
 }
 int Banteng::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Banteng::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-Komodo::Komodo():a('J',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Komodo::Komodo(int i, int x, int y, int kg, bool jinak) : a('J',i){
+Komodo::Komodo(int i, int x, int y, int kg, bool jinak) : Squamata('J',i){
 	aksi = "stick tongue";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Squamata");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Komodo::interact() {
 	cout <<"Komodo: (" << aksi << ")" << endl;
 }
 int Komodo::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Komodo::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Iguana::Iguana():a('I',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Iguana::Iguana(int i, int x, int y, int kg, bool jinak) : a('I',i) {
+Iguana::Iguana(int i, int x, int y, int kg, bool jinak) : Squamata('I',i) {
 	suara = "Hiss";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Squamata");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Iguana::interact() {
 	cout <<"Iguana: \"" << suara << "\"" << endl;
 }
 int Iguana::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Iguana::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-HiuKarpet::HiuKarpet():a('V',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-HiuKarpet::HiuKarpet(int i, int x, int y, int kg, bool jinak) : a('V',i) {
+HiuKarpet::HiuKarpet(int i, int x, int y, int kg, bool jinak) : Carcharhiniformes('V',i) {
 	aksi = "burying in sand";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Carcharhiniformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void HiuKarpet::interact() {
 	cout << "Hiu Karpet: (" << aksi << ")" << endl;
 }
 int HiuKarpet::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal HiuKarpet::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-HiuMartil::HiuMartil():a('T',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-HiuMartil::HiuMartil(int i, int x, int y, int kg, bool jinak) : a('T',i){
+HiuMartil::HiuMartil(int i, int x, int y, int kg, bool jinak) : Carcharhiniformes('T',i){
 	aksi = "move head";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Carcharhiniformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void HiuMartil::interact() {
 	cout << "Hiu Martil: (" << aksi << ")" << endl;
 }
 int HiuMartil::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal HiuMartil::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-StingRay::StingRay():a('Y',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-StingRay::StingRay(int i, int x, int y, int kg, bool jinak) : a('Y',i) {
+StingRay::StingRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Y',i) {
 	aksi = "move fin";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Rajiformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void StingRay::interact() {
 	cout << "StingRay: (" << aksi << ")" << endl;
 }
 int StingRay::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal StingRay::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-MantaRay::MantaRay():a('Q',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-MantaRay::MantaRay(int i, int x, int y, int kg, bool jinak) : a('Q',i) {
+MantaRay::MantaRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Q',i) {
 	aksi = "swim! jump!";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Rajiformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void MantaRay::interact() {
 	cout << "MantaRay: (" << aksi<< ")" << endl;
 }
 int MantaRay::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal MantaRay::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Elang::Elang():a('~',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Elang::Elang(int i, int x, int y, int kg, bool jinak) : a('~',i) {
+Elang::Elang(int i, int x, int y, int kg, bool jinak) : Falconiformes('~',i) {
 	suara = "Kaaaak!";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Falconiformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Elang::interact() {
 	cout << "Elang: \"" << suara << "\"" << endl;
 }
 int Elang::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Elang::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Garuda::Garuda():a('G',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Garuda::Garuda(int i, int x, int y, int kg, bool jinak) : a('G',i) {
+Garuda::Garuda(int i, int x, int y, int kg, bool jinak) : Falconiformes('G',i) {
 	aksi = "spread wings";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Falconiformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Garuda::interact() {
 	cout << "Garuda: (" << aksi<< ")" << endl;
 }
 int Garuda::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Garuda::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Kakatua::Kakatua():a('P',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Kakatua::Kakatua(int i, int x, int y, int kg, bool jinak) : a('P',i) {
+Kakatua::Kakatua(int i, int x, int y, int kg, bool jinak) : Prittaciformes ('P',i) {
 	suara = "Hello! kwak!";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Prittaciformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Kakatua::interact() {
 	cout << "Kakatua: \"" << suara << "\"" << endl;
 }
 int Kakatua::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Kakatua::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-Nuri::Nuri():a('N',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Nuri::Nuri(int i, int x, int y, int kg, bool jinak) : a('N',i) {
+Nuri::Nuri(int i, int x, int y, int kg, bool jinak) : Prittaciformes('N',i) {
 	aksi = "play ball";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Prittaciformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Nuri::interact() {
 	cout << "Nuri: (" << aksi << ")" << endl;
 }
 int Nuri::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Nuri::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-Parkit::Parkit():a('F',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Parkit::Parkit(int i, int x, int y, int kg, bool jinak) : a('F',i) {
+Parkit::Parkit(int i, int x, int y, int kg, bool jinak) : Prittaciformes('F',i) {
 	suara = "cuit cuit";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Prittaciformes");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Parkit::interact() {
 	cout << "Parkit: \"" << suara << "\"" << endl;
 }
 int Parkit::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Parkit::GetAnimal(){
-	return a;
+	Herbivora::GetAmount();
 }
 
-Buaya::Buaya():a('D',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Buaya::Buaya(int i, int x, int y, int kg, bool jinak) : a('D',i) {
+Buaya::Buaya(int i, int x, int y, int kg, bool jinak) : Crocodillia('D',i) {
 	aksi = "open mouth";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Crocodillia");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Buaya:: interact() {
 	cout <<"Buaya: ("<< aksi << ")" << endl;
 }
 int Buaya::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Buaya::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }
 
-Aligator::Aligator():a('L',0){
-	a.SetX(0);
-	a.SetY(0);
-	a.SetMassa(0);
-	a.SetJinak(true);
-}
-Aligator::Aligator(int i, int x, int y, int kg, bool jinak) : a('L',i) {
+Aligator::Aligator(int i, int x, int y, int kg, bool jinak) : Crocodillia('L',i) {
 	aksi = "crawl";
-	_pemakan.SetAmount(kg/defmakanan);
-	a.SetMassa(kg);
-	a.SetJinak(jinak);
-	a.SetX(x);
-	a.SetY(y);
-	a.SetOrdo("Crocodillia");
+	SetAmount(kg/defmakanan);
+	SetMassa(kg);
+	SetJinak(jinak);
+	SetX(x);
+	SetY(y);
 }
 void Aligator::interact() {
 	cout << "Aligator: (" << aksi << ")" << endl;
 }
 int Aligator::getMakanan() {
-	_pemakan.GetAmount();
-}
-Animal Aligator::GetAnimal(){
-	return a;
+	Karnivora::GetAmount();
 }

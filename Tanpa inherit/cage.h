@@ -1,5 +1,5 @@
-#ifndef CAGE_H
-#define CAGE_H
+#ifndef CAGE_h
+#define CAGE_h
 
 #include <vector>
 #include <string>
@@ -27,7 +27,8 @@ class Cage
 		vector<Animal*> animal;
 };
 
-class CageHandler{
+class CageHandler
+{
 	public:
 		CageHandler();
 		Cage* GetCage(int);

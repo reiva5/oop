@@ -1,5 +1,5 @@
-#ifndef DRIVER_H
-#define DRIVER_H
+#ifndef DRIVER_h
+#define DRIVER_h
 
 #include "zoo.h"
 
@@ -23,31 +23,6 @@ class Driver{
 		bool** visited;
 		int map_width;
 		int map_length;
-		Animal *animal;
-		Banteng* A;
-		Bekantan* B;
-		BadakCulaSatu* C;
-		Buaya* D;
-		Rusa* E;
-		Parkit* F;
-		Garuda* G;
-		HarimauSumatra* H;
-		Iguana* I;
-		Komodo* J;
-		Kancil* K;
-		Aligator* L;
-		Macan* M;
-		Nuri* N;
-		Kakatua* P;
-		MantaRay* Q;
-		Siamang* S;
-		HiuMartil* T;
-		OrangUtan* U;
-		HiuKarpet* V;
-		StingRay* Y;
-		Zebra* Z;
-		Elang* e;
-
 };
 
 #endif

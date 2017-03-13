@@ -129,76 +129,53 @@ void Driver::initialize_animal(AnimalHandler& ah, Zoo& z)
 			ordinat=i["Lokasi"]["y"].get<int>();
 			jinak=i["Jinak"].get<bool>();
 
-			if(spesies=="Elang"){
-				e = new Elang(id, absis, ordinat, massa, jinak);
-				*a=e->GetAnimal();
-			}else if(spesies=="Bekantan"){
-				B = new Bekantan(id,absis,ordinat,massa,jinak);
-				*a=B->GetAnimal();
-			}else if(spesies=="BadakCulaSatu"){
-				C = new BadakCulaSatu(id, absis, ordinat, massa, jinak);
-				*a=C->GetAnimal();
-			}else if(spesies=="Buaya"){
-				D = new Buaya(id, absis, ordinat, massa, jinak);
-				*a=D->GetAnimal();
-			}else if(spesies=="Rusa"){
-				E = new Rusa(id, absis, ordinat, massa, jinak);
-				*a=E->GetAnimal();
-			}else if(spesies=="Parkit"){
-				F = new Parkit(id, absis, ordinat, massa, jinak);
-				*a=F->GetAnimal();
-			}else if(spesies=="Garuda"){
-				G = new Garuda(id, absis, ordinat, massa, jinak);
-				*a=G->GetAnimal();
-			}else if(spesies=="HarimauSumatra"){
-				H = new HarimauSumatra(id, absis, ordinat, massa, jinak);
-				*a=H->GetAnimal();
-			}else if(spesies=="Iguana"){
-				I = new Iguana(id, absis, ordinat, massa, jinak);
-				*a=I->GetAnimal();
-			}else if(spesies=="Komodo"){
-				J = new Komodo(id, absis, ordinat, massa, jinak);
-				*a=J->GetAnimal();
-			}else if(spesies=="Kancil"){
-				K = new Kancil(id, absis, ordinat, massa, jinak);
-				*a=K->GetAnimal();
-			}else if(spesies=="Aligator"){
-				L = new Aligator(id, absis, ordinat, massa, jinak);
-				*a=L->GetAnimal();
-			}else if(spesies=="Macan"){
-				M = new Macan(id, absis, ordinat, massa, jinak);
-				*a=M->GetAnimal();
-			}else if(spesies=="Nuri"){
-				N = new Nuri(id, absis, ordinat, massa, jinak);
-				*a=N->GetAnimal();
-			}else if(spesies=="Kakatua"){
-				P = new Kakatua(id, absis, ordinat, massa, jinak);
-				*a=P->GetAnimal();
-			}else if(spesies=="MantaRay"){
-				Q = new MantaRay(id, absis, ordinat, massa, jinak);
-				*a=Q->GetAnimal();
-			}else if(spesies=="Siamang"){
-				S = new Siamang(id, absis, ordinat, massa, jinak);
-				*a=S->GetAnimal();
-			}else if(spesies=="HiuMartil"){
-				T = new HiuMartil(id, absis, ordinat, massa, jinak);
-				*a=T->GetAnimal();
-			}else if(spesies=="OrangUtan"){
-				U = new OrangUtan(id, absis, ordinat, massa, jinak);
-				*a=U->GetAnimal();
-			}else if(spesies=="HiuKarpet"){
-				V = new HiuKarpet(id, absis, ordinat, massa, jinak);
-				*a=V->GetAnimal();
-			}else if(spesies=="StingRay"){
-				Y = new StingRay(id, absis, ordinat, massa, jinak);
-				*a=Y->GetAnimal();
-			}else if(spesies=="Zebra"){
-				Z = new Zebra(id, absis, ordinat, massa, jinak);
-				*a=Z->GetAnimal();
-			}else if(spesies=="Banteng"){
-				A = new Banteng(id, absis, ordinat, massa, jinak);
-				*a=A->GetAnimal();
-			}
+			if(spesies=="Elang")
+				a=new Elang(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Bekantan")
+				a=new Bekantan(id, absis, ordinat, massa, jinak);
+			else if(spesies=="BadakCulaSatu")
+				a=new BadakCulaSatu(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Buaya")
+				a=new Buaya(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Rusa")
+				a=new Rusa(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Parkit")
+				a=new Parkit(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Garuda")
+				a=new Garuda(id, absis, ordinat, massa, jinak);
+			else if(spesies=="HarimauSumatra")
+				a=new HarimauSumatra(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Iguana")
+				a=new Iguana(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Komodo")
+				a=new Komodo(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Kancil")
+				a=new Kancil(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Aligator")
+				a=new Aligator(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Macan")
+				a=new Macan(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Nuri")
+				a=new Nuri(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Kakatua")
+				a=new Kakatua(id, absis, ordinat, massa, jinak);
+			else if(spesies=="MantaRay")
+				a=new MantaRay(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Siamang")
+				a=new Siamang(id, absis, ordinat, massa, jinak);
+			else if(spesies=="HiuMartil")
+				a=new HiuMartil(id, absis, ordinat, massa, jinak);
+			else if(spesies=="OrangUtan")
+				a=new OrangUtan(id, absis, ordinat, massa, jinak);
+			else if(spesies=="HiuKarpet")
+				a=new HiuKarpet(id, absis, ordinat, massa, jinak);
+			else if(spesies=="StingRay")
+				a=new StingRay(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Zebra")
+				a=new Zebra(id, absis, ordinat, massa, jinak);
+			else if(spesies=="Banteng")
+				a=new Banteng(id, absis, ordinat, massa, jinak);
+
 			ah.AddAnimal(a);
 			if(absis<z.GetWidth() && ordinat<z.GetLength()){
 				z.GetCell(absis, ordinat)->setAnimal(a);
@@ -324,18 +301,15 @@ void Driver::TourVirtualZoo(Zoo& z)
 		}
 		else{
 			cout<<"You're in: "<<curr_x<<' '<<curr_y<<endl;
-			if(curr_y-1>=0 && z.GetCell(curr_x, curr_y-1)->getAnimal()!=NULL){
-				z.GetCell(curr_x, curr_y-1)->getAnimal()->animal.interact();
-			}
-			if(curr_x-1>=0 && z.GetCell(curr_x-1, curr_y)->getAnimal()!=NULL){
+			if(curr_y-1>=0 && z.GetCell(curr_x, curr_y-1)->getAnimal()!=NULL)
+				z.GetCell(curr_x, curr_y-1)->getAnimal()->interact();
+			if(curr_x-1>=0 && z.GetCell(curr_x-1, curr_y)->getAnimal()!=NULL)
 				z.GetCell(curr_x-1, curr_y)->getAnimal()->interact();
-			}
-			if(curr_y+1<z.GetLength() && z.GetCell(curr_x, curr_y+1)->getAnimal()!=NULL){
+			if(curr_y+1<z.GetLength() && z.GetCell(curr_x, curr_y+1)->getAnimal()!=NULL)
 				z.GetCell(curr_x, curr_y+1)->getAnimal()->interact();
-			}
-			if(curr_x+1<z.GetWidth() && z.GetCell(curr_x+1, curr_y)->getAnimal()!=NULL){
+			if(curr_x+1<z.GetWidth() && z.GetCell(curr_x+1, curr_y)->getAnimal()!=NULL)
 				z.GetCell(curr_x+1, curr_y)->getAnimal()->interact();
-			}
+
 			for(int i=0; i<z.NbExit(); i++){
 				if(z.GetExit(i)->GetAbsis()==curr_x && z.GetExit(i)->GetOrdinat()==curr_y){
 					finish=true;
