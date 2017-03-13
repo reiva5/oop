@@ -4,61 +4,65 @@
 
 class Pemakan {
 public:
-	virtual int GetAmount() = 0;
+  /** @brief Mengembalikan jumlah makananan
+    * @return jumlah makanan = 0
+    */
+  virtual int GetAmount() = 0;
 };
 
 /** @class Karnivora
-  * Kelas Karnivora yang menyimpan informasi makanan berupa daging
+  * Kelas Karnivora
+    menyimpan informasi makanan berupa daging
 */
 class Karnivora: public Pemakan {
 public:
-	/** @brief Constructor.
-	  * @param n Jumlah daging yang diinginkan
-	  */
-	void SetAmount(int n);
-	/** @brief Mengembalikan nilai daging
-	  * @return Nilai daging
-	  */
-	int GetAmount();
+  /** @brief Setter daging
+    * @param n Jumlah daging yang diinginkan
+    */
+  void SetAmount(int n);
+  /** @brief Getter daging
+    * @return daging
+    */
+  int GetAmount();
 
 protected:
-	int daging;
+  int daging;
 };
 
 /** @class Herbivora
-  * Kelas Herbivora yang menyimpan informasi makanan berupa tumbuhan
+  * Kelas Herbivora menyimpan informasi makanan berupa tumbuhan
 */
 class Herbivora: public Pemakan {
 public:
-	/** @brief Constructor.
-	  * @param n Jumlah tumbuhan yang diingiinkan
-	  */
-	void SetAmount(int n);
-	/** @brief Mengembalikan jumlah tumbuhan 
-	  * @return Nilai tumbuhan
-	  */
-	int GetAmount();
+  /** @brief Setter tumbuhan
+    * @param n Jumlah tumbuhan yang diinginkan
+    */
+  void SetAmount(int n);
+  /** @brief Getter tumbuhan
+    * @return tumbuhan
+    */
+  int GetAmount();
 
 protected:
-	int tumbuhan;	
+  int tumbuhan;  
 };
 
 /** @class Omnivora
-  * Kelas Omnivora yang menyimpan informasi makanan baik daging maupun tumbuhan
-*/
+  * Kelas Omnivora menyimpan informasi makanan perpaduan daging dan tumbuhan
+  */
 class Omnivora: public Pemakan {
 public:
-	/** @brief Constructor.
-	  * @param n Jumlah daging_tumbuhan yang diinginkan
-	  */
-	void SetAmount(int n);
-	/** @brief Mengembalikan jumlah daging_tumbuhan
-	  * @return Nilai daging_tumbuhan
-	  */
-	int GetAmount();
+  /** @brief Setter daging_tumbuhan
+    * @param n Jumlah daging_tumbuhan yang diinginkan
+    */
+  void SetAmount(int n);
+  /** @brief Getter daging_tumbuhan
+    * @return daging_tumbuhan
+    */
+  int GetAmount();
 
 protected:
-	int daging_tumbuhan;
+  int daging_tumbuhan;
 };
 
 #endif 

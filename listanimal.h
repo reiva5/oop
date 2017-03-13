@@ -11,24 +11,27 @@ using namespace std;
   */
 class OrangUtan: public Primate, public Omnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial binatang di parent Primate 
-	  * Menginisiasi jumlah makanan dengan jml di parent Omnivora 
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	OrangUtan(int i, int x, int y, int kg, bool jinak); 
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact ();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Omnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan OrangUtan dengan inisial 'U' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  OrangUtan(int i, int x, int y, int massa, bool jinak); 
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Omnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 
 private:
-	string suara;	
-	const int defmakanan=15; 
+  string suara;  
+  const int rasio=15; 
 };
 
 /** @class Siamang
@@ -36,24 +39,27 @@ private:
   */
 class Siamang: public Primate, public Omnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial binatang di parent Primate 
-	  * Menginisiasi jumlah makanan dengan jml di parent Omnivora 
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Siamang(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact ();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Omnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Siamang dengan inisial 'S' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Siamang(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Omnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 
 private:
-	string suara;
-	const int defmakanan=5;
+  string suara;
+  const int rasio=5;
 };
 
 /** @class Bekantan
@@ -61,24 +67,27 @@ private:
   */
 class Bekantan: public Primate, public Omnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Primate 
-	  * Menginisiasi jumlah makanan dengan jml di parent Omnivora 
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Bekantan(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Omnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Bekantan dengan inisial 'B' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Bekantan(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Omnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 
 private:
-	string aksi;
-	const int defmakanan=10; 
+  string aksi;
+  const int rasio=10; 
 };
 
 /** @class BadakCulaSatu
@@ -86,23 +95,26 @@ private:
   */
 class BadakCulaSatu: public Perrisodactyl, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Perrisodactyl 
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora 
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	BadakCulaSatu(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan BadakCulaSatu dengan inisial 'C' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  BadakCulaSatu(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=250; 
+  string aksi;
+  const int rasio=250; 
 };
 
 /** @class Zebra
@@ -110,23 +122,26 @@ private:
   */
 class Zebra: public Perrisodactyl, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Perrisodactyl 
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora 
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Zebra(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Zebra inisial 'Z' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Zebra(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=60; 
+  string aksi;
+  const int rasio=60; 
 };
 
 /** @class HarimauSumatra
@@ -134,23 +149,26 @@ private:
   */
 class HarimauSumatra: public Carnivore, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial binatang di parent Carnivore 
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	HarimauSumatra(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan HarimauSumatra dengan inisial 'H' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  HarimauSumatra(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string suara;
-	const int defmakanan=12;	
+  string suara;
+  const int rasio=12;  
 };
 
 /** @class HarimauSumatra
@@ -158,23 +176,26 @@ private:
   */
 class Macan: public Carnivore, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Carnivore 
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Macan(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Macan dengan inisial 'M' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Macan(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=12;
+  string aksi;
+  const int rasio=12;
 };
 
 /** @class Rusa
@@ -182,23 +203,26 @@ private:
   */
 class Rusa : public Artiodactyl, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Artiodactyl
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Rusa(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Rusa dengan inisial 'E' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Rusa(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=20;
+  string aksi;
+  const int rasio=20;
 };
 
 /** @class Kancil
@@ -206,23 +230,26 @@ private:
   */
 class Kancil: public Artiodactyl, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Artiodactyl
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Kancil(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Kancil dengan inisial 'K' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Kancil(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=2;
+  string aksi;
+  const int rasio=2;
 };
 
 /** @class Banteng
@@ -230,23 +257,26 @@ private:
   */
 class Banteng: public Artiodactyl, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial binatang di parent Artiodactyl
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Banteng(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Banteng dengan inisial 'A' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Banteng(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=100;
+  string aksi;
+  const int rasio=100;
 };
 
 /** @class Komodo
@@ -254,23 +284,26 @@ private:
   */
 class Komodo: public Squamata, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Squamata
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Komodo(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Komodo dengan inisial 'J' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Komodo(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=10;
+  string aksi;
+  const int rasio=10;
 };
 
 /** @class Iguana
@@ -279,23 +312,26 @@ private:
 class Iguana: public Squamata, public Herbivora
 {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial di parent Squamata
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Iguana(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Iguana dengan inisial 'I' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Iguana(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string suara;
-	const int defmakanan=8;	
+  string suara;
+  const int rasio=8;  
 };
 
 /** @class HiuKarpet
@@ -304,24 +340,26 @@ private:
 class HiuKarpet: public Carcharhiniformes, public Karnivora
 {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Carcharhiniformes
-	  * Menginisiasi jumlah makanan dengan jml di Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	HiuKarpet(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan HiuKarpet dengan inisial 'V' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  HiuKarpet(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=100;
+  string aksi;
+  const int rasio=100;
 };
 
 /** @class HiuMartil
@@ -330,24 +368,26 @@ private:
 class HiuMartil: public Carcharhiniformes, public Karnivora
 {
 public:
-
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Carcharhiniformes
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	HiuMartil(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan HiuMartil dengan inisial 'T' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  HiuMartil(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=100;
+  string aksi;
+  const int rasio=100;
 };
 
 /** @class StingRay
@@ -356,23 +396,26 @@ private:
 class StingRay: public Rajiformes, public Karnivora
 {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Rajiformes
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	StingRay(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan StingRay dengan inisial 'Y' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  StingRay(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=10;
+  string aksi;
+  const int rasio=10;
 };
 
 /** @class MantaRay
@@ -380,24 +423,26 @@ private:
   */
 class MantaRay: public Rajiformes, public Karnivora {
 public:
-
-	/** @brief Constructor. 
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Rajiformes
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	MantaRay(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan MantaRay dengan inisial 'Q' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  MantaRay(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=400;
+  string aksi;
+  const int rasio=400;
 };
 
 /** @class Elang
@@ -405,23 +450,27 @@ private:
   */
 class Elang: public Falconiformes, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial di parent Falconiformes.
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Elang(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Elang dengan inisial '~' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Elang(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
+
 private:
-	string suara;
-	const int defmakanan=5;
+  string suara;
+  const int rasio=5;
 };
 
 /** @class Garuda
@@ -429,23 +478,26 @@ private:
   */
 class Garuda: public Falconiformes, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Falconiformes
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Garuda(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Garuda dengan inisial 'G' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Garuda(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=6;
+  string aksi;
+  const int rasio=6;
 };
 
 /** @class Kakatua
@@ -454,24 +506,27 @@ private:
 class Kakatua: public Prittaciformes, public Herbivora
 {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial di parent Prittaciformes
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Kakatua(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Kakatua dengan inisial 'P' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Kakatua(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 
 private:
-	string suara;
-	const int defmakanan=3;
+  string suara;
+  const int rasio=3;
 };
 
 /** @class Nuri
@@ -479,23 +534,26 @@ private:
   */
 class Nuri: public Prittaciformes, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Prittaciformes
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Nuri(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Nuri dengan inisial 'N' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Nuri(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string aksi;
-	const int defmakanan=2;
+  string aksi;
+  const int rasio=2;
 };
 
 /** @class Parkit
@@ -503,23 +561,26 @@ private:
   */
 class Parkit: public Prittaciformes, public Herbivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi suara. Menginisiasi inisial di parent Prittaciformes 
-	  * Menginisiasi jumlah makanan dengan jml di parent Herbivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */ 	
-	Parkit(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan suara binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Herbivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Parkit dengan inisial 'F' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */  
+  Parkit(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan suara binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Herbivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 private:
-	string suara;
-	const int defmakanan=5;
+  string suara;
+  const int rasio=5;
 };
 
 /** @class Buaya
@@ -527,25 +588,28 @@ private:
   */
 class Buaya: public Crocodillia, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Crocodillia
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkan
-	  */
-	Buaya(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Buaya dengan inisial 'D' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Buaya(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 
 private:
-	string aksi;
-	const int defmakanan=200;
-	
+  string aksi;
+  const int rasio=200;
+  
 };
 
 /** @class Aligator
@@ -553,24 +617,27 @@ private:
   */
 class Aligator: public Crocodillia, public Karnivora {
 public:
-	/** @brief Constructor.
-	  * Menginisiasi aksi. Menginisiasi inisial di parent Crocodillia 
-	  * Menginisiasi jumlah makanan dengan jml di parent Karnivora
-	  * @param jml Nilai makanan yang diinginkab
-	  */
-	Aligator(int i, int x, int y, int kg, bool jinak);
-	/** @brief Menampilkan aksi binatang ke layar
-	  */
-	void interact();
-	/** @brief Melihat jumlah makanan dari binatang.
-	  * Memanggil fungsi GetAmount parent Karnivora
-	  * @return Jumlah makanan dari binatang. 
-	  */
-	int getMakanan();
+  /** @brief Constructor.
+    * Menciptakan Rusa dengan inisial 'L' dan ID i
+    * @param i Nilai Id Animal yang diciptakan
+    * @param x Posisi x Animal yang diciptakan
+    * @param y Posisi y Animal yang diciptakan
+    * @param massa berat Animal yang diciptakan
+    * @param jinak nilai jinak Animal yang diciptakan
+    */
+  Aligator(int i, int x, int y, int massa, bool jinak);
+  /** @brief Menampilkan aksi binatang ke layar
+    */
+  void Interact();
+  /** @brief Melihat jumlah makanan dari binatang.
+    * Memanggil fungsi GetAmount parent Karnivora
+    * @return Jumlah makanan dari binatang. 
+    */
+  int GetJmlMakanan();
 
 private:
-	string aksi;
-	const int defmakanan=100;
+  string aksi;
+  const int rasio=100;
 };
 
 #endif

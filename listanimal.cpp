@@ -2,348 +2,366 @@
 #include "listanimal.h"
 using namespace std;
 
-OrangUtan::OrangUtan(int i, int x, int y, int kg, bool jinak): Primate('U',i) {
-	suara = "Auooo";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+OrangUtan::OrangUtan(int i, int x, int y, int massa, bool jinak): 
+  Primate('U',i) {
+  suara = "Auooo";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void OrangUtan::interact() {
-	cout << "Orang Utan: \""<< suara <<"\""<< endl;
+void OrangUtan::Interact() {
+  cout << "Orang Utan: \""<< suara <<"\""<< endl;
 }
-int OrangUtan::getMakanan() {
-	Omnivora::GetAmount();
-}
-
-Siamang::Siamang(int i, int x, int y, int kg, bool jinak): Primate('S',i) {
-	suara = "Ooo Ooo";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void Siamang::interact() {
-	cout << "Siamang: \"" << suara << "\"" << endl;
-}
-int Siamang::getMakanan() {
-	Omnivora::GetAmount();
+int OrangUtan::GetJmlMakanan() {
+  Omnivora::GetAmount();
 }
 
-Bekantan::Bekantan(int i, int x, int y, int kg, bool jinak): Primate('B',i){
-	aksi = "climb tree";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Siamang::Siamang(int i, int x, int y, int massa, bool jinak):
+  Primate('S',i) {
+  suara = "Ooo Ooo";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Bekantan::interact() {
-	cout << "Bekantan: (" << aksi << ")" << endl;
+void Siamang::Interact() {
+  cout << "Siamang: \"" << suara << "\"" << endl;
 }
-int Bekantan::getMakanan() {
-	Omnivora::GetAmount();
-}
-
-BadakCulaSatu::BadakCulaSatu(int i, int x, int y, int kg, bool jinak): Perrisodactyl('C', i) {
-	aksi = "bathing in mud";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void BadakCulaSatu::interact() {
-	cout <<"Badak Cula Satu: (" << aksi << ")" << endl;
-}
-int BadakCulaSatu::getMakanan() {
-	Herbivora::GetAmount();
+int Siamang::GetJmlMakanan() {
+  Omnivora::GetAmount();
 }
 
-Zebra::Zebra(int i, int x, int y, int kg, bool jinak) : Perrisodactyl('Z',i) {
-	aksi = "running";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Bekantan::Bekantan(int i, int x, int y, int massa, bool jinak): 
+  Primate('B',i) {
+  aksi = "climb tree";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Zebra::interact() {
-	cout <<"Zebra: (" << aksi << ")" << endl;
+void Bekantan::Interact() {
+  cout << "Bekantan: (" << aksi << ")" << endl;
 }
-int Zebra::getMakanan() {
-	Herbivora::GetAmount();
-}
-
-HarimauSumatra::HarimauSumatra(int i, int x, int y, int kg, bool jinak) : Carnivore('H',i) {
-	suara = "AUUM!!";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void HarimauSumatra::interact() {
-	cout <<"Harimau Sumatra: \"" << suara << "\"" << endl;
-}
-int HarimauSumatra::getMakanan() {
-	Karnivora::GetAmount();
+int Bekantan::GetJmlMakanan() {
+  Omnivora::GetAmount();
 }
 
-Macan::Macan(int i, int x, int y, int kg, bool jinak) : Carnivore('M', i) {
-	aksi = "stalk prey";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+BadakCulaSatu::BadakCulaSatu(int i, int x, int y, int massa, bool jinak): 
+  Perrisodactyl('C', i) {
+  aksi = "bathing in mud";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Macan::interact() {
-	cout <<"Macan: (" << aksi << ")" << endl;
+void BadakCulaSatu::Interact() {
+  cout <<"Badak Cula Satu: (" << aksi << ")" << endl;
 }
-int Macan::getMakanan() {
-	Karnivora::GetAmount();
-}
-
-Rusa::Rusa(int i, int x, int y, int kg, bool jinak): Artiodactyl('E',i){
-	aksi = "flaunt horn";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void Rusa::interact() {
-	cout <<"Rusa: (" << aksi << ")" << endl;
-}
-int Rusa::getMakanan() {
-	Herbivora::GetAmount();
+int BadakCulaSatu::GetJmlMakanan() {
+  Herbivora::GetAmount();
 }
 
-Kancil::Kancil(int i, int x, int y, int kg, bool jinak): Artiodactyl('K',i){
-	aksi = "eat cucumber";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Zebra::Zebra(int i, int x, int y, int massa, bool jinak): 
+  Perrisodactyl('Z',i) {
+  aksi = "running";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Kancil::interact() {
-	cout <<"Kancil: (" << aksi << ")" << endl;
+void Zebra::Interact() {
+  cout <<"Zebra: (" << aksi << ")" << endl;
 }
-int Kancil::getMakanan() {
-	Herbivora::GetAmount();
+int Zebra::GetJmlMakanan() {
+  Herbivora::GetAmount();
+}
+
+HarimauSumatra::HarimauSumatra(int i, int x, int y, int massa, bool jinak): 
+  Carnivore('H',i) {
+  suara = "AUUM!!";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void HarimauSumatra::Interact() {
+  cout <<"Harimau Sumatra: \"" << suara << "\"" << endl;
+}
+int HarimauSumatra::GetJmlMakanan() {
+  Karnivora::GetAmount();
+}
+
+Macan::Macan(int i, int x, int y, int massa, bool jinak) : Carnivore('M', i) {
+  aksi = "stalk prey";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Macan::Interact() {
+  cout <<"Macan: (" << aksi << ")" << endl;
+}
+int Macan::GetJmlMakanan() {
+  Karnivora::GetAmount();
+}
+
+Rusa::Rusa(int i, int x, int y, int massa, bool jinak): Artiodactyl('E',i){
+  aksi = "flaunt horn";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Rusa::Interact() {
+  cout <<"Rusa: (" << aksi << ")" << endl;
+}
+int Rusa::GetJmlMakanan() {
+  Herbivora::GetAmount();
+}
+
+Kancil::Kancil(int i, int x, int y, int massa, bool jinak): Artiodactyl('K',i){
+  aksi = "eat cucumber";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Kancil::Interact() {
+  cout <<"Kancil: (" << aksi << ")" << endl;
+}
+int Kancil::GetJmlMakanan() {
+  Herbivora::GetAmount();
 }
 
 
-Banteng::Banteng(int i, int x, int y, int kg, bool jinak) : Artiodactyl('A',i){
-	aksi = "snort";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Banteng::Banteng(int i, int x, int y, int massa, bool jinak):
+  Artiodactyl('A',i) {
+  aksi = "snort";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Banteng::interact() {
-	cout <<"Banteng: ("<< aksi << ")" << endl;
+void Banteng::Interact() {
+  cout <<"Banteng: ("<< aksi << ")" << endl;
 }
-int Banteng::getMakanan() {
-	Herbivora::GetAmount();
-}
-
-Komodo::Komodo(int i, int x, int y, int kg, bool jinak) : Squamata('J',i){
-	aksi = "stick tongue";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void Komodo::interact() {
-	cout <<"Komodo: (" << aksi << ")" << endl;
-}
-int Komodo::getMakanan() {
-	Karnivora::GetAmount();
+int Banteng::GetJmlMakanan() {
+  Herbivora::GetAmount();
 }
 
-Iguana::Iguana(int i, int x, int y, int kg, bool jinak) : Squamata('I',i) {
-	suara = "Hiss";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Komodo::Komodo(int i, int x, int y, int massa, bool jinak) : Squamata('J',i){
+  aksi = "stick tongue";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Iguana::interact() {
-	cout <<"Iguana: \"" << suara << "\"" << endl;
+void Komodo::Interact() {
+  cout <<"Komodo: (" << aksi << ")" << endl;
 }
-int Iguana::getMakanan() {
-	Herbivora::GetAmount();
-}
-
-HiuKarpet::HiuKarpet(int i, int x, int y, int kg, bool jinak) : Carcharhiniformes('V',i) {
-	aksi = "burying in sand";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void HiuKarpet::interact() {
-	cout << "Hiu Karpet: (" << aksi << ")" << endl;
-}
-int HiuKarpet::getMakanan() {
-	Karnivora::GetAmount();
+int Komodo::GetJmlMakanan() {
+  Karnivora::GetAmount();
 }
 
-HiuMartil::HiuMartil(int i, int x, int y, int kg, bool jinak) : Carcharhiniformes('T',i){
-	aksi = "move head";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Iguana::Iguana(int i, int x, int y, int massa, bool jinak) : Squamata('I',i) {
+  suara = "Hiss";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void HiuMartil::interact() {
-	cout << "Hiu Martil: (" << aksi << ")" << endl;
+void Iguana::Interact() {
+  cout <<"Iguana: \"" << suara << "\"" << endl;
 }
-int HiuMartil::getMakanan() {
-	Karnivora::GetAmount();
-}
-
-StingRay::StingRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Y',i) {
-	aksi = "move fin";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void StingRay::interact() {
-	cout << "StingRay: (" << aksi << ")" << endl;
-}
-int StingRay::getMakanan() {
-	Karnivora::GetAmount();
+int Iguana::GetJmlMakanan() {
+  Herbivora::GetAmount();
 }
 
-MantaRay::MantaRay(int i, int x, int y, int kg, bool jinak) : Rajiformes('Q',i) {
-	aksi = "swim! jump!";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+HiuKarpet::HiuKarpet(int i, int x, int y, int massa, bool jinak): 
+  Carcharhiniformes('V',i) {
+  aksi = "burying in sand";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void MantaRay::interact() {
-	cout << "MantaRay: (" << aksi<< ")" << endl;
+void HiuKarpet::Interact() {
+  cout << "Hiu Karpet: (" << aksi << ")" << endl;
 }
-int MantaRay::getMakanan() {
-	Karnivora::GetAmount();
-}
-
-Elang::Elang(int i, int x, int y, int kg, bool jinak) : Falconiformes('~',i) {
-	suara = "Kaaaak!";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void Elang::interact() {
-	cout << "Elang: \"" << suara << "\"" << endl;
-}
-int Elang::getMakanan() {
-	Karnivora::GetAmount();
+int HiuKarpet::GetJmlMakanan() {
+  Karnivora::GetAmount();
 }
 
-Garuda::Garuda(int i, int x, int y, int kg, bool jinak) : Falconiformes('G',i) {
-	aksi = "spread wings";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+HiuMartil::HiuMartil(int i, int x, int y, int massa, bool jinak): 
+  Carcharhiniformes('T',i) {
+  aksi = "move head";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Garuda::interact() {
-	cout << "Garuda: (" << aksi<< ")" << endl;
+void HiuMartil::Interact() {
+  cout << "Hiu Martil: (" << aksi << ")" << endl;
 }
-int Garuda::getMakanan() {
-	Karnivora::GetAmount();
-}
-
-Kakatua::Kakatua(int i, int x, int y, int kg, bool jinak) : Prittaciformes ('P',i) {
-	suara = "Hello! kwak!";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void Kakatua::interact() {
-	cout << "Kakatua: \"" << suara << "\"" << endl;
-}
-int Kakatua::getMakanan() {
-	Herbivora::GetAmount();
+int HiuMartil::GetJmlMakanan() {
+  Karnivora::GetAmount();
 }
 
-Nuri::Nuri(int i, int x, int y, int kg, bool jinak) : Prittaciformes('N',i) {
-	aksi = "play ball";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+StingRay::StingRay(int i, int x, int y, int massa, bool jinak): 
+  Rajiformes('Y',i) {
+  aksi = "move fin";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Nuri::interact() {
-	cout << "Nuri: (" << aksi << ")" << endl;
+void StingRay::Interact() {
+  cout << "StingRay: (" << aksi << ")" << endl;
 }
-int Nuri::getMakanan() {
-	Herbivora::GetAmount();
-}
-
-Parkit::Parkit(int i, int x, int y, int kg, bool jinak) : Prittaciformes('F',i) {
-	suara = "cuit cuit";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
-}
-void Parkit::interact() {
-	cout << "Parkit: \"" << suara << "\"" << endl;
-}
-int Parkit::getMakanan() {
-	Herbivora::GetAmount();
+int StingRay::GetJmlMakanan() {
+  Karnivora::GetAmount();
 }
 
-Buaya::Buaya(int i, int x, int y, int kg, bool jinak) : Crocodillia('D',i) {
-	aksi = "open mouth";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+MantaRay::MantaRay(int i, int x, int y, int massa, bool jinak): 
+  Rajiformes('Q',i) {
+  aksi = "swim! jump!";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Buaya:: interact() {
-	cout <<"Buaya: ("<< aksi << ")" << endl;
+void MantaRay::Interact() {
+  cout << "MantaRay: (" << aksi<< ")" << endl;
 }
-int Buaya::getMakanan() {
-	Karnivora::GetAmount();
+int MantaRay::GetJmlMakanan() {
+  Karnivora::GetAmount();
 }
 
-Aligator::Aligator(int i, int x, int y, int kg, bool jinak) : Crocodillia('L',i) {
-	aksi = "crawl";
-	SetAmount(kg/defmakanan);
-	SetMassa(kg);
-	SetJinak(jinak);
-	SetX(x);
-	SetY(y);
+Elang::Elang(int i, int x, int y, int massa, bool jinak): 
+  Falconiformes('~',i) {
+  suara = "Kaaaak!";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
 }
-void Aligator::interact() {
-	cout << "Aligator: (" << aksi << ")" << endl;
+void Elang::Interact() {
+  cout << "Elang: \"" << suara << "\"" << endl;
 }
-int Aligator::getMakanan() {
-	Karnivora::GetAmount();
+int Elang::GetJmlMakanan() {
+  Karnivora::GetAmount();
+}
+
+Garuda::Garuda(int i, int x, int y, int massa, bool jinak): 
+  Falconiformes('G',i) {
+  aksi = "spread wings";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Garuda::Interact() {
+  cout << "Garuda: (" << aksi<< ")" << endl;
+}
+int Garuda::GetJmlMakanan() {
+  Karnivora::GetAmount();
+}
+
+Kakatua::Kakatua(int i, int x, int y, int massa, bool jinak): 
+  Prittaciformes ('P',i) {
+  suara = "Hello! kwak!";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Kakatua::Interact() {
+  cout << "Kakatua: \"" << suara << "\"" << endl;
+}
+int Kakatua::GetJmlMakanan() {
+  Herbivora::GetAmount();
+}
+
+Nuri::Nuri(int i, int x, int y, int massa, bool jinak): Prittaciformes('N',i) 
+{
+  aksi = "play ball";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Nuri::Interact() {
+  cout << "Nuri: (" << aksi << ")" << endl;
+}
+int Nuri::GetJmlMakanan() {
+  Herbivora::GetAmount();
+}
+
+Parkit::Parkit(int i, int x, int y, int massa, bool jinak): 
+  Prittaciformes('F',i) {
+  suara = "cuit cuit";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Parkit::Interact() {
+  cout << "Parkit: \"" << suara << "\"" << endl;
+}
+int Parkit::GetJmlMakanan() {
+  Herbivora::GetAmount();
+}
+
+Buaya::Buaya(int i, int x, int y, int massa, bool jinak): Crocodillia('D',i) {
+  aksi = "open mouth";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Buaya:: Interact() {
+  cout <<"Buaya: ("<< aksi << ")" << endl;
+}
+int Buaya::GetJmlMakanan() {
+  Karnivora::GetAmount();
+}
+
+Aligator::Aligator(int i, int x, int y, int massa, bool jinak): 
+  Crocodillia('L',i) {
+  aksi = "crawl";
+  SetAmount(massa/rasio);
+  SetMassa(massa);
+  SetJinak(jinak);
+  SetX(x);
+  SetY(y);
+}
+void Aligator::Interact() 
+{
+  cout << "Aligator: (" << aksi << ")" << endl;
+}
+int Aligator::GetJmlMakanan() {
+  Karnivora::GetAmount();
 }
