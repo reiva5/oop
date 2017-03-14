@@ -12,6 +12,17 @@ class Driver {
       * Menciptakan kelas driver dengan informasi dari file eksternal
       */
     Driver();
+    /** @brief Copy Constructor
+      * Mengcopy d ke current object, Mencegah terjadinya bit wise copy
+      * @param d Driver yang akan dicopy ke current object
+      */
+    Driver(const Driver& d);
+    /** @brief Operator Assignment
+      * Menimpa nilai current object dengan d
+      * @param d Driver yang akan dimasukkan nilainya ke current object
+      * @return current object yang bernilai d
+      */
+    Driver& operator= (const Driver& d);
     /** @brief Destructor.
       */
     ~Driver();

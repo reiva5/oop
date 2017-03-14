@@ -17,6 +17,18 @@ class Zoo {
       * @param y Nilai length Zoo yang ingin diciptakan
       */
     Zoo(int x, int y);
+    /** @brief Copy Constructor.
+      * Prekondisi z memiliki width dan length yang sama
+      * Mengantisipasi agar tidak bit wise copy
+      * @param z Zoo yang ingin dicopy
+      */
+    Zoo(const Zoo& z);
+    /** @brief Operator Assignment
+      * Mengoverloading operator samadengan agar Zoo tidak bit wise copy
+      * @param z Nilai zoo yang ingin di masukkan
+      * @return this zoo yang sudah sama dengan z
+      */
+    Zoo& operator= (const Zoo& z);
     /** @brief Destructor. 
       */
     ~Zoo();

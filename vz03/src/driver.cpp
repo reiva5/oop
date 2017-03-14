@@ -21,6 +21,40 @@ Driver::Driver() {
   }
 }
 
+Driver::Driver(const Driver& d) {
+  visited = new bool*[map_length];
+  for(int i = 0; i < map_length; i++) {
+    visited[i] = new bool[map_width];
+  }
+
+  for (int i = 0; i < map_length; i++) {
+    for (int j = 0; j < map_width; j++) {
+      visited[i] = d.visited[i];
+    }
+  }
+}
+
+Driver& Driver::operator= (const Driver& d) {
+  if (this != &d) {
+    for(int i = 0; i < map_length; i++) {
+      delete [] visited[i];
+    }
+    delete [] visited;
+  
+    visited = new bool*[map_length];
+    for(int i = 0; i < map_length; i++) {
+      visited[i] = new bool[map_width];
+    }
+
+    for (int i = 0; i < map_length; i++) {
+      for (int j = 0; j < map_width; j++) {
+        visited[i] = d.visited[i];
+      }
+    } 
+  }
+  return *this;
+}
+
 Driver::~Driver() {
   for(int i = 0; i < map_length; i++) {
     delete [] visited[i];

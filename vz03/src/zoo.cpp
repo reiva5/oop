@@ -5,9 +5,43 @@ using namespace std;
 
 Zoo::Zoo(int x, int y): width(x), length(y) {
   c = new Cell**[length];
-  for(int i = 0; i < length; i++){
+  for(int i = 0; i < length; i++) {
     c[i] = new Cell*[width];
   }
+}
+
+Zoo::Zoo(const Zoo& z) : length(z.length) , width(z.width) {
+  c = new Cell**[length];
+  for (int i = 0; i < length; i++) {
+    c[i] = new Cell*[width];
+  }
+
+  for (int i = 0; i < length; i++) {
+    for (int j = 0; j < width; j++) {
+      c[i] = z.c[i];
+    }
+  }
+}
+
+Zoo& Zoo::operator= (const Zoo& z) {
+  if (this != &z) {
+    for(int i = 0; i<length;i++) {
+      delete [] c[i];
+    }
+    delete [] c;
+
+    c = new Cell**[length];
+    for (int i = 0; i < length; i++) {
+      c[i] = new Cell*[width];
+    }
+
+    for (int i = 0; i < length; i++) {
+      for (int j = 0; j < width; j++) {
+        c[i] = z.c[i];
+      }
+    }
+  }
+  return *this;
 }
 
 void Zoo::SetCell(int x, int y, Cell* cell) {

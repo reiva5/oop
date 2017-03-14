@@ -2,8 +2,8 @@
 #define MACAN_H
 
 #include "include.h"
-/** @class HarimauSumatra
-  * Kelas HarimauSumatra turunan dari Carnivore dan Karnivora 
+/** @class Macan
+  * Kelas Macan turunan dari Carnivore dan Karnivora 
   */
 class Macan: public Carnivore, public Karnivora {
 public:
