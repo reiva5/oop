@@ -28,13 +28,27 @@ Animal* Cell::GetAnimal() {
 }
 
 void Cell::SetAnimal(Animal* a) {
-  if(a==NULL)
+  if(a==NULL) {
     animal = NULL;
-  else{
-    if(this->GetAnimal()==NULL)
-      animal = a;
-    else
-      throw ZooExp(7);
+  } else {
+      bool found  = false;
+      int i = 0;
+      while (i < a->GetHabitat().size() && !found) {
+        if (a->GetHabitat()[i] == this->type) {
+          found = true;
+        }
+        i++;
+      }
+
+      if (found) {
+        if(this->GetAnimal()==NULL) {
+          animal = a;
+        } else {
+            throw ZooExp(7);  
+        }
+      } else {
+         throw ZooExp(1);
+      }
   }
 }
 

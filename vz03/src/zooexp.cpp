@@ -7,7 +7,7 @@ int ZooExp::n =0;
 
 string ZooExp::msg [] = 
   { "Animal over capacity", 
-  "Animal not in its habitat", 
+  "Animal not belong in this habitat", 
   "Cell type and Cage habitat doesn't match",
   "Wild animal must be with its species", 
   "Absis/Ordinat overflow", 

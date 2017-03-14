@@ -185,20 +185,26 @@ void Driver::DisplayVirtualZoo(Zoo& z) {
   cin>>right;
   cout<<"Input down position: ";
   cin>>down;
-  cout<<" ====================================================================== "
-  <<endl;
+
+  cout<<" ================================================================";
+  cout<< "====== "<<endl;
   cout<<"                        VIRTUAL ZOO MAP"<<endl;
-  cout<<" ====================================================================== "
-  <<endl;
-  if((left >= 0) && (up >= 0) && (right<z.GetWidth()) && (down<z.GetLength())) {
+  cout<<" ================================================================";
+  cout<<"====== "<<endl;
+  if((left >= 0) && (up >= 0) && 
+     (right < z.GetWidth()) && (down<z.GetLength()) &&
+     (left < right) && (up<down)) {
     for(int i = up; i <= down; i++) {
       for(int j = left; j <= right; j++) {
         z.GetCell(j,i)->Render();
       }
       cout<<endl;
     }  
-  } else
+    Renderable::Legend();
+  } else {
     throw ZooExp(4);
+  }
+
 }
 
 void Driver::InitPosition(Zoo& z) {
@@ -226,11 +232,11 @@ void Driver::TourVirtualZoo(Zoo& z) {
   srand(time(NULL));
   bool finish=false;
 
-  cout<<" ====================================================================== "
-  <<endl;
+  cout<<" ============================================================";
+  cout<<"========== "<<endl;
   cout<<"                        VIRTUAL ZOO TOUR"<<endl;
-  cout<<" ====================================================================== "
-  <<endl;
+  cout<<" ============================================================";
+  cout<<"========== "<<endl;
 
   while(!finish) {
     int init = rand()%4;
@@ -245,8 +251,9 @@ void Driver::TourVirtualZoo(Zoo& z) {
           found = true;
           visited[curr_y][curr_x] = true;
           curr_y--; 
-        } else
+        } else {
             init++;
+        }
       } else if(init == 1) {
         if((curr_x+1<z.GetWidth()) &&
            (z.GetCell(curr_x+1, curr_y)->GetType() == ' ') &&
@@ -272,12 +279,14 @@ void Driver::TourVirtualZoo(Zoo& z) {
           found = true;
           visited[curr_y][curr_x] = true;
           curr_x--;
-        } else
+        } else {
             init=0;
+        }
       }
 
-      if(!found)
+      if(!found) {
         i++;
+      }
     }
 
     if(!found) {
