@@ -1,9 +1,12 @@
-#ifndef DRIVER_h
-#define DRIVER_h
+#ifndef DRIVER_H
+#define DRIVER_H
 
 #include "zoo.h"
+#include "animal_handler.h"
+#include "cage_handler.h"
 
-class Driver{
+class Driver
+{
 	public:
 		Driver();
 		~Driver();
@@ -23,6 +26,7 @@ class Driver{
 		bool** visited;
 		int map_width;
 		int map_length;
+		Animal *animal;
 };
 
 #endif

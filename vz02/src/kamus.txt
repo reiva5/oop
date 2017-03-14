@@ -24,7 +24,6 @@ Y = StingRay
 Z = Zebra
 ~ = Elang
 
-
 Habitat:
 w = water
 o = air
@@ -36,4 +35,4 @@ X = Cage land
 Facility:
 ' ' = road
 R 	= Restaurant
-* 	= Park  
+* 	= Park

@@ -1,10 +1,10 @@
-#ifndef CAGE_h
-#define CAGE_h
+#ifndef CAGE_H
+#define CAGE_H
 
 #include <vector>
 #include <string>
-#include "listanimal.h"
 #include "zooexp.h"
+#include "animal.h"
 
 using namespace std;
 
@@ -26,18 +26,4 @@ class Cage
 		const char habitat;
 		vector<Animal*> animal;
 };
-
-class CageHandler
-{
-	public:
-		CageHandler();
-		Cage* GetCage(int);
-		int NbCage();
-		~CageHandler();
-		void AddCage(Cage*);
-	private:
-		vector<Cage*> cagelist;
-		int n;
-};
-
 #endif

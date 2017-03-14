@@ -2,6 +2,10 @@
 #include "json.hpp"
 #include <bits/stdc++.h>
 
+#define bug cout<<"bug";
+#define nl cout<<endl;
+#define boom cout<<"boom";
+#define sp cout<<" ";
 
 using namespace std;
 using json=nlohmann::json;
@@ -12,6 +16,7 @@ Driver::Driver()
 	fin.open("map.json");
 	json input;
 	fin>>input;
+	fin.close();
 
 	map_length=input["ZooLength"].get<int>();
 	map_width=input["ZooWidth"].get<int>();
@@ -53,38 +58,44 @@ void Driver::initialize_zoo(Zoo** z, CageHandler& ch)
 			id = i["Cage"].get<int>();
 			type = i["type"].get<string>();
 
-			if(type=="water")
-				cell = new cell('w', x, y);
-			else if(type=="land")
-				cell = new cell('x',x,y);
-			else if(type=="air")
-				cell = new cell('o',x,y);
+			if(type=="water"){
+				cell = new Cell('w', x, y);
+			}
+			else if(type=="land"){
+				cell = new Cell('x',x,y);
+			}
+			else if(type=="air"){
+				cell = new Cell('o',x,y);
+			}
 			else if(type=="road"){
 				if(i["entrance"].get<bool>()){
-					cell= new Entrance(x,y);
+					cell= new Cell(' ',x,y);
 					(*z)->AddEntrance(cell);
 				}
 				else if(i["exit"].get<bool>()){
-					cell=new Exit(x,y);
+					cell=new Cell(' ',x,y);
 					(*z)->AddExit(cell);
 				}
 				else
-					cell = new Road(x,y);
+					cell = new Cell(' ',x,y);
 			}
-			else if(type=="park")
-				cell = new Park(x,y);
-			else if(type=="restaurant")
-				cell = new Restaurant(x,y);
+			else if(type=="park"){
+				cell = new Cell('*',x,y);
+			}
+			else if(type=="restaurant"){
+				cell = new Cell('R',x,y);
+			}
 
 			(*z)->SetCell(x,y,cell);
 			if(id>0){
 				cage=ch.GetCage(id);
-				cage->AddCell(cell->getType());
-				(*z)->GetCell(x,y)->setCage(cage);	
+				cage->AddCell(cell->GetType());
+				(*z)->GetCell(x,y)->SetCage(cage);	
 			}
 			
 		}
 	}
+	fin.close();
 }
 
 void Driver::initialize_cage(CageHandler& ch)
@@ -129,62 +140,112 @@ void Driver::initialize_animal(AnimalHandler& ah, Zoo& z)
 			ordinat=i["Lokasi"]["y"].get<int>();
 			jinak=i["Jinak"].get<bool>();
 
-			if(spesies=="Elang")
-				a=new Elang(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Bekantan")
-				a=new Bekantan(id, absis, ordinat, massa, jinak);
-			else if(spesies=="BadakCulaSatu")
-				a=new BadakCulaSatu(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Buaya")
-				a=new Buaya(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Rusa")
-				a=new Rusa(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Parkit")
-				a=new Parkit(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Garuda")
-				a=new Garuda(id, absis, ordinat, massa, jinak);
-			else if(spesies=="HarimauSumatra")
-				a=new HarimauSumatra(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Iguana")
-				a=new Iguana(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Komodo")
-				a=new Komodo(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Kancil")
-				a=new Kancil(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Aligator")
-				a=new Aligator(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Macan")
-				a=new Macan(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Nuri")
-				a=new Nuri(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Kakatua")
-				a=new Kakatua(id, absis, ordinat, massa, jinak);
-			else if(spesies=="MantaRay")
-				a=new MantaRay(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Siamang")
-				a=new Siamang(id, absis, ordinat, massa, jinak);
-			else if(spesies=="HiuMartil")
-				a=new HiuMartil(id, absis, ordinat, massa, jinak);
-			else if(spesies=="OrangUtan")
-				a=new OrangUtan(id, absis, ordinat, massa, jinak);
-			else if(spesies=="HiuKarpet")
-				a=new HiuKarpet(id, absis, ordinat, massa, jinak);
-			else if(spesies=="StingRay")
-				a=new StingRay(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Zebra")
-				a=new Zebra(id, absis, ordinat, massa, jinak);
-			else if(spesies=="Banteng")
-				a=new Banteng(id, absis, ordinat, massa, jinak);
-
+			if (spesies == "Elang")
+			{
+				a = new Animal(absis, ordinat, massa,'~', spesies, "\\Kaaaak!\\", jinak, "o", id);
+			}
+			else if (spesies == "Bekantan")
+			{
+				a = new Animal(absis, ordinat, massa,'B', spesies, "(climb tree)", jinak, "x", id);
+			}
+			else if (spesies == "BadakCulaSatu")
+			{
+				a = new Animal(absis, ordinat, massa,'C', spesies, "(bathing in mud)", jinak, "x", id);
+			}
+			else if (spesies == "Buaya")
+			{ 
+				a = new Animal(absis, ordinat, massa,'D', spesies, "(open mouth)", jinak, "xw", id);
+			}
+			else if (spesies == "Rusa")
+			{
+				a = new Animal(absis, ordinat, massa,'E', spesies, "(flaunt horn)", jinak, "x", id);
+			}
+			else if (spesies == "Parkit")
+			{
+				a = new Animal(absis, ordinat, massa,'F', spesies, "\\cuit cuit\\", jinak, "o", id);
+			}
+			else if (spesies =="Garuda")
+			{
+				a = new Animal(absis, ordinat, massa, 'G', spesies, "(spread wings)", jinak, "o", id);
+			}
+			else if (spesies == "HarimauSumatra")
+			{
+				a = new Animal(absis, ordinat, massa, 'H', spesies, "\\AUUM!!\\", jinak, "x", id);
+			}
+			else if (spesies == "Iguana")
+			{
+				a = new Animal(absis, ordinat, massa, 'I', spesies, "\\Hiss\\", jinak, "x", id);
+			}
+			else if (spesies == "Komodo")
+			{
+				a = new Animal(absis, ordinat, massa, 'J', spesies, "(stick tongue)", jinak, "x", id);
+			}
+			else if (spesies == "Kancil")
+			{
+				a = new Animal(absis, ordinat, massa, 'K', spesies, "(eat cucumber)", jinak, "x", id);
+			}
+			else if (spesies == "Aligator")
+			{
+				a = new Animal(absis, ordinat, massa, 'L', spesies, "(crawl)", jinak, "xw", id);
+			}
+			else if (spesies == "Macan")
+			{
+				a = new Animal(absis, ordinat, massa, 'M', spesies, "(stalk prey)", jinak, "x", id);
+			}
+			else if (spesies == "Nuri")
+			{
+				a = new Animal(absis, ordinat, massa, 'N', spesies, "(play ball)", jinak, "o", id);
+			}
+			else if (spesies == "Kakatua")
+			{
+				a = new Animal(absis, ordinat, massa, 'P', spesies, "\\Hello! kwak!\\", jinak, "o", id);
+			}
+			else if (spesies == "MantaRay")
+			{
+				a = new Animal(absis, ordinat, massa, 'Q', spesies, "(swim! jump!)", jinak, "w", id);
+			}
+			else if (spesies == "Siamang")
+			{
+				a = new Animal(absis, ordinat, massa, 'S', spesies, "\\Ooo Ooo\\", jinak, "x", id);
+			}
+			else if (spesies == "HiuMartil")
+			{
+				a = new Animal(absis, ordinat, massa, 'T', spesies, "(move head)", jinak, "w", id);
+			}
+			else if (spesies == "OrangUtan")
+			{
+				a = new Animal(absis, ordinat, massa, 'U', spesies, "\\Auooo\\", jinak, "x", id);
+			}
+			else if (spesies == "HiuKarpet")
+			{
+				a = new Animal(absis, ordinat, massa, 'V', spesies, "(burying in sand)", jinak, "w", id);
+			}
+			else if (spesies == "StingRay")
+			{
+				a = new Animal(absis, ordinat, massa, 'Y', spesies, "(move fin)", jinak, "w", id);
+			}
+			else if (spesies == "Zebra")
+			{
+				a = new Animal(absis, ordinat, massa, 'Z', spesies, "(running)", jinak, "x", id);
+			}
+			else if (spesies == "Banteng")
+			{
+				a = new Animal(absis, ordinat, massa, 'A', spesies, "(snort)", jinak, "x", id);
+			}
+			
 			ah.AddAnimal(a);
-			if(absis<z.GetWidth() && ordinat<z.GetLength()){
-				z.GetCell(absis, ordinat)->setAnimal(a);
-				z.GetCell(absis, ordinat)->getCage()->AddAnimal(a);
+			if (absis<z.GetWidth() && ordinat<z.GetLength())
+			{
+				z.GetCell(absis, ordinat)->SetAnimal(a);
+				z.GetCell(absis, ordinat)->GetCage()->AddAnimal(a);
 			}
 			else
+			{
 				throw ZooExp(4);
+			}
 		}
 	}
+	fin.close();
 }
 
 void Driver::DisplayVirtualZoo(Zoo& z)
@@ -204,7 +265,7 @@ void Driver::DisplayVirtualZoo(Zoo& z)
 	if(left>=0 && up>=0 && right<z.GetWidth() && down<z.GetLength()){
 		for(int i=up; i<=down; i++){
 			for(int j=left; j<=right; j++){
-				z.GetCell(j,i)->render();
+				z.GetCell(j,i)->Render();
 			}
 			cout<<endl;
 		}	
@@ -255,7 +316,7 @@ void Driver::TourVirtualZoo(Zoo& z)
 		while((!found) && (i<4))
 		{
 			if(init==0){
-				if((curr_y-1>=0)&&(z.GetCell(curr_x, curr_y-1)->getType()==' ')&&(!visited[curr_y-1][curr_x])){
+				if((curr_y-1>=0)&&(z.GetCell(curr_x, curr_y-1)->GetType()==' ')&&(!visited[curr_y-1][curr_x])){
 					found=true;
 					visited[curr_y][curr_x]=true;
 					curr_y--;
@@ -264,7 +325,7 @@ void Driver::TourVirtualZoo(Zoo& z)
 					init++;
 			}
 			else if(init==1){
-				if((curr_x+1<z.GetWidth())&&(z.GetCell(curr_x+1, curr_y)->getType()==' ')&&(!visited[curr_y][curr_x+1])){
+				if((curr_x+1<z.GetWidth())&&(z.GetCell(curr_x+1, curr_y)->GetType()==' ')&&(!visited[curr_y][curr_x+1])){
 					found=true;
 					visited[curr_y][curr_x]=true;
 					curr_x++;
@@ -273,7 +334,7 @@ void Driver::TourVirtualZoo(Zoo& z)
 					init++;
 			}
 			else if(init==2){
-				if((curr_y+1<z.GetLength())&&(z.GetCell(curr_x, curr_y+1)->getType()==' ')&&(!visited[curr_y+1][curr_x])){
+				if((curr_y+1<z.GetLength())&&(z.GetCell(curr_x, curr_y+1)->GetType()==' ')&&(!visited[curr_y+1][curr_x])){
 					found=true;
 					visited[curr_y][curr_x]=true;
 					curr_y++;
@@ -282,7 +343,7 @@ void Driver::TourVirtualZoo(Zoo& z)
 					init++;
 			}
 			else if(init==3){
-				if((curr_x-1>=0)&&(z.GetCell(curr_x-1, curr_y)->getType()==' ')&&(!visited[curr_y][curr_x-1])){
+				if((curr_x-1>=0)&&(z.GetCell(curr_x-1, curr_y)->GetType()==' ')&&(!visited[curr_y][curr_x-1])){
 					found=true;
 					visited[curr_y][curr_x]=true;
 					curr_x--;
@@ -301,15 +362,18 @@ void Driver::TourVirtualZoo(Zoo& z)
 		}
 		else{
 			cout<<"You're in: "<<curr_x<<' '<<curr_y<<endl;
-			if(curr_y-1>=0 && z.GetCell(curr_x, curr_y-1)->getAnimal()!=NULL)
-				z.GetCell(curr_x, curr_y-1)->getAnimal()->interact();
-			if(curr_x-1>=0 && z.GetCell(curr_x-1, curr_y)->getAnimal()!=NULL)
-				z.GetCell(curr_x-1, curr_y)->getAnimal()->interact();
-			if(curr_y+1<z.GetLength() && z.GetCell(curr_x, curr_y+1)->getAnimal()!=NULL)
-				z.GetCell(curr_x, curr_y+1)->getAnimal()->interact();
-			if(curr_x+1<z.GetWidth() && z.GetCell(curr_x+1, curr_y)->getAnimal()!=NULL)
-				z.GetCell(curr_x+1, curr_y)->getAnimal()->interact();
-
+			if(curr_y-1>=0 && z.GetCell(curr_x, curr_y-1)->GetAnimal()!=NULL){
+				z.GetCell(curr_x, curr_y-1)->GetAnimal()->interact();
+			}
+			if(curr_x-1>=0 && z.GetCell(curr_x-1, curr_y)->GetAnimal()!=NULL){
+				z.GetCell(curr_x-1, curr_y)->GetAnimal()->interact();
+			}
+			if(curr_y+1<z.GetLength() && z.GetCell(curr_x, curr_y+1)->GetAnimal()!=NULL){
+				z.GetCell(curr_x, curr_y+1)->GetAnimal()->interact();
+			}
+			if(curr_x+1<z.GetWidth() && z.GetCell(curr_x+1, curr_y)->GetAnimal()!=NULL){
+				z.GetCell(curr_x+1, curr_y)->GetAnimal()->interact();
+			}
 			for(int i=0; i<z.NbExit(); i++){
 				if(z.GetExit(i)->GetAbsis()==curr_x && z.GetExit(i)->GetOrdinat()==curr_y){
 					finish=true;
@@ -323,37 +387,38 @@ void Driver::TourVirtualZoo(Zoo& z)
 void Driver::MoveAnimal(Zoo& z, AnimalHandler& ah)
 {
 	srand(time(NULL));
-	for(int i=0; i<ah.NbAnimal(); i++){
+	for(int i=0; i<ah.NbAnimal(); i++){ nl
 		int init=rand()%4;
 		int x= ah.GetAnimal(i)->GetPosisiX();
 		int y= ah.GetAnimal(i)->GetPosisiY();
-		int cage= z.GetCell(x, y)->getCage()->getId();
+		int cage= z.GetCell(x, y)->GetCage()->getId();
+
 		if(init==0){
-			if(y-1>=0 && z.GetCell(x, y-1)->getCage()!=NULL && z.GetCell(x, y-1)->getCage()->getId()==cage && z.GetCell(x, y-1)->getAnimal()==NULL){
+			if(y-1>=0 && z.GetCell(x, y-1)->GetCage()!=NULL && z.GetCell(x, y-1)->GetCage()->getId()==cage && z.GetCell(x, y-1)->GetAnimal()==NULL){
 				ah.GetAnimal(i)->SetY(y-1);
-				z.GetCell(x, y)->setAnimal(NULL);
-				z.GetCell(x, y-1)->setAnimal(ah.GetAnimal(i));
+				z.GetCell(x, y)->SetAnimal(NULL);
+				z.GetCell(x, y-1)->SetAnimal(ah.GetAnimal(i));
 			}
 		}
 		else if(init==1){
-			if(x+1<z.GetWidth() && z.GetCell(x+1, y)->getCage()!=NULL && z.GetCell(x+1, y)->getCage()->getId()==cage && z.GetCell(x+1, y)->getAnimal()==NULL){
+			if(x+1<z.GetWidth() && z.GetCell(x+1, y)->GetCage()!=NULL && z.GetCell(x+1, y)->GetCage()->getId()==cage && z.GetCell(x+1, y)->GetAnimal()==NULL){
 				ah.GetAnimal(i)->SetX(x+1);
-				z.GetCell(x, y)->setAnimal(NULL);
-				z.GetCell(x+1, y)->setAnimal(ah.GetAnimal(i));
+				z.GetCell(x, y)->SetAnimal(NULL);
+				z.GetCell(x+1, y)->SetAnimal(ah.GetAnimal(i));
 			}
 		}
 		else if(init==2){
-			if(y+1<z.GetLength() && z.GetCell(x, y+1)->getCage()!=NULL && z.GetCell(x, y+1)->getCage()->getId()==cage && z.GetCell(x, y+1)->getAnimal()==NULL){
+			if(y+1<z.GetLength() && z.GetCell(x, y+1)->GetCage()!=NULL && z.GetCell(x, y+1)->GetCage()->getId()==cage && z.GetCell(x, y+1)->GetAnimal()==NULL){
 				ah.GetAnimal(i)->SetY(y+1);
-				z.GetCell(x, y)->setAnimal(NULL);
-				z.GetCell(x, y+1)->setAnimal(ah.GetAnimal(i));
+				z.GetCell(x, y)->SetAnimal(NULL);
+				z.GetCell(x, y+1)->SetAnimal(ah.GetAnimal(i));
 			}
 		}
 		else if(init==3){
-			if(x-1>=0 && z.GetCell(x-1, y)->getCage()!=NULL && z.GetCell(x-1, y)->getCage()->getId()==cage && z.GetCell(x-1, y)->getAnimal()==NULL){
+			if(x-1>=0 && z.GetCell(x-1, y)->GetCage()!=NULL && z.GetCell(x-1, y)->GetCage()->getId()==cage && z.GetCell(x-1, y)->GetAnimal()==NULL){
 				ah.GetAnimal(i)->SetX(x-1);
-				z.GetCell(x, y)->setAnimal(NULL);
-				z.GetCell(x-1, y)->setAnimal(ah.GetAnimal(i));
+				z.GetCell(x, y)->SetAnimal(NULL);
+				z.GetCell(x-1, y)->SetAnimal(ah.GetAnimal(i));
 			}
 		}
 	}
