@@ -1,7 +1,0 @@
-<map id="Carcharhiniformes" name="Carcharhiniformes">
-<area shape="rect" id="node5" href="$classHiuKarpet.html" title="HiuKarpet" alt="" coords="5,304,85,331"/>
-<area shape="rect" id="node6" href="$classHiuMartil.html" title="HiuMartil" alt="" coords="109,304,184,331"/>
-<area shape="rect" id="node2" href="$classWaterAnimal.html" title="WaterAnimal" alt="" coords="47,155,145,181"/>
-<area shape="rect" id="node3" href="$classAnimal.html" title="Animal" alt="" coords="65,80,127,107"/>
-<area shape="rect" id="node4" href="$classRenderable.html" title="Renderable" alt="" coords="52,5,140,32"/>
-</map>

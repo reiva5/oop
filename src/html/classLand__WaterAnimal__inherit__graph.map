@@ -1,7 +1,0 @@
-<map id="Land_WaterAnimal" name="Land_WaterAnimal">
-<area shape="rect" id="node4" href="$classCrocodillia.html" title="Crocodillia" alt="" coords="40,229,123,256"/>
-<area shape="rect" id="node2" href="$classAnimal.html" title="Animal" alt="" coords="50,80,113,107"/>
-<area shape="rect" id="node3" href="$classRenderable.html" title="Renderable" alt="" coords="37,5,125,32"/>
-<area shape="rect" id="node5" href="$classAligator.html" title="Aligator" alt="" coords="5,304,72,331"/>
-<area shape="rect" id="node6" href="$classBuaya.html" title="Buaya" alt="" coords="96,304,155,331"/>
-</map>

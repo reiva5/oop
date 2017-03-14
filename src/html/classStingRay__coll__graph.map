@@ -1,8 +1,0 @@
-<map id="StingRay" name="StingRay">
-<area shape="rect" id="node2" href="$classRajiformes.html" title="Rajiformes" alt="" coords="13,229,98,256"/>
-<area shape="rect" id="node3" href="$classWaterAnimal.html" title="WaterAnimal" alt="" coords="5,155,103,181"/>
-<area shape="rect" id="node4" href="$classAnimal.html" title="Animal" alt="" coords="23,80,85,107"/>
-<area shape="rect" id="node5" href="$classRenderable.html" title="Renderable" alt="" coords="10,5,98,32"/>
-<area shape="rect" id="node6" href="$classKarnivora.html" title="Karnivora" alt="" coords="125,229,202,256"/>
-<area shape="rect" id="node7" href="$classPemakan.html" title="Pemakan" alt="" coords="127,155,205,181"/>
-</map>

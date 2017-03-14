@@ -1,7 +1,0 @@
-<map id="Perrisodactyl" name="Perrisodactyl">
-<area shape="rect" id="node5" href="$classBadakCulaSatu.html" title="BadakCulaSatu" alt="" coords="5,304,119,331"/>
-<area shape="rect" id="node6" href="$classZebra.html" title="Zebra" alt="" coords="143,304,197,331"/>
-<area shape="rect" id="node2" href="$classLandAnimal.html" title="LandAnimal" alt="" coords="70,155,161,181"/>
-<area shape="rect" id="node3" href="$classAnimal.html" title="Animal" alt="" coords="84,80,147,107"/>
-<area shape="rect" id="node4" href="$classRenderable.html" title="Renderable" alt="" coords="71,5,159,32"/>
-</map>

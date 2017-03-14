@@ -1,8 +1,0 @@
-<map id="Zebra" name="Zebra">
-<area shape="rect" id="node2" href="$classPerrisodactyl.html" title="Perrisodactyl" alt="" coords="5,229,104,256"/>
-<area shape="rect" id="node3" href="$classLandAnimal.html" title="LandAnimal" alt="" coords="9,155,100,181"/>
-<area shape="rect" id="node4" href="$classAnimal.html" title="Animal" alt="" coords="23,80,86,107"/>
-<area shape="rect" id="node5" href="$classRenderable.html" title="Renderable" alt="" coords="11,5,99,32"/>
-<area shape="rect" id="node6" href="$classHerbivora.html" title="Herbivora" alt="" coords="129,229,207,256"/>
-<area shape="rect" id="node7" href="$classPemakan.html" title="Pemakan" alt="" coords="129,155,207,181"/>
-</map>

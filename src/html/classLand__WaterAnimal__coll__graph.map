@@ -1,4 +1,0 @@
-<map id="Land_WaterAnimal" name="Land_WaterAnimal">
-<area shape="rect" id="node2" href="$classAnimal.html" title="Animal" alt="" coords="40,80,103,107"/>
-<area shape="rect" id="node3" href="$classRenderable.html" title="Renderable" alt="" coords="27,5,115,32"/>
-</map>
