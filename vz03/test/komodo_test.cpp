@@ -1,26 +1,24 @@
-#include "../src/siamang.h"
+#include "../src/komodo.h"
 #include <gtest/gtest.h>
 
-class SiamangTest : public ::testing::Test {
+class KomodoTest : public ::testing::Test {
   protected:
-   SiamangTest(){};
+   KomodoTest() {};
 };
 
+TEST(KomodoTest, KomodoConstructor) {
+  Komodo o(1, 10, 1, 100, true);
 
-TEST(SiamangTest, SiamangConstructor) {
-  Siamang o(1, 10, 1, 100, true);
-
-  EXPECT_EQ(20, o.GetJmlMakanan());
+  EXPECT_EQ(10, o.GetJmlMakanan());
   EXPECT_EQ(1, o.GetID());
   EXPECT_EQ(true, o.IsJinak());
   EXPECT_EQ(10, o.GetPosisiX());
   EXPECT_EQ(1, o.GetPosisiY());
-  EXPECT_EQ('S', o.GetInisial());
+  EXPECT_EQ('J', o.GetInisial());
 }
 
-
-TEST(SiamangTest, SiamangInteract) {
-  Siamang o(1, 10, 1, 100, true);
+TEST(KomodoTest, KomodoInteract) {
+  Komodo o(1, 10, 1, 100, true);
 
   std::stringstream buffer;
   std::streambuf * old = std::cout.rdbuf(buffer.rdbuf());
@@ -28,7 +26,7 @@ TEST(SiamangTest, SiamangInteract) {
   std::string text = buffer.str();
   std::cout.rdbuf( old );
  
-  EXPECT_EQ("Siamang: \"Ooo Ooo\"\n", text);
+  EXPECT_EQ("Komodo: (stick tongue)\n", text);
 }
 
 int main(int argc, char **argv) {

@@ -1,26 +1,25 @@
-#include "../src/siamang.h"
+#include "../src/banteng.h"
 #include <gtest/gtest.h>
-
-class SiamangTest : public ::testing::Test {
+ 
+class BantengTest : public ::testing::Test {
   protected:
-   SiamangTest(){};
+    BantengTest() {};
 };
 
 
-TEST(SiamangTest, SiamangConstructor) {
-  Siamang o(1, 10, 1, 100, true);
+TEST(BantengTest, BantengConstructor) {
+  Banteng o(1, 10, 1, 100, true);
 
-  EXPECT_EQ(20, o.GetJmlMakanan());
+  EXPECT_EQ(1, o.GetJmlMakanan());
   EXPECT_EQ(1, o.GetID());
   EXPECT_EQ(true, o.IsJinak());
   EXPECT_EQ(10, o.GetPosisiX());
   EXPECT_EQ(1, o.GetPosisiY());
-  EXPECT_EQ('S', o.GetInisial());
+  EXPECT_EQ('A', o.GetInisial());
 }
 
-
-TEST(SiamangTest, SiamangInteract) {
-  Siamang o(1, 10, 1, 100, true);
+TEST(BantengTest, BantengInteract) {
+  Banteng o(1, 10, 1, 100, true);
 
   std::stringstream buffer;
   std::streambuf * old = std::cout.rdbuf(buffer.rdbuf());
@@ -28,7 +27,7 @@ TEST(SiamangTest, SiamangInteract) {
   std::string text = buffer.str();
   std::cout.rdbuf( old );
  
-  EXPECT_EQ("Siamang: \"Ooo Ooo\"\n", text);
+  EXPECT_EQ("Banteng: (snort)\n", text);
 }
 
 int main(int argc, char **argv) {

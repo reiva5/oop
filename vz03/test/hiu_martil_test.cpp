@@ -1,26 +1,24 @@
-#include "../src/siamang.h"
+#include "../src/hiu_martil.h"
 #include <gtest/gtest.h>
 
-class SiamangTest : public ::testing::Test {
+class HiuMartilTest : public ::testing::Test {
   protected:
-   SiamangTest(){};
+   HiuMartilTest() {};
 };
 
+TEST(HiuMartilTest, HiuMartilConstructor) {
+  HiuMartil o(1, 10, 1, 100, true);
 
-TEST(SiamangTest, SiamangConstructor) {
-  Siamang o(1, 10, 1, 100, true);
-
-  EXPECT_EQ(20, o.GetJmlMakanan());
+  EXPECT_EQ(1, o.GetJmlMakanan());
   EXPECT_EQ(1, o.GetID());
   EXPECT_EQ(true, o.IsJinak());
   EXPECT_EQ(10, o.GetPosisiX());
   EXPECT_EQ(1, o.GetPosisiY());
-  EXPECT_EQ('S', o.GetInisial());
+  EXPECT_EQ('T', o.GetInisial());
 }
 
-
-TEST(SiamangTest, SiamangInteract) {
-  Siamang o(1, 10, 1, 100, true);
+TEST(HiuMartilt, HiuMartilInteract) {
+  HiuMartil o(1, 10, 1, 100, true);
 
   std::stringstream buffer;
   std::streambuf * old = std::cout.rdbuf(buffer.rdbuf());
@@ -28,7 +26,7 @@ TEST(SiamangTest, SiamangInteract) {
   std::string text = buffer.str();
   std::cout.rdbuf( old );
  
-  EXPECT_EQ("Siamang: \"Ooo Ooo\"\n", text);
+  EXPECT_EQ("Hiu Martil: (move head)\n", text);
 }
 
 int main(int argc, char **argv) {

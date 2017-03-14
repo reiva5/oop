@@ -1,9 +1,9 @@
 #include "../src/orang_utan.h"
-#include<gtest/gtest.h>
+#include <gtest/gtest.h>
 
 class OrangUtanTest : public ::testing::Test {
   protected:
-   OrangUtanTest(){};
+   OrangUtanTest() {};
 };
 
 

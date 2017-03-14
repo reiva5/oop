@@ -1,5 +1,5 @@
 #include "../src/cage.h"
-#include<gtest/gtest.h>
+#include <gtest/gtest.h>
 
 class CageTest : public ::testing::Test {
   protected:
