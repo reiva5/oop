@@ -11,6 +11,7 @@ Driver::Driver() {
   fin.open("map.json");
   json input;
   fin>>input;
+  fin.close();
 
   map_length = input["ZooLength"].get<int>();
   map_width = input["ZooWidth"].get<int>();
@@ -76,6 +77,7 @@ void Driver::InitZoo(Zoo** z, CageHandler& ch) {
       } 
     }
   }
+  fin.close();
 }
 
 void Driver::InitCage(CageHandler& ch) {
@@ -170,6 +172,7 @@ void Driver::InitAnimal(AnimalHandler& ah, Zoo& z) {
       }
     }
   }
+  fin.close();
 }
 
 void Driver::DisplayVirtualZoo(Zoo& z) {

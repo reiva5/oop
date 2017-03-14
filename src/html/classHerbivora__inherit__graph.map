@@ -1,0 +1,12 @@
+<map id="Herbivora" name="Herbivora">
+<area shape="rect" id="node3" href="$classBadakCulaSatu.html" title="BadakCulaSatu" alt="" coords="5,155,119,181"/>
+<area shape="rect" id="node4" href="$classBanteng.html" title="Banteng" alt="" coords="143,155,213,181"/>
+<area shape="rect" id="node5" href="$classIguana.html" title="Iguana" alt="" coords="238,155,299,181"/>
+<area shape="rect" id="node6" href="$classKakatua.html" title="Kakatua" alt="" coords="324,155,395,181"/>
+<area shape="rect" id="node7" href="$classKancil.html" title="Kancil" alt="" coords="419,155,478,181"/>
+<area shape="rect" id="node8" href="$classNuri.html" title="Nuri" alt="" coords="503,155,549,181"/>
+<area shape="rect" id="node9" href="$classParkit.html" title="Parkit" alt="" coords="574,155,630,181"/>
+<area shape="rect" id="node10" href="$classRusa.html" title="Rusa" alt="" coords="654,155,707,181"/>
+<area shape="rect" id="node11" href="$classZebra.html" title="Zebra" alt="" coords="732,155,787,181"/>
+<area shape="rect" id="node2" href="$classPemakan.html" title="Pemakan" alt="" coords="410,5,487,32"/>
+</map>

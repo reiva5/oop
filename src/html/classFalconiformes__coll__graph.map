@@ -1,0 +1,5 @@
+<map id="Falconiformes" name="Falconiformes">
+<area shape="rect" id="node2" href="$classFlyingAnimal.html" title="FlyingAnimal" alt="" coords="9,155,106,181"/>
+<area shape="rect" id="node3" href="$classAnimal.html" title="Animal" alt="" coords="26,80,89,107"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Renderable" alt="" coords="13,5,101,32"/>
+</map>

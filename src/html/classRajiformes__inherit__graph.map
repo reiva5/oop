@@ -1,0 +1,7 @@
+<map id="Rajiformes" name="Rajiformes">
+<area shape="rect" id="node5" href="$classMantaRay.html" title="MantaRay" alt="" coords="5,304,88,331"/>
+<area shape="rect" id="node6" href="$classStingRay.html" title="StingRay" alt="" coords="113,304,189,331"/>
+<area shape="rect" id="node2" href="$classWaterAnimal.html" title="WaterAnimal" alt="" coords="50,155,147,181"/>
+<area shape="rect" id="node3" href="$classAnimal.html" title="Animal" alt="" coords="67,80,130,107"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Renderable" alt="" coords="55,5,143,32"/>
+</map>

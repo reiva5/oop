@@ -12,6 +12,9 @@ class Renderable {
     /** @brief Menampilkan banner virtual zoo
       */
     static void Banner();
+  /** @brief Menampilkan legend zoo
+      */
+    static void Legend();
 };
 
 #endif

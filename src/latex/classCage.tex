@@ -1,0 +1,177 @@
+\hypertarget{classCage}{}\section{Cage Class Reference}
+\label{classCage}\index{Cage@{Cage}}
+
+
+{\ttfamily \#include $<$cage.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCage_ad281dd303f3e6f810a89d51af1c91443}{Cage} (int \+\_\+id, char hab)
+\begin{DoxyCompactList}\small\item\em Constructor. Menciptakan \hyperlink{classCage}{Cage} dengan id \+\_\+id dan habitat hab. \end{DoxyCompactList}\item 
+void \hyperlink{classCage_ad9f2bbc36b168b9a1eed1f575206e37a}{Add\+Animal} (\hyperlink{classAnimal}{Animal} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Menambahkan elemen ke animal. \end{DoxyCompactList}\item 
+void \hyperlink{classCage_a814423376e6a50f31d33fea857fef9d5}{Add\+Cell} (char c)
+\begin{DoxyCompactList}\small\item\em Menambahkan cell Penambahan cell akan menambah luas dari cage. \end{DoxyCompactList}\item 
+int \hyperlink{classCage_a105581dec308e734a7527d420d7cb4ee}{Get\+Id} ()
+\begin{DoxyCompactList}\small\item\em Getter id. \end{DoxyCompactList}\item 
+int \hyperlink{classCage_a10136c36884c5c58f6c244afbeee120f}{Get\+Luas} ()
+\begin{DoxyCompactList}\small\item\em Getter luas. \end{DoxyCompactList}\item 
+int \hyperlink{classCage_a7d94436b894f2e5496ee467743bd2bcc}{Get\+Nb\+Animal} ()
+\begin{DoxyCompactList}\small\item\em Mengembalikan banyaknya elemen animal. \end{DoxyCompactList}\item 
+char \hyperlink{classCage_a745590ba0bb6f530762d7a64884d5ec6}{Get\+Habitat} ()
+\begin{DoxyCompactList}\small\item\em Getter habitat. \end{DoxyCompactList}\item 
+bool \hyperlink{classCage_a731496cc568257acdb67fa967dfca577}{Is\+Available} ()
+\begin{DoxyCompactList}\small\item\em Mengetahui apakah cage available Mengecek apakah cage dapat ditambahkan elemen animal. \end{DoxyCompactList}\item 
+bool \hyperlink{classCage_a5d34dbb0a9acc972234f639e5ea9e8ea}{Is\+Isi\+Jinak} ()
+\begin{DoxyCompactList}\small\item\em Mengetahui apakah elemen animal jinak. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kelas \hyperlink{classCage}{Cage} terdiri dari animal dengan luas, id, dan habitat tertentu Representasi kumpulan cage dengan habitat sejenis 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Cage@{Cage}!Cage@{Cage}}
+\index{Cage@{Cage}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Cage(int \+\_\+id, char hab)}{Cage(int _id, char hab)}}]{\setlength{\rightskip}{0pt plus 5cm}Cage\+::\+Cage (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+id, }
+\item[{char}]{hab}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_ad281dd303f3e6f810a89d51af1c91443}{}\label{classCage_ad281dd303f3e6f810a89d51af1c91443}
+
+
+Constructor. Menciptakan \hyperlink{classCage}{Cage} dengan id \+\_\+id dan habitat hab. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+id} & Nilai id \hyperlink{classCage}{Cage} yang ingin diciptakan \\
+\hline
+{\em hab} & Nilai habitat \hyperlink{classCage}{Cage} yang ingin diciptakan \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Cage@{Cage}!Add\+Animal@{Add\+Animal}}
+\index{Add\+Animal@{Add\+Animal}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Add\+Animal(\+Animal $\ast$a)}{AddAnimal(Animal *a)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cage\+::\+Add\+Animal (
+\begin{DoxyParamCaption}
+\item[{{\bf Animal} $\ast$}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_ad9f2bbc36b168b9a1eed1f575206e37a}{}\label{classCage_ad9f2bbc36b168b9a1eed1f575206e37a}
+
+
+Menambahkan elemen ke animal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & elemen yang ingin ditambahkan ke animal \\
+\hline
+\end{DoxyParams}
+\index{Cage@{Cage}!Add\+Cell@{Add\+Cell}}
+\index{Add\+Cell@{Add\+Cell}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Add\+Cell(char c)}{AddCell(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cage\+::\+Add\+Cell (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a814423376e6a50f31d33fea857fef9d5}{}\label{classCage_a814423376e6a50f31d33fea857fef9d5}
+
+
+Menambahkan cell Penambahan cell akan menambah luas dari cage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \hyperlink{classHabitat}{Habitat} \\
+\hline
+\end{DoxyParams}
+\index{Cage@{Cage}!Get\+Habitat@{Get\+Habitat}}
+\index{Get\+Habitat@{Get\+Habitat}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Get\+Habitat()}{GetHabitat()}}]{\setlength{\rightskip}{0pt plus 5cm}char Cage\+::\+Get\+Habitat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a745590ba0bb6f530762d7a64884d5ec6}{}\label{classCage_a745590ba0bb6f530762d7a64884d5ec6}
+
+
+Getter habitat. 
+
+\begin{DoxyReturn}{Returns}
+habitat 
+\end{DoxyReturn}
+\index{Cage@{Cage}!Get\+Id@{Get\+Id}}
+\index{Get\+Id@{Get\+Id}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Get\+Id()}{GetId()}}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\+::\+Get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a105581dec308e734a7527d420d7cb4ee}{}\label{classCage_a105581dec308e734a7527d420d7cb4ee}
+
+
+Getter id. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+\index{Cage@{Cage}!Get\+Luas@{Get\+Luas}}
+\index{Get\+Luas@{Get\+Luas}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Get\+Luas()}{GetLuas()}}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\+::\+Get\+Luas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a10136c36884c5c58f6c244afbeee120f}{}\label{classCage_a10136c36884c5c58f6c244afbeee120f}
+
+
+Getter luas. 
+
+\begin{DoxyReturn}{Returns}
+luas 
+\end{DoxyReturn}
+\index{Cage@{Cage}!Get\+Nb\+Animal@{Get\+Nb\+Animal}}
+\index{Get\+Nb\+Animal@{Get\+Nb\+Animal}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Get\+Nb\+Animal()}{GetNbAnimal()}}]{\setlength{\rightskip}{0pt plus 5cm}int Cage\+::\+Get\+Nb\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a7d94436b894f2e5496ee467743bd2bcc}{}\label{classCage_a7d94436b894f2e5496ee467743bd2bcc}
+
+
+Mengembalikan banyaknya elemen animal. 
+
+\begin{DoxyReturn}{Returns}
+size dari animal 
+\end{DoxyReturn}
+\index{Cage@{Cage}!Is\+Available@{Is\+Available}}
+\index{Is\+Available@{Is\+Available}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Is\+Available()}{IsAvailable()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cage\+::\+Is\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a731496cc568257acdb67fa967dfca577}{}\label{classCage_a731496cc568257acdb67fa967dfca577}
+
+
+Mengetahui apakah cage available Mengecek apakah cage dapat ditambahkan elemen animal. 
+
+\begin{DoxyReturn}{Returns}
+Apakah cage availabe 
+\end{DoxyReturn}
+\index{Cage@{Cage}!Is\+Isi\+Jinak@{Is\+Isi\+Jinak}}
+\index{Is\+Isi\+Jinak@{Is\+Isi\+Jinak}!Cage@{Cage}}
+\subsubsection[{\texorpdfstring{Is\+Isi\+Jinak()}{IsIsiJinak()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Cage\+::\+Is\+Isi\+Jinak (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCage_a5d34dbb0a9acc972234f639e5ea9e8ea}{}\label{classCage_a5d34dbb0a9acc972234f639e5ea9e8ea}
+
+
+Mengetahui apakah elemen animal jinak. 
+
+\begin{DoxyReturn}{Returns}
+Apakah semua elemen animal jinak 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cage.\+h\item 
+cage.\+cpp\end{DoxyCompactItemize}

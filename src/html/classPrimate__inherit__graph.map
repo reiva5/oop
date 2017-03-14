@@ -1,0 +1,8 @@
+<map id="Primate" name="Primate">
+<area shape="rect" id="node5" href="$classBekantan.html" title="Bekantan" alt="" coords="5,304,83,331"/>
+<area shape="rect" id="node6" href="$classOrangUtan.html" title="OrangUtan" alt="" coords="107,304,192,331"/>
+<area shape="rect" id="node7" href="$classSiamang.html" title="Siamang" alt="" coords="217,304,290,331"/>
+<area shape="rect" id="node2" href="$classLandAnimal.html" title="LandAnimal" alt="" coords="104,155,195,181"/>
+<area shape="rect" id="node3" href="$classAnimal.html" title="Animal" alt="" coords="118,80,181,107"/>
+<area shape="rect" id="node4" href="$classRenderable.html" title="Renderable" alt="" coords="105,5,193,32"/>
+</map>

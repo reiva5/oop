@@ -1,0 +1,10 @@
+<map id="WaterAnimal" name="WaterAnimal">
+<area shape="rect" id="node4" href="$classCarcharhiniformes.html" title="Carcharhiniformes" alt="" coords="75,229,203,256"/>
+<area shape="rect" id="node7" href="$classRajiformes.html" title="Rajiformes" alt="" coords="227,229,312,256"/>
+<area shape="rect" id="node2" href="$classAnimal.html" title="Animal" alt="" coords="173,80,235,107"/>
+<area shape="rect" id="node3" href="$classRenderable.html" title="Renderable" alt="" coords="160,5,248,32"/>
+<area shape="rect" id="node5" href="$classHiuKarpet.html" title="HiuKarpet" alt="" coords="5,304,85,331"/>
+<area shape="rect" id="node6" href="$classHiuMartil.html" title="HiuMartil" alt="" coords="109,304,184,331"/>
+<area shape="rect" id="node8" href="$classMantaRay.html" title="MantaRay" alt="" coords="215,304,297,331"/>
+<area shape="rect" id="node9" href="$classStingRay.html" title="StingRay" alt="" coords="322,304,398,331"/>
+</map>

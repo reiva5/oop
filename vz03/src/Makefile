@@ -250,7 +250,7 @@ buildobject: $(SRCS)
 	g++ renderable.cpp -c -o ../bin/renderable.o -std=c++11
 
 buildall: $(OBJS)
-	g++ $(OBJS) -o ../bin/main -std=c++11
+	g++ $(OBJS) -o main -std=c++11
 
 map: map_generator.cpp
 	g++ map_generator.cpp -o ../bin/map_generator -std=c++11
