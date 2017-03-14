@@ -18,7 +18,7 @@ class AnimalHandler {
     ~AnimalHandler();
     /** @brief Getter elemen animal
       * @param id nilai id animal yang ingin diketahui
-      * @return animalist[id]
+      * @return list_animal[id]
       */
     Animal* GetAnimal(int id);
     /** @brief Mengetahui jumlah animal
