@@ -1,4 +1,4 @@
-#include "../src/sting_ray.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class StingRayTest : public ::testing::Test {

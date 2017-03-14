@@ -1,4 +1,4 @@
-#include "../src/omnivora.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class OmnivoraTest : public ::testing::Test {
@@ -14,7 +14,7 @@ TEST(OmnivoraTest, SetGetAmountTest) {
     EXPECT_EQ(10, o.GetAmount());
 }
 
-int main(int argc, char **argv[]) {
+int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

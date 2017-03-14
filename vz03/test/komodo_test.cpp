@@ -1,4 +1,4 @@
-#include "../src/komodo.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class KomodoTest : public ::testing::Test {

@@ -1,0 +1,7 @@
+<map id="Carnivore" name="Carnivore">
+<area shape="rect" id="node5" href="$class_harimau_sumatra.html" title="HarimauSumatra" alt="" coords="5,304,125,331"/>
+<area shape="rect" id="node6" href="$class_macan.html" title="Macan" alt="" coords="149,304,211,331"/>
+<area shape="rect" id="node2" href="$class_land_animal.html" title="LandAnimal" alt="" coords="77,155,168,181"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="Animal" alt="" coords="91,80,154,107"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="Renderable" alt="" coords="79,5,167,32"/>
+</map>

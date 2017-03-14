@@ -1,4 +1,4 @@
-#include "../src/manta_ray.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class MantaRayTest : public ::testing::Test {

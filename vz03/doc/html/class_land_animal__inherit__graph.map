@@ -1,0 +1,21 @@
+<map id="LandAnimal" name="LandAnimal">
+<area shape="rect" id="node4" href="$class_artiodactyl.html" title="Artiodactyl" alt="" coords="398,81,482,108"/>
+<area shape="rect" id="node8" href="$class_carnivore.html" title="Carnivore" alt="" coords="401,208,479,235"/>
+<area shape="rect" id="node11" href="$class_perrisodactyl.html" title="Perrisodactyl" alt="" coords="391,284,489,311"/>
+<area shape="rect" id="node14" href="$class_primate.html" title="Primate" alt="" coords="407,385,473,412"/>
+<area shape="rect" id="node18" href="$class_squamata.html" title="Squamata" alt="" coords="399,512,481,539"/>
+<area shape="rect" id="node2" href="$class_animal.html" title="Animal" alt="" coords="141,284,204,311"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="Renderable" alt="" coords="5,284,93,311"/>
+<area shape="rect" id="node5" href="$class_banteng.html" title="Banteng" alt="" coords="562,5,633,32"/>
+<area shape="rect" id="node6" href="$class_kancil.html" title="Kancil" alt="" coords="568,56,627,83"/>
+<area shape="rect" id="node7" href="$class_rusa.html" title="Rusa" alt="" coords="571,107,624,133"/>
+<area shape="rect" id="node9" href="$class_harimau_sumatra.html" title="HarimauSumatra" alt="" coords="537,157,657,184"/>
+<area shape="rect" id="node10" href="$class_macan.html" title="Macan" alt="" coords="567,208,628,235"/>
+<area shape="rect" id="node12" href="$class_badak_cula_satu.html" title="BadakCulaSatu" alt="" coords="541,259,654,285"/>
+<area shape="rect" id="node13" href="$class_zebra.html" title="Zebra" alt="" coords="570,309,625,336"/>
+<area shape="rect" id="node15" href="$class_bekantan.html" title="Bekantan" alt="" coords="559,360,636,387"/>
+<area shape="rect" id="node16" href="$class_orang_utan.html" title="OrangUtan" alt="" coords="555,411,640,437"/>
+<area shape="rect" id="node17" href="$class_siamang.html" title="Siamang" alt="" coords="561,461,634,488"/>
+<area shape="rect" id="node19" href="$class_iguana.html" title="Iguana" alt="" coords="567,512,628,539"/>
+<area shape="rect" id="node20" href="$class_komodo.html" title="Komodo" alt="" coords="562,563,633,589"/>
+</map>

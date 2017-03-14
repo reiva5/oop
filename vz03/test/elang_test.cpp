@@ -1,4 +1,4 @@
-#include "../src/elang.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class ElangTest : public ::testing::Test {

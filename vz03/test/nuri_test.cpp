@@ -1,4 +1,4 @@
-#include "../src/nuri.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class NuriTest : public ::testing::Test {

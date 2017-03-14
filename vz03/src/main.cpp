@@ -20,7 +20,6 @@ int main() {
 				cin>>option;
 				if(option==1) {
 					driver.DisplayVirtualZoo(**z);
-					Renderable::Legend();
 				}
 				else if(option==2) {
 					driver.InitPosition(**z);	

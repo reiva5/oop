@@ -1,0 +1,6 @@
+<map id="nlohmann::basic_json::iter_impl::set_end" name="nlohmann::basic_json::iter_impl::set_end">
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a8dba7b7d2f38e6b0c614030aa43983f6" title="returns a const iterator to one past the last element " alt="" coords="216,5,364,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element " alt="" coords="201,71,379,98"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#a543bd5f7490de54c875b2c0912dc9a49" title="creates a diff as a JSON patch " alt="" coords="427,31,575,72"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#ad87518a27b13f886b836bb93213e6515" title="applies a JSON patch " alt="" coords="427,96,575,137"/>
+</map>

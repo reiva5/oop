@@ -1,0 +1,7 @@
+<map id="Falconiformes" name="Falconiformes">
+<area shape="rect" id="node5" href="$class_elang.html" title="Elang" alt="" coords="5,304,60,331"/>
+<area shape="rect" id="node6" href="$class_garuda.html" title="Garuda" alt="" coords="85,304,149,331"/>
+<area shape="rect" id="node2" href="$class_flying_animal.html" title="FlyingAnimal" alt="" coords="25,155,123,181"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="Animal" alt="" coords="43,80,105,107"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="Renderable" alt="" coords="30,5,118,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Prittaciformes" name="Prittaciformes">
+<area shape="rect" id="node5" href="$class_kakatua.html" title="Kakatua" alt="" coords="5,304,76,331"/>
+<area shape="rect" id="node6" href="$class_nuri.html" title="Nuri" alt="" coords="100,304,147,331"/>
+<area shape="rect" id="node7" href="$class_parkit.html" title="Parkit" alt="" coords="171,304,227,331"/>
+<area shape="rect" id="node2" href="$class_flying_animal.html" title="FlyingAnimal" alt="" coords="75,155,172,181"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="Animal" alt="" coords="92,80,155,107"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="Renderable" alt="" coords="79,5,167,32"/>
+</map>

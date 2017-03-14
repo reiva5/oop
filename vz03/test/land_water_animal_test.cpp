@@ -1,4 +1,4 @@
-#include "../src/land_water_animal.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class Land_WaterAnimalTest : public ::testing::Test {

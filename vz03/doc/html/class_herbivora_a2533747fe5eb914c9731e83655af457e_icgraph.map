@@ -1,0 +1,21 @@
+<map id="Herbivora::GetAmount" name="Herbivora::GetAmount">
+<area shape="rect" id="node2" href="$class_badak_cula_satu.html#a1b53ef7e5a7fbcb46c9daffc3be05bfb" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="205,5,421,32"/>
+<area shape="rect" id="node4" href="$class_kancil.html#ab958e9fa65f83d505aaba333b4119790" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="233,56,394,83"/>
+<area shape="rect" id="node6" href="$class_rusa.html#aafe45dbc124b4639bee4d625a7461d1b" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="235,107,391,133"/>
+<area shape="rect" id="node8" href="$class_zebra.html#a1ad885f1ff84bfea442a330fea7c6eaa" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="234,157,393,184"/>
+<area shape="rect" id="node10" href="$class_parkit.html#a2c4755adea1478b458052fe975e212dc" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="234,208,393,235"/>
+<area shape="rect" id="node12" href="$class_nuri.html#ac3bacc743d41a816b8852efe0d2b221c" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="239,259,388,285"/>
+<area shape="rect" id="node14" href="$class_kakatua.html#a981115d43e229e2516227e9919286133" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="227,309,400,336"/>
+<area shape="rect" id="node16" href="$class_iguana.html#ae871a38dfe31ebba979268ba881cff1a" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="231,360,395,387"/>
+<area shape="rect" id="node18" href="$class_banteng.html#a302f2f5b3eaf114afedef16c9d5d129f" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="227,411,400,437"/>
+<area shape="rect" id="node20" href="$herbivora__test_8cpp.html#a7d79e2021bf138c118fea95e1012f607" title="TEST" alt="" coords="285,461,341,488"/>
+<area shape="rect" id="node3" href="$badak__cula__satu__test_8cpp.html#aff3582ddcb5c17e8a7d37a245065868e" title="TEST" alt="" coords="469,5,525,32"/>
+<area shape="rect" id="node5" href="$kancil__test_8cpp.html#a931277cf42bbc125e8c21edfef10281b" title="TEST" alt="" coords="469,56,525,83"/>
+<area shape="rect" id="node7" href="$artiodactyl__test_8cpp.html#a55c338ec860db9c984c7c0e5b5d2c857" title="TEST" alt="" coords="469,107,525,133"/>
+<area shape="rect" id="node9" href="$perrisodactyl__test_8cpp.html#ae3c8664d47df71b4d2a6db1e11e7f439" title="TEST" alt="" coords="469,157,525,184"/>
+<area shape="rect" id="node11" href="$parkit__test_8cpp.html#a72f900205e5e8333ec503d50fa12c263" title="TEST" alt="" coords="469,208,525,235"/>
+<area shape="rect" id="node13" href="$nuri__test_8cpp.html#aad5c960ab0b6e7183c2dc0f66a5bccd8" title="TEST" alt="" coords="469,259,525,285"/>
+<area shape="rect" id="node15" href="$kakatua__test_8cpp.html#a47ff87af63b05304d78157f01a0b1ee1" title="TEST" alt="" coords="469,309,525,336"/>
+<area shape="rect" id="node17" href="$iguana__test_8cpp.html#a40380fd039e4ea56472a806432aa0ffa" title="TEST" alt="" coords="469,360,525,387"/>
+<area shape="rect" id="node19" href="$banteng__test_8cpp.html#ac6ebc6a85579dc3ff4f9114642a00059" title="TEST" alt="" coords="469,411,525,437"/>
+</map>

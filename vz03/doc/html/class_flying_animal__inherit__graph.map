@@ -1,0 +1,11 @@
+<map id="FlyingAnimal" name="FlyingAnimal">
+<area shape="rect" id="node4" href="$class_falconiformes.html" title="Falconiformes" alt="" coords="65,229,169,256"/>
+<area shape="rect" id="node7" href="$class_prittaciformes.html" title="Prittaciformes" alt="" coords="216,229,319,256"/>
+<area shape="rect" id="node2" href="$class_animal.html" title="Animal" alt="" coords="149,80,212,107"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="Renderable" alt="" coords="137,5,225,32"/>
+<area shape="rect" id="node5" href="$class_elang.html" title="Elang" alt="" coords="5,304,60,331"/>
+<area shape="rect" id="node6" href="$class_garuda.html" title="Garuda" alt="" coords="85,304,149,331"/>
+<area shape="rect" id="node8" href="$class_kakatua.html" title="Kakatua" alt="" coords="173,304,244,331"/>
+<area shape="rect" id="node9" href="$class_nuri.html" title="Nuri" alt="" coords="268,304,315,331"/>
+<area shape="rect" id="node10" href="$class_parkit.html" title="Parkit" alt="" coords="339,304,395,331"/>
+</map>

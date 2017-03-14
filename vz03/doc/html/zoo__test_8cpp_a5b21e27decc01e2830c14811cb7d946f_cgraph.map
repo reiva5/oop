@@ -1,0 +1,8 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_zoo.html#a4d9bd50e85f2db05953a2c0f1c28e544" title="Menambahkan entrance. " alt="" coords="109,5,236,32"/>
+<area shape="rect" id="node3" href="$class_zoo.html#a71fb3e80888204c2268e2eea7cebe155" title="Menambahkan exit. " alt="" coords="123,56,222,83"/>
+<area shape="rect" id="node4" href="$class_zoo.html#a6abb30edd3c25b445b7ae1fb614e70d4" title="Getter entrance. " alt="" coords="110,107,235,133"/>
+<area shape="rect" id="node5" href="$class_zoo.html#a23c21d0e78ece74d7e0be4b67351911e" title="Getter exit. " alt="" coords="125,157,221,184"/>
+<area shape="rect" id="node6" href="$class_zoo.html#a3325c4efe9874ddaf581acafd3ae836f" title="Mengembalikan jumlah elemen entrance. " alt="" coords="112,208,233,235"/>
+<area shape="rect" id="node7" href="$class_zoo.html#abb09d111979b600efc38dc2a3ef80e7e" title="Mengembalikan jumlah elemen exit. " alt="" coords="127,259,219,285"/>
+</map>

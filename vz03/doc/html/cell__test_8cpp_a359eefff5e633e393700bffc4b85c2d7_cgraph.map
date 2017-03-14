@@ -1,0 +1,5 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_cell.html#aef420cdd18435ea7a2c8d96720fe8e7a" title="Getter Animal. " alt="" coords="280,5,395,32"/>
+<area shape="rect" id="node3" href="$class_cell.html#a20c2142de099ddb1f6fa794aa3f5f26d" title="Setter animal. Merubah nilai animal dari cell. " alt="" coords="109,56,223,83"/>
+<area shape="rect" id="node4" href="$class_animal.html#a892a7fc299149570c841ee7215b4bb4b" title="Getter type. " alt="" coords="271,56,404,83"/>
+</map>

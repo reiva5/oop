@@ -1,4 +1,4 @@
-#include "../src/garuda.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class GarudaTest : public ::testing::Test {

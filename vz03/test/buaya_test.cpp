@@ -1,4 +1,4 @@
-#include "../src/buaya.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class BuayaTest : public ::testing::Test {

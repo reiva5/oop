@@ -1,4 +1,4 @@
-#include "../src/aligator.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class AligatorTest : public ::testing::Test {

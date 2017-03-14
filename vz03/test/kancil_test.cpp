@@ -1,9 +1,9 @@
-#include "../src/kancil.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class KancilTest : public ::testing::Test {
   protected:
-   Kancilst() {};
+   KancilTest() {};
 };
 
 TEST(KancilTest, KancilConstructor) {

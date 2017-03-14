@@ -1,4 +1,4 @@
-#include "../src/harimau_sumatra.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class HairmauSumataraTest : public ::testing::Test {

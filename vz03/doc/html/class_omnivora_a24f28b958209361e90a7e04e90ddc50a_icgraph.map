@@ -1,0 +1,9 @@
+<map id="Omnivora::GetAmount" name="Omnivora::GetAmount">
+<area shape="rect" id="node2" href="$class_bekantan.html#a84c8ea3d97bd95d0c108d4016b5be934" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Omnivora. ..." alt="" coords="209,5,389,32"/>
+<area shape="rect" id="node4" href="$class_siamang.html#af604ba0243bb13132d2b5ac191f41839" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Omnivora. ..." alt="" coords="211,56,387,83"/>
+<area shape="rect" id="node6" href="$class_orang_utan.html#ac1e2890d346b10b9235e1ee2f8d22d79" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Omnivora. ..." alt="" coords="205,107,393,133"/>
+<area shape="rect" id="node8" href="$omnivora__test_8cpp.html#acebb25ad0aa9e89e35a61f6b7c07446b" title="TEST" alt="" coords="271,157,327,184"/>
+<area shape="rect" id="node3" href="$bekantan__test_8cpp.html#a89b6d477dc9ae49e73fb73e95e0a394d" title="TEST" alt="" coords="441,5,497,32"/>
+<area shape="rect" id="node5" href="$siamang__test_8cpp.html#af5e3a563b6049fced3e9adc93ab3cefa" title="TEST" alt="" coords="441,56,497,83"/>
+<area shape="rect" id="node7" href="$orang__utan__test_8cpp.html#ac6f00440b5ef6ff9e1b8fcb3ad5d42e9" title="TEST" alt="" coords="441,107,497,133"/>
+</map>

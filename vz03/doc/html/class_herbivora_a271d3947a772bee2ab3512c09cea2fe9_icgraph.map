@@ -1,0 +1,12 @@
+<map id="Herbivora::SetAmount" name="Herbivora::SetAmount">
+<area shape="rect" id="node2" href="$class_badak_cula_satu.html#acb72f5690f5c5a73e75a76b1cf40dcdc" title="Constructor. Menciptakan BadakCulaSatu dengan inisial &#39;C&#39; dan ID i. " alt="" coords="204,5,416,32"/>
+<area shape="rect" id="node3" href="$class_banteng.html#a67115d9d4b6576dc53668118bcb63284" title="Constructor. Menciptakan Banteng dengan inisial &#39;A&#39; dan ID i. " alt="" coords="247,56,373,83"/>
+<area shape="rect" id="node4" href="$class_iguana.html#a36cea5dad12ace3182deab6fd7ab1b25" title="Constructor. Menciptakan Iguana dengan inisial &#39;I&#39; dan ID i. " alt="" coords="256,107,364,133"/>
+<area shape="rect" id="node5" href="$class_kakatua.html#a7c02844b01c8544fcc0e05d68feb7016" title="Constructor. Menciptakan Kakatua dengan inisial &#39;P&#39; dan ID i. " alt="" coords="247,157,373,184"/>
+<area shape="rect" id="node6" href="$class_kancil.html#abed0545d9b1d8afddea3f945d92563da" title="Constructor. Menciptakan Kancil dengan inisial &#39;K&#39; dan ID i. " alt="" coords="259,208,361,235"/>
+<area shape="rect" id="node7" href="$class_nuri.html#a41b91cafa881ba61c923fa9b160625de" title="Constructor. Menciptakan Nuri dengan inisial &#39;N&#39; dan ID i. " alt="" coords="271,259,349,285"/>
+<area shape="rect" id="node8" href="$class_parkit.html#a038d7efe3fad9f0ec83e2d51397cab3f" title="Constructor. Menciptakan Parkit dengan inisial &#39;F&#39; dan ID i. " alt="" coords="261,309,359,336"/>
+<area shape="rect" id="node9" href="$class_rusa.html#ab2f3ddf21f8ed4b031f7811b46e9e060" title="Constructor. Menciptakan Rusa dengan inisial &#39;E&#39; dan ID i. " alt="" coords="264,360,356,387"/>
+<area shape="rect" id="node10" href="$herbivora__test_8cpp.html#a7d79e2021bf138c118fea95e1012f607" title="TEST" alt="" coords="282,411,338,437"/>
+<area shape="rect" id="node11" href="$class_zebra.html#a92d2891c5e617e0d19fa54a95dc89f15" title="Constructor. Menciptakan Zebra inisial &#39;Z&#39; dan ID i. " alt="" coords="262,461,358,488"/>
+</map>

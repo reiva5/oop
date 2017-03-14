@@ -1,4 +1,4 @@
-#include "../src/carcharhiniformes.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class CarcharhiniformesTest : public ::testing::Test {

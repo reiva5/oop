@@ -1,0 +1,9 @@
+<map id="Cage::AddAnimal" name="Cage::AddAnimal">
+<area shape="rect" id="node2" href="$class_cage.html#a745590ba0bb6f530762d7a64884d5ec6" title="Getter habitat. " alt="" coords="182,5,306,32"/>
+<area shape="rect" id="node3" href="$class_animal.html#a892a7fc299149570c841ee7215b4bb4b" title="Getter type. " alt="" coords="177,56,311,83"/>
+<area shape="rect" id="node4" href="$class_animal.html#a98d6f1e3cbc08c981f7b11ecc5b3886e" title="Getter inisial. " alt="" coords="181,107,307,133"/>
+<area shape="rect" id="node5" href="$class_cage.html#a731496cc568257acdb67fa967dfca577" title="Mengetahui apakah cage available Mengecek apakah cage dapat ditambahkan elemen animal. " alt="" coords="181,157,307,184"/>
+<area shape="rect" id="node7" href="$class_cage.html#a5d34dbb0a9acc972234f639e5ea9e8ea" title="Mengetahui apakah elemen animal jinak. " alt="" coords="185,208,303,235"/>
+<area shape="rect" id="node8" href="$class_animal.html#a0068651e223252b68e634714f4e414ca" title="Mengecek apakah animal jinak. " alt="" coords="188,259,300,285"/>
+<area shape="rect" id="node6" href="$class_cage.html#a7d94436b894f2e5496ee467743bd2bcc" title="Mengembalikan banyaknya elemen animal. " alt="" coords="359,157,497,184"/>
+</map>

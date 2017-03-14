@@ -1,4 +1,4 @@
-#include "../src/water_habitat.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class WaterHabitatTest : public ::testing::Test {
@@ -10,7 +10,7 @@ TEST(WaterHabitatTest, WaterHabitatConstructor) {
 	WaterHabitat c(10,15);
 
 	EXPECT_EQ('w', c.GetType());
-	EXPECT_EQ(10, c.GetAbis());
+	EXPECT_EQ(10, c.GetAbsis());
 	EXPECT_EQ(15, c.GetOrdinat());
 	EXPECT_EQ(NULL, c.GetCage());
 	EXPECT_EQ(NULL, c.GetAnimal());

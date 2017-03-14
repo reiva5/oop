@@ -1,4 +1,4 @@
-#include "../src/carnivore.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class CarnivoreTest : public ::testing::Test {

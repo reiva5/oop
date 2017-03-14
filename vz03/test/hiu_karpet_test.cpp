@@ -1,4 +1,4 @@
-#include "../src/hiu_karpet.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class HiuKarpetTest : public ::testing::Test {

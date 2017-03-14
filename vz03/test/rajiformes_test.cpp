@@ -1,4 +1,4 @@
-#include "../src/rajiformes.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class RajiformesTest : public ::testing::Test {

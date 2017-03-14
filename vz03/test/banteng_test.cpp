@@ -1,4 +1,4 @@
-#include "../src/banteng.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
  
 class BantengTest : public ::testing::Test {

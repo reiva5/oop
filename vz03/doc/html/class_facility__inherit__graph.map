@@ -1,0 +1,9 @@
+<map id="Facility" name="Facility">
+<area shape="rect" id="node4" href="$class_park.html" title="Park" alt="" coords="5,229,55,256"/>
+<area shape="rect" id="node5" href="$class_restaurant.html" title="Restaurant" alt="" coords="79,229,165,256"/>
+<area shape="rect" id="node6" href="$class_road.html" title="Road" alt="" coords="190,229,243,256"/>
+<area shape="rect" id="node2" href="$class_cell.html" title="Cell" alt="" coords="99,80,145,107"/>
+<area shape="rect" id="node3" href="$class_renderable.html" title="Renderable" alt="" coords="78,5,166,32"/>
+<area shape="rect" id="node7" href="$class_entrance.html" title="Entrance" alt="" coords="138,304,213,331"/>
+<area shape="rect" id="node8" href="$class_exit.html" title="Exit" alt="" coords="237,304,282,331"/>
+</map>

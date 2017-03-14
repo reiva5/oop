@@ -1,4 +1,4 @@
-#include "../src/macan.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class MacanTest : public ::testing::Test {

@@ -1,0 +1,5 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node2" href="$class_renderable.html" title="Renderable" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="267,228,330,255"/>
+<area shape="rect" id="node9" href="$class_cage.html" title="Cage" alt="" coords="272,424,325,451"/>
+</map>

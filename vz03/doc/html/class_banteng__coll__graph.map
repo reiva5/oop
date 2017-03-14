@@ -1,0 +1,10 @@
+<map id="Banteng" name="Banteng">
+<area shape="rect" id="node2" href="$class_artiodactyl.html" title="Artiodactyl" alt="" coords="313,395,397,421"/>
+<area shape="rect" id="node3" href="$class_land_animal.html" title="LandAnimal" alt="" coords="277,311,368,338"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="271,228,334,255"/>
+<area shape="rect" id="node5" href="$class_renderable.html" title="Renderable" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node11" href="$class_herbivora.html" title="Herbivora" alt="" coords="527,228,606,255"/>
+<area shape="rect" id="node12" href="$class_pemakan.html" title="Pemakan" alt="" coords="576,95,653,121"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="609,395,689,421"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="598,304,725,345"/>
+</map>

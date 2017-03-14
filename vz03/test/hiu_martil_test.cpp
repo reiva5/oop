@@ -1,4 +1,4 @@
-#include "../src/hiu_martil.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class HiuMartilTest : public ::testing::Test {

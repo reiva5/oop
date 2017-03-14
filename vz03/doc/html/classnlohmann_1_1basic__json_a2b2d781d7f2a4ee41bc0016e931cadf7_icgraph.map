@@ -1,0 +1,5 @@
+<map id="nlohmann::basic_json::type" name="nlohmann::basic_json::type">
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a543bd5f7490de54c875b2c0912dc9a49" title="creates a diff as a JSON patch " alt="" coords="203,5,351,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a2f208f86f3fafaa8e9bc9374963485e4" title="create a CBOR serialization of a given JSON value " alt="" coords="203,71,351,112"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#af7b03056b7891c59fee1811756b1a856" title="create a MessagePack serialization of a given JSON value " alt="" coords="201,136,352,177"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="HarimauSumatra" name="HarimauSumatra">
+<area shape="rect" id="node2" href="$class_carnivore.html" title="Carnivore" alt="" coords="13,229,91,256"/>
+<area shape="rect" id="node3" href="$class_land_animal.html" title="LandAnimal" alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="19,80,82,107"/>
+<area shape="rect" id="node5" href="$class_renderable.html" title="Renderable" alt="" coords="7,5,95,32"/>
+<area shape="rect" id="node6" href="$class_karnivora.html" title="Karnivora" alt="" coords="119,229,196,256"/>
+<area shape="rect" id="node7" href="$class_pemakan.html" title="Pemakan" alt="" coords="120,155,197,181"/>
+</map>

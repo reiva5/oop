@@ -8,7 +8,7 @@ using json=nlohmann::json;
 
 Driver::Driver() {
   ifstream fin;
-  fin.open("map.json");
+  fin.open("../map/map.json");
   json input;
   fin>>input;
   fin.close();
@@ -64,7 +64,7 @@ Driver::~Driver() {
 
 void Driver::InitZoo(Zoo** z, CageHandler& ch) {
   ifstream fin;
-  fin.open("map.json");
+  fin.open("../map/map.json");
   if(fin.is_open()) {
     Cage* cage;
     Cell* cell;
@@ -116,7 +116,7 @@ void Driver::InitZoo(Zoo** z, CageHandler& ch) {
 
 void Driver::InitCage(CageHandler& ch) {
   ifstream fin;
-  fin.open("map.json");
+  fin.open("../map/map.json");
   json input;
   if(fin.is_open()) {
     Cage* c;
@@ -132,7 +132,7 @@ void Driver::InitCage(CageHandler& ch) {
 
 void Driver::InitAnimal(AnimalHandler& ah, Zoo& z) {
   ifstream fin;
-  fin.open("map.json");
+  fin.open("../map/map.json");
   json input;
   if(fin.is_open()) {
     Animal* a;

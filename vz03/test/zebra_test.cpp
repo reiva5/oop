@@ -1,4 +1,4 @@
-#include "../src/zebra.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class ZebraTest : public ::testing::Test {

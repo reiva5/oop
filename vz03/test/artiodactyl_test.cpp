@@ -1,4 +1,4 @@
-#include "../src/artiodactyl.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class ArtiodactylTest : public ::testing::Test {

@@ -1,0 +1,6 @@
+<map id="Omnivora::SetAmount" name="Omnivora::SetAmount">
+<area shape="rect" id="node2" href="$class_bekantan.html#a00fa93f38b1aca4a25a989b495d45da1" title="Constructor. Menciptakan Bekantan dengan inisial &#39;B&#39; dan ID i. " alt="" coords="212,5,352,32"/>
+<area shape="rect" id="node3" href="$class_orang_utan.html#a397ebb2cede26ace5418e51486324379" title="Constructor. Menciptakan OrangUtan dengan inisial &#39;U&#39; dan ID i. " alt="" coords="204,56,360,83"/>
+<area shape="rect" id="node4" href="$class_siamang.html#a57da4cc19d81240e9e494e631ea7d0ba" title="Constructor. Menciptakan Siamang dengan inisial &#39;S&#39; dan ID i. " alt="" coords="216,107,348,133"/>
+<area shape="rect" id="node5" href="$omnivora__test_8cpp.html#acebb25ad0aa9e89e35a61f6b7c07446b" title="TEST" alt="" coords="254,157,310,184"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_animal_handler.html#a5d85a87f7aac6373839018a2ff67b648" title="Menambahkan animal kedalam list_animal. " alt="" coords="125,5,304,32"/>
+<area shape="rect" id="node3" href="$class_animal_handler.html#a3df3838f7ce62e0befef35dd57b18164" title="Mengembalikan jumlah makanan dari seluruh animal Mengiterasi list_animal dan menjumlahkan makanan dar..." alt="" coords="109,56,320,83"/>
+</map>

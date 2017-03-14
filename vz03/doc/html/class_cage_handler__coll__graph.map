@@ -1,0 +1,5 @@
+<map id="CageHandler" name="CageHandler">
+<area shape="rect" id="node3" href="$class_cage.html" title="Cage" alt="" coords="113,421,166,448"/>
+<area shape="rect" id="node6" href="$class_animal.html" title="Animal" alt="" coords="184,228,247,255"/>
+<area shape="rect" id="node7" href="$class_renderable.html" title="Renderable" alt="" coords="69,95,157,121"/>
+</map>

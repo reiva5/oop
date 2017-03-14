@@ -1,4 +1,4 @@
-#include "../src/parkit.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class ParkitTest : public ::testing::Test {

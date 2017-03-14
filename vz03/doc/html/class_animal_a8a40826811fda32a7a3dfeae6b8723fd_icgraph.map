@@ -1,0 +1,9 @@
+<map id="Animal::AddHabitat" name="Animal::AddHabitat">
+<area shape="rect" id="node2" href="$class_flying_animal.html#aaadfaeb6b44076a3434e909a2e3bb043" title="Constructor. Menciptakan FlyingAnimal dengan cara memanggil constructor Animal berinisial c dan ID i..." alt="" coords="188,5,368,32"/>
+<area shape="rect" id="node3" href="$class_land___air_animal.html#a5aedc489190aa9c6130c1e64106da166" title="Constructor. Menciptakan Land_AirAnimal dengan cara memanggil constructor Animal berinisial c dan ID ..." alt="" coords="203,57,353,98"/>
+<area shape="rect" id="node4" href="$class_land___water_animal.html#a2ea3f23d2db7fd3e5b0f0b307738b34b" title="Constructor. Menciptakan Lan_WaterdAnimal dengan cara memanggil constructor Animal berinisial c dan I..." alt="" coords="194,122,362,163"/>
+<area shape="rect" id="node5" href="$class_land_animal.html#ac3bc80ea9b2b42316f5ed204df3bc0b6" title="Constructor. Menciptakan LandAnimal menciptakan Animal berinisial c dan ID i. " alt="" coords="195,188,361,215"/>
+<area shape="rect" id="node6" href="$animal__test_8cpp.html#a35720dae12367196edc618aee803ecc0" title="TEST" alt="" coords="250,239,306,265"/>
+<area shape="rect" id="node7" href="$class_water___air_animal.html#a915e2ced584d5134f0f6261bf330862a" title="Constructor. Menciptakan Water_AirAnimal dengan cara memanggil constructor Animal berinisial c dan ID..." alt="" coords="197,290,359,331"/>
+<area shape="rect" id="node8" href="$class_water_animal.html#acfcd2658c49a054543ed793ed232e7e4" title="Constructor. Menciptakan WaterAnimal dengan cara memanggil constructor Animal berinisial c dan ID i..." alt="" coords="188,356,368,383"/>
+</map>

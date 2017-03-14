@@ -1,0 +1,4 @@
+<map id="AnimalHandler" name="AnimalHandler">
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="169,228,232,255"/>
+<area shape="rect" id="node5" href="$class_renderable.html" title="Renderable" alt="" coords="69,95,157,121"/>
+</map>

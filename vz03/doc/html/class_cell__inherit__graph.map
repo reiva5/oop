@@ -1,0 +1,13 @@
+<map id="Cell" name="Cell">
+<area shape="rect" id="node3" href="$class_facility.html" title="Facility" alt="" coords="137,155,201,181"/>
+<area shape="rect" id="node9" href="$class_habitat.html" title="Habitat" alt="" coords="330,155,394,181"/>
+<area shape="rect" id="node2" href="$class_renderable.html" title="Renderable" alt="" coords="217,5,305,32"/>
+<area shape="rect" id="node4" href="$class_park.html" title="Park" alt="" coords="5,229,55,256"/>
+<area shape="rect" id="node5" href="$class_restaurant.html" title="Restaurant" alt="" coords="79,229,165,256"/>
+<area shape="rect" id="node6" href="$class_road.html" title="Road" alt="" coords="190,229,243,256"/>
+<area shape="rect" id="node7" href="$class_entrance.html" title="Entrance" alt="" coords="138,304,213,331"/>
+<area shape="rect" id="node8" href="$class_exit.html" title="Exit" alt="" coords="237,304,282,331"/>
+<area shape="rect" id="node10" href="$class_air_habitat.html" title="AirHabitat" alt="" coords="267,229,347,256"/>
+<area shape="rect" id="node11" href="$class_land_habitat.html" title="LandHabitat" alt="" coords="372,229,464,256"/>
+<area shape="rect" id="node12" href="$class_water_habitat.html" title="WaterHabitat" alt="" coords="489,229,587,256"/>
+</map>

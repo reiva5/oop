@@ -1,0 +1,8 @@
+<map id="Parkit" name="Parkit">
+<area shape="rect" id="node2" href="$class_prittaciformes.html" title="Prittaciformes" alt="" coords="5,229,108,256"/>
+<area shape="rect" id="node3" href="$class_flying_animal.html" title="FlyingAnimal" alt="" coords="8,155,105,181"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="25,80,88,107"/>
+<area shape="rect" id="node5" href="$class_renderable.html" title="Renderable" alt="" coords="13,5,101,32"/>
+<area shape="rect" id="node6" href="$class_herbivora.html" title="Herbivora" alt="" coords="132,229,211,256"/>
+<area shape="rect" id="node7" href="$class_pemakan.html" title="Pemakan" alt="" coords="133,155,210,181"/>
+</map>

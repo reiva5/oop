@@ -1,0 +1,8 @@
+<map id="Aligator" name="Aligator">
+<area shape="rect" id="node2" href="$class_crocodillia.html" title="Crocodillia" alt="" coords="333,380,416,407"/>
+<area shape="rect" id="node3" href="$class_land___water_animal.html" title="Land_WaterAnimal" alt="" coords="250,304,382,331"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="270,228,333,255"/>
+<area shape="rect" id="node5" href="$class_renderable.html" title="Renderable" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node11" href="$class_karnivora.html" title="Karnivora" alt="" coords="527,228,604,255"/>
+<area shape="rect" id="node12" href="$class_pemakan.html" title="Pemakan" alt="" coords="557,95,635,121"/>
+</map>

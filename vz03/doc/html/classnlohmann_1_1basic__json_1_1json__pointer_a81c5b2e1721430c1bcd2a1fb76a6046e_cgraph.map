@@ -1,0 +1,4 @@
+<map id="nlohmann::basic_json::json_pointer::unflatten" name="nlohmann::basic_json::json_pointer::unflatten">
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json_1_1json__pointer.html#a099736051cf0b34f6873e1652ae5d3d7" title="create and return a reference to the pointed to value " alt="" coords="212,5,367,61"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object " alt="" coords="215,85,363,126"/>
+</map>

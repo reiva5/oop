@@ -1,0 +1,5 @@
+<map id="Artiodactyl" name="Artiodactyl">
+<area shape="rect" id="node2" href="$class_land_animal.html" title="LandAnimal" alt="" coords="247,304,337,331"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="Animal" alt="" coords="261,228,323,255"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="Renderable" alt="" coords="5,95,93,121"/>
+</map>

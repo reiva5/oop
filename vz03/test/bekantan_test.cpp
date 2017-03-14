@@ -1,4 +1,4 @@
-#include "../src/bekantan.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class BekantanTest : public ::testing::Test {

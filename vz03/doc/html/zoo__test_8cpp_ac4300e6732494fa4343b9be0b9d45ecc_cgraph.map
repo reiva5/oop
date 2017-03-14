@@ -1,0 +1,6 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_zoo.html#af5daa12c3652abde6bcd3401d6b115ff" title="Getter length. " alt="" coords="114,5,226,32"/>
+<area shape="rect" id="node3" href="$class_zoo.html#a7c64c9bc4156508f76c378e327c1d310" title="Getter width. " alt="" coords="117,56,223,83"/>
+<area shape="rect" id="node4" href="$class_zoo.html#a3325c4efe9874ddaf581acafd3ae836f" title="Mengembalikan jumlah elemen entrance. " alt="" coords="109,107,231,133"/>
+<area shape="rect" id="node5" href="$class_zoo.html#abb09d111979b600efc38dc2a3ef80e7e" title="Mengembalikan jumlah elemen exit. " alt="" coords="124,157,216,184"/>
+</map>

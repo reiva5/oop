@@ -1,0 +1,7 @@
+<map id="WaterHabitat" name="WaterHabitat">
+<area shape="rect" id="node2" href="$class_habitat.html" title="Habitat" alt="" coords="267,589,331,616"/>
+<area shape="rect" id="node3" href="$class_cell.html" title="Cell" alt="" coords="276,513,321,540"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="Renderable" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node6" href="$class_animal.html" title="Animal" alt="" coords="267,228,330,255"/>
+<area shape="rect" id="node11" href="$class_cage.html" title="Cage" alt="" coords="272,424,325,451"/>
+</map>

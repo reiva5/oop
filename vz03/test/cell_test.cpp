@@ -1,4 +1,4 @@
-#include "../src/cell.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class CellTest : public ::testing::Test {

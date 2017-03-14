@@ -1,4 +1,4 @@
-#include "../src/rusa.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class RusaTest : public ::testing::Test {

@@ -1,0 +1,8 @@
+<map id="Artiodactyl" name="Artiodactyl">
+<area shape="rect" id="node5" href="$class_banteng.html" title="Banteng" alt="" coords="5,304,76,331"/>
+<area shape="rect" id="node6" href="$class_kancil.html" title="Kancil" alt="" coords="101,304,159,331"/>
+<area shape="rect" id="node7" href="$class_rusa.html" title="Rusa" alt="" coords="183,304,237,331"/>
+<area shape="rect" id="node2" href="$class_land_animal.html" title="LandAnimal" alt="" coords="85,155,175,181"/>
+<area shape="rect" id="node3" href="$class_animal.html" title="Animal" alt="" coords="99,80,161,107"/>
+<area shape="rect" id="node4" href="$class_renderable.html" title="Renderable" alt="" coords="86,5,174,32"/>
+</map>

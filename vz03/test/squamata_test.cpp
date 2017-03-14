@@ -1,4 +1,4 @@
-#include "../src/squamata.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class SquamataTest : public ::testing::Test {

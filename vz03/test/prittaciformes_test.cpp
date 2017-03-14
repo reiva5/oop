@@ -1,4 +1,4 @@
-#include "../src/prittaciformes.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class PrittaciformesTest : public ::testing::Test {

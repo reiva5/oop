@@ -1,4 +1,4 @@
-#include "../src/siamang.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class SiamangTest : public ::testing::Test {

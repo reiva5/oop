@@ -1,0 +1,8 @@
+<map id="Rusa" name="Rusa">
+<area shape="rect" id="node2" href="$class_artiodactyl.html" title="Artiodactyl" alt="" coords="333,380,417,407"/>
+<area shape="rect" id="node3" href="$class_land_animal.html" title="LandAnimal" alt="" coords="271,304,361,331"/>
+<area shape="rect" id="node4" href="$class_animal.html" title="Animal" alt="" coords="270,228,333,255"/>
+<area shape="rect" id="node5" href="$class_renderable.html" title="Renderable" alt="" coords="5,95,93,121"/>
+<area shape="rect" id="node11" href="$class_herbivora.html" title="Herbivora" alt="" coords="527,228,606,255"/>
+<area shape="rect" id="node12" href="$class_pemakan.html" title="Pemakan" alt="" coords="576,95,653,121"/>
+</map>

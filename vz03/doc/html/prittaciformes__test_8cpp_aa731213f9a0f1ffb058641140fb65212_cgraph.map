@@ -1,0 +1,9 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_animal.html#abfb32d0af74791999af1e7cebcff575d" title="Getter ID. " alt="" coords="131,5,237,32"/>
+<area shape="rect" id="node3" href="$class_animal.html#a98d6f1e3cbc08c981f7b11ecc5b3886e" title="Getter inisial. " alt="" coords="121,56,247,83"/>
+<area shape="rect" id="node4" href="$class_nuri.html#ac3bacc743d41a816b8852efe0d2b221c" title="Melihat jumlah makanan dari binatang. Memanggil fungsi GetAmount parent Herbivora. " alt="" coords="109,107,259,133"/>
+<area shape="rect" id="node6" href="$class_animal.html#abcec270bc5610a32ddd9327847b4c72c" title="Getter posisi x. " alt="" coords="116,157,252,184"/>
+<area shape="rect" id="node7" href="$class_animal.html#a1adc84f7d029ae24c3236ea9ba5d083c" title="Getter posisi y. " alt="" coords="116,208,252,235"/>
+<area shape="rect" id="node8" href="$class_animal.html#a0068651e223252b68e634714f4e414ca" title="Mengecek apakah animal jinak. " alt="" coords="128,259,240,285"/>
+<area shape="rect" id="node5" href="$class_herbivora.html#a2533747fe5eb914c9731e83655af457e" title="Getter tumbuhan. " alt="" coords="307,107,459,133"/>
+</map>

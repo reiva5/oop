@@ -1,0 +1,6 @@
+<map id="Omnivora" name="Omnivora">
+<area shape="rect" id="node3" href="$class_bekantan.html" title="Bekantan" alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node4" href="$class_orang_utan.html" title="OrangUtan" alt="" coords="107,155,192,181"/>
+<area shape="rect" id="node5" href="$class_siamang.html" title="Siamang" alt="" coords="217,155,290,181"/>
+<area shape="rect" id="node2" href="$class_pemakan.html" title="Pemakan" alt="" coords="111,5,188,32"/>
+</map>

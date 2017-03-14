@@ -1,0 +1,26 @@
+<map id="Animal::SetMassa" name="Animal::SetMassa">
+<area shape="rect" id="node2" href="$class_aligator.html#a19d0ebd3217864614103b0bbd343a48c" title="Constructor. Menciptakan Aligator dengan inisial &#39;L&#39; dan ID i. " alt="" coords="237,5,355,32"/>
+<area shape="rect" id="node3" href="$class_badak_cula_satu.html#acb72f5690f5c5a73e75a76b1cf40dcdc" title="Constructor. Menciptakan BadakCulaSatu dengan inisial &#39;C&#39; dan ID i. " alt="" coords="190,56,402,83"/>
+<area shape="rect" id="node4" href="$class_banteng.html#a67115d9d4b6576dc53668118bcb63284" title="Constructor. Menciptakan Banteng dengan inisial &#39;A&#39; dan ID i. " alt="" coords="233,107,359,133"/>
+<area shape="rect" id="node5" href="$class_bekantan.html#a00fa93f38b1aca4a25a989b495d45da1" title="Constructor. Menciptakan Bekantan dengan inisial &#39;B&#39; dan ID i. " alt="" coords="226,157,366,184"/>
+<area shape="rect" id="node6" href="$class_buaya.html#a56229331076a5f3cb5bf26a354b246d2" title="Constructor. Menciptakan Buaya dengan inisial &#39;D&#39; dan ID i. " alt="" coords="244,208,348,235"/>
+<area shape="rect" id="node7" href="$class_elang.html#a0498b01d6007cf95ea065322a4ef87fa" title="Constructor. Menciptakan Elang dengan inisial &#39;~&#39; dan ID i. " alt="" coords="248,259,344,285"/>
+<area shape="rect" id="node8" href="$class_garuda.html#ae2c20d77a5f7d0d255f32fd2b71f76ee" title="Constructor. Menciptakan Garuda dengan inisial &#39;G&#39; dan ID i. " alt="" coords="239,309,353,336"/>
+<area shape="rect" id="node9" href="$class_harimau_sumatra.html#ad2cf7f52161d04f3b8b8d7b78135dba1" title="Constructor. Menciptakan HarimauSumatra dengan inisial &#39;H&#39; dan ID i. " alt="" coords="183,360,409,387"/>
+<area shape="rect" id="node10" href="$class_hiu_karpet.html#ac1589c25b08eb4b0d33deec9e5dcabc5" title="Constructor. Menciptakan HiuKarpet dengan inisial &#39;V&#39; dan ID i. " alt="" coords="223,411,369,437"/>
+<area shape="rect" id="node11" href="$class_hiu_martil.html#a376ac60795c3c37cec40714635d47b8a" title="Constructor. Menciptakan HiuMartil dengan inisial &#39;T&#39; dan ID i. " alt="" coords="229,461,363,488"/>
+<area shape="rect" id="node12" href="$class_iguana.html#a36cea5dad12ace3182deab6fd7ab1b25" title="Constructor. Menciptakan Iguana dengan inisial &#39;I&#39; dan ID i. " alt="" coords="242,512,350,539"/>
+<area shape="rect" id="node13" href="$class_kakatua.html#a7c02844b01c8544fcc0e05d68feb7016" title="Constructor. Menciptakan Kakatua dengan inisial &#39;P&#39; dan ID i. " alt="" coords="233,563,359,589"/>
+<area shape="rect" id="node14" href="$class_kancil.html#abed0545d9b1d8afddea3f945d92563da" title="Constructor. Menciptakan Kancil dengan inisial &#39;K&#39; dan ID i. " alt="" coords="245,613,347,640"/>
+<area shape="rect" id="node15" href="$class_komodo.html#ac2d7d7d36ba0cff779de2f39303554c2" title="Constructor. Menciptakan Komodo dengan inisial &#39;J&#39; dan ID i. " alt="" coords="233,664,359,691"/>
+<area shape="rect" id="node16" href="$class_macan.html#a4160d7d7b71420a139693abf5f4eb462" title="Constructor. Menciptakan Macan dengan inisial &#39;M&#39; dan ID i. " alt="" coords="242,715,350,741"/>
+<area shape="rect" id="node17" href="$class_manta_ray.html#a0e939e0eec733dabc1af002e1530f71e" title="Constructor. Menciptakan MantaRay dengan inisial &#39;Q&#39; dan ID i. " alt="" coords="221,765,371,792"/>
+<area shape="rect" id="node18" href="$class_nuri.html#a41b91cafa881ba61c923fa9b160625de" title="Constructor. Menciptakan Nuri dengan inisial &#39;N&#39; dan ID i. " alt="" coords="257,816,335,843"/>
+<area shape="rect" id="node19" href="$class_orang_utan.html#a397ebb2cede26ace5418e51486324379" title="Constructor. Menciptakan OrangUtan dengan inisial &#39;U&#39; dan ID i. " alt="" coords="218,867,374,893"/>
+<area shape="rect" id="node20" href="$class_parkit.html#a038d7efe3fad9f0ec83e2d51397cab3f" title="Constructor. Menciptakan Parkit dengan inisial &#39;F&#39; dan ID i. " alt="" coords="247,917,345,944"/>
+<area shape="rect" id="node21" href="$class_rusa.html#ab2f3ddf21f8ed4b031f7811b46e9e060" title="Constructor. Menciptakan Rusa dengan inisial &#39;E&#39; dan ID i. " alt="" coords="250,968,342,995"/>
+<area shape="rect" id="node22" href="$class_siamang.html#a57da4cc19d81240e9e494e631ea7d0ba" title="Constructor. Menciptakan Siamang dengan inisial &#39;S&#39; dan ID i. " alt="" coords="230,1019,362,1045"/>
+<area shape="rect" id="node23" href="$class_sting_ray.html#a30d42cc4678ff7162a98e6e28aabbb8c" title="Constructor. Menciptakan StingRay dengan inisial &#39;Y&#39; dan ID i. " alt="" coords="227,1069,365,1096"/>
+<area shape="rect" id="node24" href="$animal__test_8cpp.html#ab12bea30098f477c37c5ea546b8bb96c" title="TEST" alt="" coords="268,1120,324,1147"/>
+<area shape="rect" id="node25" href="$class_zebra.html#a92d2891c5e617e0d19fa54a95dc89f15" title="Constructor. Menciptakan Zebra inisial &#39;Z&#39; dan ID i. " alt="" coords="248,1171,344,1197"/>
+</map>

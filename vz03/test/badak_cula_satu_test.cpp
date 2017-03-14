@@ -1,4 +1,4 @@
-#include "../src/badak_cula_satu.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class BadakCulaSatuTest : public ::testing::Test {
