@@ -54,11 +54,11 @@ void Driver::initialize_zoo(Zoo** z, CageHandler& ch)
 			type = i["type"].get<string>();
 
 			if(type=="water")
-				cell = new WaterHabitat(x,y);
+				cell = new cell('w', x, y);
 			else if(type=="land")
-				cell = new LandHabitat(x,y);
+				cell = new cell('x',x,y);
 			else if(type=="air")
-				cell =  new AirHabitat(x,y);
+				cell = new cell('o',x,y);
 			else if(type=="road"){
 				if(i["entrance"].get<bool>()){
 					cell= new Entrance(x,y);
