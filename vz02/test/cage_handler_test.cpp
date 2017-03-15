@@ -1,4 +1,4 @@
-#include "../src/cage_handler.h"
+#include "../src/include.h"
 #include <gtest/gtest.h>
 
 class CageHandlerTest : public ::testing::Test

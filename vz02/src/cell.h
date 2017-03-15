@@ -7,7 +7,7 @@
 #include "cage.h"
 using namespace std;
 
-class Cell: public Renderable
+class Cell
 {
 	public:
 		Cell(char, int, int);
